@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff') format('woff'),
+        url('../fonts/balqis.woff2') format('woff2')       
+    ;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src: url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+        url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
+}
+$titleColor:#E2AB3F;
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    a{
+        text-decoration: none;
+        color: black;
+        
+        &:hover{
+            text-decoration: underline; 
+        }
+    }
+}
+.onescreen{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(165, 42, 42, 0.527);
+    border: 10px solid rgb(21, 255, 0);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+}
+.title{
+    color: $titleColor;
+    font-family: 'balqis';
+    font-size: 96px;
+}
+.subtitle{
+    font-style: italic;
+    font-size: 24px;
+    position: relative;
+    display: inline; 
+}
+
+.buttom input{
+    width: 280px !important;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #E2AB3F;
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imgs/Main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header__container{
+    max-width: 928px;
+    margin: 0 auto;
+
+    .container__item:first-child{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 72px;
+        font-size: 24px;
+        
+        .menu ul li{
+            display: inline;
+            margin-right: 52px;
+        }
+        .header__number::before{
+            position: absolute;
+            top: auto;
+            right: 190px;
+            content: ' ';
+            background-image: url('../imgs/icons/Phone.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .container__item:last-child{
+        position: relative;
+        top: 252px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .header__title{
+            font-family: 'balqis';
+            font-size: 250px;       
+        }
+        .header__subtitle{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 56px;
+            font-style: italic;
+        }
+    }
+}
+
+.FairyTail{
+   .onescreen{
+        .container{
+            margin: 0;
+            grid-column: span 10;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            width: 100% ;
+            
+            .FairyTail__item{
+                grid-column: 1/11;
+                
+                & .title{
+                    padding-left: 360px;
+                }
+                & .subtitle{
+                    padding-left: 541px;
+                }
+            }
+            .FairyTail_slider{
+                grid-column: 1/7;
+                height: auto;
+                border: 1px solid springgreen;
+                background-color: tan;
+                .slider__item img{
+                    height: 100%;
+                    width: 100%;
+
+                }
+    
+            }
+            .FairyTail.text{
+                grid-column: 7/11;
+                border: 1px solid rgb(175, 245, 11);
+                font-size: 18px;
+                line-height: 21px;
+                padding: 50px 0px 50px 55px;
+                
+                p + p{
+                    padding-top: 50px;
+                }
+            }
+            
+        }      
+   } 
+}
+
+.OurTrip{
+    .onescreen{
+        .container{
+            padding: 0;
+            width: 100%;
+        }
+        >.container{
+            padding-top: 100px;
+            grid-column: 3/13;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            
+            .container__item_first{
+                grid-column: 1/5;
+            }
+
+            .container__item_second{
+                grid-column: 5/11;
+                height: auto;
+                background-color: aqua;
+                position: relative;
+            }
+        }
+        .subtitle{
+            left: 205px;
+        }
+        .text{
+            padding-top: 100px;
+            .text__blok{
+                padding-bottom: 50px;
+                line-height: 21px;
+                .text__title{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .container__item_second{
+            .our__slider img{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }    
+        }
+
+    }    
+}
+
+.Hotel{
+  .container{
+    grid-column: 3/11;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+   
+  }  
+}
