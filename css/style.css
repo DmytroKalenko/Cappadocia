@@ -23,44 +23,46 @@ body a:hover {
 }
 
 .onescreen {
-  width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
+img {
+  border-radius: 30px;
+}
+
 .container {
   margin: 0 auto;
   position: relative;
-  padding-top: 100px;
+  padding-top: 170px;
 }
 
 .title {
-  color: #E2AB3F;
+  color: #ffc043;
   font-family: 'balqis';
-  font-size: 96px;
+  font-size: 90px;
 }
 
 .subtitle {
   font-style: italic;
-  font-size: 24px;
+  font-size: 35px;
   position: relative;
   display: inline;
 }
 
 input {
-  width: 280px !important;
-  height: 50px;
+  width: 302px !important;
+  height: 61px;
   background: transparent;
   border: 1px solid #E2AB3F;
   display: inline-block;
-  font-size: 24px;
+  font-size: 34px;
   text-transform: uppercase;
 }
 
 .header,
 .footer {
-  width: 100vw;
   height: 100vh;
   background-image: url("../imgs/Main.jpg");
   background-repeat: no-repeat;
@@ -69,15 +71,18 @@ input {
 }
 
 .header__container {
-  max-width: 928px;
+  max-width: 2200px;
   margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .header__container .container__item:first-child {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-top: 72px;
-  font-size: 24px;
+  padding-top: 4%;
+  font-size: 26px;
 }
 .header__container .container__item:first-child .menu ul li {
   display: inline;
@@ -86,7 +91,7 @@ input {
 .header__container .container__item:first-child .header__number::before {
   position: absolute;
   top: auto;
-  right: 190px;
+  right: 10%;
   content: ' ';
   background-image: url("../imgs/icons/Phone.svg");
   background-size: contain;
@@ -97,40 +102,42 @@ input {
 }
 .header__container .container__item:last-child {
   position: relative;
-  top: 252px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .header__container .container__item:last-child .header__title {
   font-family: 'balqis';
-  font-size: 250px;
+  font-size: 200pt;
+  text-align: center;
 }
 .header__container .container__item:last-child .header__subtitle {
   display: flex;
   justify-content: flex-end;
-  font-size: 56px;
+  font-size: 36px;
   font-style: italic;
+  padding-right: 26%;
 }
 
 .FairyTail .onescreen .container {
   margin: 0;
-  grid-column: span 10;
+  grid-column: span 12;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   width: 100%;
 }
 .FairyTail .onescreen .container .FairyTail__item {
-  grid-column: 1/11;
+  grid-column: 1/13;
+  margin-bottom: 50px;
 }
 .FairyTail .onescreen .container .FairyTail__item .title {
-  padding-left: 360px;
+  padding-left: 10%;
 }
 .FairyTail .onescreen .container .FairyTail__item .subtitle {
-  padding-left: 541px;
+  padding-left: 19%;
 }
 .FairyTail .onescreen .container .FairyTail_slider {
-  grid-column: 1/7;
+  grid-column: 2/7;
   height: auto;
 }
 .FairyTail .onescreen .container .FairyTail_slider .slider__item img {
@@ -138,10 +145,10 @@ input {
   width: 100%;
 }
 .FairyTail .onescreen .container .FairyTail.text {
-  grid-column: 7/11;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 50px 0px 50px 55px;
+  grid-column: 7/13;
+  font-size: 26px;
+  line-height: 35px;
+  padding: 50px 150px 50px 145px;
 }
 .FairyTail .onescreen .container .FairyTail.text p + p {
   padding-top: 50px;
@@ -152,32 +159,42 @@ input {
   width: 100%;
 }
 .OurTrip .onescreen > .container {
-  padding-top: 100px;
+  padding: 100px 0;
   grid-column: 3/13;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
 .OurTrip .onescreen > .container .container__item_first {
-  grid-column: 1/5;
+  grid-column: 1/4;
+}
+.OurTrip .onescreen > .container .container__item_first .container.buttom,
+.OurTrip .onescreen > .container .container__item_first .container.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.OurTrip .onescreen > .container .container__item_first .container.buttom {
+  margin-top: 70px;
 }
 .OurTrip .onescreen > .container .container__item_second {
-  grid-column: 5/11;
-  height: auto;
-  background-color: aqua;
+  grid-column: 5/10;
   position: relative;
 }
 .OurTrip .onescreen .subtitle {
-  left: 205px;
+  left: 35%;
 }
 .OurTrip .onescreen .text {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .OurTrip .onescreen .text .text__blok {
-  padding-bottom: 50px;
-  line-height: 21px;
+  width: 240px;
+  padding-bottom: 30px;
+  font-size: 21px;
+  line-height: 29px;
 }
 .OurTrip .onescreen .text .text__blok .text__title {
   padding-bottom: 20px;
+  text-align: center;
 }
 .OurTrip .onescreen .container__item_second .our__slider img {
   position: absolute;
@@ -195,8 +212,16 @@ input {
   left: 112px;
 }
 .Hotel .container__item__second {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   padding-top: 100px;
+}
+.Hotel .container__item__second .photo {
+  position: relative;
+}
+.Hotel .container__item__second .photo img {
+  height: 100%;
+  width: 100%;
 }
 .Hotel .container__item__second .text {
   display: flex;
@@ -218,12 +243,14 @@ input {
   height: 100%;
 }
 .Hotel .container__item__second .text p:nth-child(3) {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+}
+.Hotel .container__item__second p {
+  font-size: 21px;
+  line-height: 35px;
 }
 .Hotel .container__item__second p + p {
   padding-top: 20px;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .Price {
@@ -242,15 +269,15 @@ input {
 }
 .Price .container .container__item__second {
   display: flex;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 35px;
   padding-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 .Price .container .container__item__second .blok__title {
   font-weight: bold;
   padding-bottom: 50px;
-  font-size: 24px;
+  font-size: 26px;
 }
 .Price .container .container__item__second .blok_first,
 .Price .container .container__item__second .blok_second {
@@ -276,8 +303,8 @@ input {
 .Price .container .container__item__second .blok_first .smallBallon__second,
 .Price .container .container__item__second .blok_second .smallBallon__second {
   position: absolute;
-  top: 72%;
-  right: 20%;
+  top: 50%;
+  right: 14%;
 }
 .Price .container .container__item__second .blok_second {
   padding-left: 70px;
@@ -337,6 +364,7 @@ input {
 .Price .container .container__item__threeth .photo img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
 }
 
 .footer {

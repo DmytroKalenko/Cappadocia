@@ -10,7 +10,7 @@
     src: url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
         url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
 }
-$titleColor:#E2AB3F;
+$titleColor:#ffc043;
 *{
     box-sizing: border-box;
 }
@@ -26,43 +26,42 @@ body{
     }
 }
 .onescreen{
-    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-
+img{
+    border-radius: 30px;
+}
 .container{
     margin: 0 auto;
     position: relative;
-    padding-top: 100px;
+    padding-top: 170px;
 }
 .title{
     color: $titleColor;
     font-family: 'balqis';
-    font-size: 96px;
+    font-size: 90px;
 }
 .subtitle{
     font-style: italic;
-    font-size: 24px;
+    font-size: 35px;
     position: relative;
     display: inline; 
 }
 
 input{
-    width: 280px !important;
-    height: 50px;
+    width: 302px !important;
+    height: 61px;
     background: transparent;
     border: 1px solid #E2AB3F;
     display: inline-block;
-    font-size: 24px;
-    text-transform: uppercase;
-    
+    font-size: 34px;
+    text-transform: uppercase;   
 }
 
 .header,
 .footer{
-    width: 100vw;
     height: 100vh;
     background-image: url('../imgs/Main.jpg');
     background-repeat: no-repeat;
@@ -70,15 +69,18 @@ input{
     background-size: cover;
 }
 .header__container{
-    max-width: 928px;
+    max-width: 2200px;
     margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 
     .container__item:first-child{
         display: flex;
         justify-content: space-between;
         position: relative;
-        padding-top: 72px;
-        font-size: 24px;
+        padding-top: 4%;
+        font-size: 26px;
         
         .menu ul li{
             display: inline;
@@ -87,7 +89,7 @@ input{
         .header__number::before{
             position: absolute;
             top: auto;
-            right: 190px;
+            right: 10%;
             content: ' ';
             background-image: url('../imgs/icons/Phone.svg');
             background-size: contain;
@@ -99,19 +101,20 @@ input{
     }
     .container__item:last-child{
         position: relative;
-        top: 252px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         .header__title{
             font-family: 'balqis';
-            font-size: 250px;       
+            font-size: 200pt;  
+            text-align: center;     
         }
         .header__subtitle{
             display: flex;
             justify-content: flex-end;
-            font-size: 56px;
+            font-size: 36px;
             font-style: italic;
+            padding-right: 26%;
         }
     }
 }
@@ -120,36 +123,36 @@ input{
    .onescreen{
         .container{
             margin: 0;
-            grid-column: span 10;
+            grid-column: span 12;
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: repeat(12, 1fr);
             width: 100% ;
             
             .FairyTail__item{
-                grid-column: 1/11;
+                grid-column: 1/13;
+                margin-bottom: 50px;
                 
                 & .title{
-                    padding-left: 360px;
+                    padding-left: 10%;
                 }
                 & .subtitle{
-                    padding-left: 541px;
+                    padding-left: 19%;
                 }
             }
             .FairyTail_slider{
-                grid-column: 1/7;
+                grid-column: 2/7;
                 height: auto;
                 .slider__item img{
                     height: 100%;
                     width: 100%;
-
                 }
     
             }
             .FairyTail.text{
-                grid-column: 7/11;
-                font-size: 18px;
-                line-height: 21px;
-                padding: 50px 0px 50px 55px;
+                grid-column: 7/13;
+                font-size: 26px;
+                line-height: 35px;
+                padding: 50px 150px 50px 145px;
                 
                 p + p{
                     padding-top: 50px;
@@ -167,32 +170,43 @@ input{
             width: 100%;
         }
         >.container{
-            padding-top: 100px;
+            padding: 100px 0;
             grid-column: 3/13;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
             
             .container__item_first{
-                grid-column: 1/5;
+                grid-column: 1/4;
+                .container.buttom,
+                .container.text{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .container.buttom{
+                    margin-top: 70px;
+                }
             }
 
             .container__item_second{
-                grid-column: 5/11;
-                height: auto;
-                background-color: aqua;
+                grid-column: 5/10;
                 position: relative;
             }
         }
         .subtitle{
-            left: 205px;
+            left: 35%;
         }
         .text{
-            padding-top: 100px;
+            padding-top: 50px;
             .text__blok{
-                padding-bottom: 50px;
-                line-height: 21px;
+                width: 240px;
+                padding-bottom: 30px;
+                font-size: 21px;
+                line-height: 29px;
+                
                 .text__title{
                     padding-bottom: 20px;
+                    text-align: center;
                 }
             }
         }
@@ -221,8 +235,17 @@ input{
     } 
     
     .container__item__second{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         padding-top: 100px;
+
+        .photo{
+            position: relative;
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
         .text{
             display: flex;
             flex-direction: column;
@@ -244,13 +267,15 @@ input{
             }
             
             & p:nth-child(3){
-                padding-bottom: 80px;
+                padding-bottom: 50px;
             }
+        }
+        p{
+            font-size: 21px;
+            line-height: 35px;
         }
         p+p{
             padding-top: 20px;
-            font-size: 18px;
-            line-height: 21px;
         }
         
     }   
@@ -271,14 +296,14 @@ input{
 
         .container__item__second{
             display: flex;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 21px;
+            line-height: 35px;
             padding-top: 100px;
-            margin-bottom: 200px;
+            margin-bottom: 150px;
             .blok__title{
                 font-weight: bold;
                 padding-bottom: 50px;
-                font-size: 24px;
+                font-size: 26px;
             }
             .blok_first,
             .blok_second{
@@ -299,8 +324,8 @@ input{
                 }
                 .smallBallon__second{
                     position: absolute;
-                    top: 72%;
-                    right: 20%;
+                    top: 50%;
+                    right: 14%;
                 }
             }    
             .blok_second{
@@ -371,6 +396,7 @@ input{
                 img{
                     width: 100%;
                     height: 100%;
+                    border-radius: 30px;
                 }
             }
         }
