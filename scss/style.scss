@@ -28,8 +28,6 @@ body{
 .onescreen{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(165, 42, 42, 0.527);
-    border: 10px solid rgb(21, 255, 0);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -51,7 +49,7 @@ body{
     display: inline; 
 }
 
-.buttom input{
+input{
     width: 280px !important;
     height: 50px;
     background: transparent;
@@ -62,7 +60,8 @@ body{
     
 }
 
-.header{
+.header,
+.footer{
     width: 100vw;
     height: 100vh;
     background-image: url('../imgs/Main.jpg');
@@ -139,8 +138,6 @@ body{
             .FairyTail_slider{
                 grid-column: 1/7;
                 height: auto;
-                border: 1px solid springgreen;
-                background-color: tan;
                 .slider__item img{
                     height: 100%;
                     width: 100%;
@@ -150,7 +147,6 @@ body{
             }
             .FairyTail.text{
                 grid-column: 7/11;
-                border: 1px solid rgb(175, 245, 11);
                 font-size: 18px;
                 line-height: 21px;
                 padding: 50px 0px 50px 55px;
@@ -213,11 +209,234 @@ body{
 }
 
 .Hotel{
-  .container{
-    grid-column: 3/11;
+    .container{
+        grid-column: 3/11;
+        display: flex;
+        flex-direction: column;
+        margin: 0; 
+        
+        .subtitle{
+            left: 112px;
+        } 
+    } 
+    
+    .container__item__second{
+        display: flex;
+        padding-top: 100px;
+        .text{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            position: relative;
+            .text_images{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                position: relative;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 50px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            & p:nth-child(3){
+                padding-bottom: 80px;
+            }
+        }
+        p+p{
+            padding-top: 20px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        
+    }   
+}
+
+.Price{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0;
-   
-  }  
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 224px;
+    .container{
+        grid-column: 3/11;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        .subtitle{
+            left: 110px;
+        }
+
+        .container__item__second{
+            display: flex;
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 100px;
+            margin-bottom: 200px;
+            .blok__title{
+                font-weight: bold;
+                padding-bottom: 50px;
+                font-size: 24px;
+            }
+            .blok_first,
+            .blok_second{
+                position: relative;
+                width: 50%;
+                p+p{
+                    padding-top: 20px;
+                }
+                .bigBalloon{
+                    position: absolute;
+                    top: -67%;
+                    right: -5%;
+                }
+                .smallBallon{
+                    position: absolute;
+                    top: 15%;
+                    right: 30%;
+                }
+                .smallBallon__second{
+                    position: absolute;
+                    top: 72%;
+                    right: 20%;
+                }
+            }    
+            .blok_second{
+                padding-left: 70px;
+            }
+        }
+        .container__item__threeth{
+            display: flex;
+            .blok__text{
+                width: 50%;
+                position: relative;
+                padding-top: 105px;
+                .title,
+                .subtitle,
+                {
+                    position: relative;
+                    text-align: end;
+                    right: 201px;
+                    left: auto;
+                    display: block;
+                }
+                .subtitle,
+                {
+                    right: 163px;
+                    
+                }
+            }
+            form{
+                padding-top: 100px;
+                width: 360px;
+                position: absolute;
+                top: 350px;
+                right: 163px;
+                
+                h1{
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 50px; 
+                    font-size: 24px;
+                    text-align: center;
+                   
+                }
+                input{
+                    display: block;
+                    width: 100% !important;
+                    height: 50px;
+                    padding-left: 31px;
+
+                }
+                input+input{
+                    margin-top: 20px;
+                       
+                }
+                input:last-child{
+                    padding-left: 0px;
+                    margin: 20px auto 0 auto;
+                    width: 280px !important;
+                }
+
+            }
+            
+
+
+            .photo{
+                position: relative;
+                width: 600px;
+                height: 800px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Contacts{
+        background-image: url('../imgs/BalloonContacts.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50%;
+        width: 19%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 18px;
+        position: relative;
+        padding-top: 4%;
+        .title{
+            font-size: 86px;
+            margin-bottom: 50px;
+        } 
+        .number{
+            padding-bottom: 20px;
+        }
+        .number::after{
+            position: absolute;
+            top: 38%;
+            left: 20%;
+            content: ' ';
+            background-image: url('../imgs/icons/phone2.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+        }
+        .email{
+            padding-bottom: 38px;
+        }
+        .email::after{
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            content: ' ';
+            background-image: url('../imgs/icons/mail.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            width: 30px;
+        }
+        .socoial__media ul li{
+            display: inline-block;
+            +li{
+                padding-left: 15px;
+            }
+        }
+    }
+    .footer__title{
+        padding-left: 186px;
+        font-family: 'balqis';
+        font-size: 86px;
+    }
 }

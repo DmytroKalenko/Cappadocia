@@ -25,8 +25,6 @@ body a:hover {
 .onescreen {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(165, 42, 42, 0.527);
-  border: 10px solid #15ff00;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -50,7 +48,7 @@ body a:hover {
   display: inline;
 }
 
-.buttom input {
+input {
   width: 280px !important;
   height: 50px;
   background: transparent;
@@ -60,7 +58,8 @@ body a:hover {
   text-transform: uppercase;
 }
 
-.header {
+.header,
+.footer {
   width: 100vw;
   height: 100vh;
   background-image: url("../imgs/Main.jpg");
@@ -133,8 +132,6 @@ body a:hover {
 .FairyTail .onescreen .container .FairyTail_slider {
   grid-column: 1/7;
   height: auto;
-  border: 1px solid springgreen;
-  background-color: tan;
 }
 .FairyTail .onescreen .container .FairyTail_slider .slider__item img {
   height: 100%;
@@ -142,7 +139,6 @@ body a:hover {
 }
 .FairyTail .onescreen .container .FairyTail.text {
   grid-column: 7/11;
-  border: 1px solid #aff50b;
   font-size: 18px;
   line-height: 21px;
   padding: 50px 0px 50px 55px;
@@ -191,7 +187,218 @@ body a:hover {
 
 .Hotel .container {
   grid-column: 3/11;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   margin: 0;
+}
+.Hotel .container .subtitle {
+  left: 112px;
+}
+.Hotel .container__item__second {
+  display: flex;
+  padding-top: 100px;
+}
+.Hotel .container__item__second .text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  position: relative;
+}
+.Hotel .container__item__second .text .text_images {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.Hotel .container__item__second .text .text_images img {
+  width: 100%;
+  height: 100%;
+}
+.Hotel .container__item__second .text p:nth-child(3) {
+  padding-bottom: 80px;
+}
+.Hotel .container__item__second p + p {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.Price {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 224px;
+}
+.Price .container {
+  grid-column: 3/11;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.Price .container .subtitle {
+  left: 110px;
+}
+.Price .container .container__item__second {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+}
+.Price .container .container__item__second .blok__title {
+  font-weight: bold;
+  padding-bottom: 50px;
+  font-size: 24px;
+}
+.Price .container .container__item__second .blok_first,
+.Price .container .container__item__second .blok_second {
+  position: relative;
+  width: 50%;
+}
+.Price .container .container__item__second .blok_first p + p,
+.Price .container .container__item__second .blok_second p + p {
+  padding-top: 20px;
+}
+.Price .container .container__item__second .blok_first .bigBalloon,
+.Price .container .container__item__second .blok_second .bigBalloon {
+  position: absolute;
+  top: -67%;
+  right: -5%;
+}
+.Price .container .container__item__second .blok_first .smallBallon,
+.Price .container .container__item__second .blok_second .smallBallon {
+  position: absolute;
+  top: 15%;
+  right: 30%;
+}
+.Price .container .container__item__second .blok_first .smallBallon__second,
+.Price .container .container__item__second .blok_second .smallBallon__second {
+  position: absolute;
+  top: 72%;
+  right: 20%;
+}
+.Price .container .container__item__second .blok_second {
+  padding-left: 70px;
+}
+.Price .container .container__item__threeth {
+  display: flex;
+}
+.Price .container .container__item__threeth .blok__text {
+  width: 50%;
+  position: relative;
+  padding-top: 105px;
+}
+.Price .container .container__item__threeth .blok__text .title,
+.Price .container .container__item__threeth .blok__text .subtitle {
+  position: relative;
+  text-align: end;
+  right: 201px;
+  left: auto;
+  display: block;
+}
+.Price .container .container__item__threeth .blok__text .subtitle {
+  right: 163px;
+}
+.Price .container .container__item__threeth form {
+  padding-top: 100px;
+  width: 360px;
+  position: absolute;
+  top: 350px;
+  right: 163px;
+}
+.Price .container .container__item__threeth form h1 {
+  display: block;
+  width: 100%;
+  padding-bottom: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+.Price .container .container__item__threeth form input {
+  display: block;
+  width: 100% !important;
+  height: 50px;
+  padding-left: 31px;
+}
+.Price .container .container__item__threeth form input + input {
+  margin-top: 20px;
+}
+.Price .container .container__item__threeth form input:last-child {
+  padding-left: 0px;
+  margin: 20px auto 0 auto;
+  width: 280px !important;
+}
+.Price .container .container__item__threeth .photo {
+  position: relative;
+  width: 600px;
+  height: 800px;
+}
+.Price .container .container__item__threeth .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .Contacts {
+  background-image: url("../imgs/BalloonContacts.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50%;
+  width: 19%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  position: relative;
+  padding-top: 4%;
+}
+.footer .Contacts .title {
+  font-size: 86px;
+  margin-bottom: 50px;
+}
+.footer .Contacts .number {
+  padding-bottom: 20px;
+}
+.footer .Contacts .number::after {
+  position: absolute;
+  top: 38%;
+  left: 20%;
+  content: ' ';
+  background-image: url("../imgs/icons/phone2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+}
+.footer .Contacts .email {
+  padding-bottom: 38px;
+}
+.footer .Contacts .email::after {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  content: ' ';
+  background-image: url("../imgs/icons/mail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+}
+.footer .Contacts .socoial__media ul li {
+  display: inline-block;
+}
+.footer .Contacts .socoial__media ul li + li {
+  padding-left: 15px;
+}
+.footer .footer__title {
+  padding-left: 186px;
+  font-family: 'balqis';
+  font-size: 86px;
 }
