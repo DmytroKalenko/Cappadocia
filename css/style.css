@@ -24,8 +24,6 @@ body a:hover {
 
 .onescreen {
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 }
 
 img {
@@ -33,22 +31,23 @@ img {
 }
 
 .container {
+  max-width: 1600px;
   margin: 0 auto;
   position: relative;
-  padding-top: 70px;
 }
 
 .title {
-  color: #ffc043;
+  color: #eb1810;
   font-family: 'balqis';
   font-size: 90px;
 }
 
 .subtitle {
+  display: inline;
+  position: relative;
+  padding-top: 10px;
   font-style: italic;
   font-size: 35px;
-  position: relative;
-  display: inline;
 }
 
 input {
@@ -72,7 +71,6 @@ input {
 }
 
 .header__container {
-  max-width: 2200px;
   margin: 0 auto;
   height: 100%;
   display: grid;
@@ -85,7 +83,8 @@ input {
   padding-top: 4%;
   font-size: 26px;
 }
-.header__container .container__item:first-child .menu ul li {
+.header__container .container__item:first-child .menu__first ul li,
+.header__container .container__item:first-child .menu__second ul li {
   display: inline;
   margin-right: 52px;
 }
@@ -120,29 +119,6 @@ input {
   padding-right: 26%;
 }
 
-.FairyTail .onescreen {
-  position: relative;
-}
-.FairyTail .onescreen:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../imgs/backgrounds/3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  filter: blur(5px) opacity(90%);
-}
-.FairyTail .onescreen .container {
-  margin: 0;
-  grid-column: span 12;
-  display: grid;
-  width: 100%;
-}
 .FairyTail .onescreen .container .FairyTail__item {
   grid-column: 1/13;
   margin-bottom: 50px;
@@ -168,28 +144,19 @@ input {
   padding-top: 50px;
 }
 
-.OurTrip .onescreen .container {
-  padding: 0;
-  width: 100%;
-}
-.OurTrip .onescreen > .container {
-  grid-column: 3/13;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-}
-.OurTrip .onescreen > .container .container__item_first {
+.OurTrip .onescreen .container__item_first {
   grid-column: 1/4;
 }
-.OurTrip .onescreen > .container .container__item_first .container.buttom,
-.OurTrip .onescreen > .container .container__item_first .container.text {
+.OurTrip .onescreen .container__item_first .container.buttom,
+.OurTrip .onescreen .container__item_first .container.text {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.OurTrip .onescreen > .container .container__item_first .container.buttom {
+.OurTrip .onescreen .container__item_first .container.buttom {
   margin-top: 70px;
 }
-.OurTrip .onescreen > .container .container__item_second {
+.OurTrip .onescreen .container__item_second {
   grid-column: 5/10;
   position: relative;
 }
@@ -236,13 +203,7 @@ input {
   background-attachment: fixed;
   filter: blur(5px) opacity(90%);
 }
-.Hotel .container {
-  grid-column: 3/11;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-.Hotel .container .subtitle {
+.Hotel .subtitle {
   left: 112px;
 }
 .Hotel .container__item__second {
@@ -287,72 +248,62 @@ input {
   padding-top: 20px;
 }
 
-.Price {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin-bottom: 150px;
-}
-.Price .container {
-  grid-column: 3/11;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-.Price .container .subtitle {
+.Price .subtitle {
   left: 110px;
 }
-.Price .container .container__item__second {
+.Price .container__item__second {
   display: flex;
   font-size: 21px;
   line-height: 35px;
   padding-top: 100px;
   margin-bottom: 150px;
 }
-.Price .container .container__item__second .blok__title {
+.Price .container__item__second .blok__title {
   font-weight: bold;
   padding-bottom: 50px;
   font-size: 26px;
 }
-.Price .container .container__item__second .blok_first,
-.Price .container .container__item__second .blok_second {
+.Price .container__item__second .blok_first,
+.Price .container__item__second .blok_second {
   position: relative;
   width: 50%;
 }
-.Price .container .container__item__second .blok_first p + p,
-.Price .container .container__item__second .blok_second p + p {
+.Price .container__item__second .blok_first p + p,
+.Price .container__item__second .blok_second p + p {
   padding-top: 20px;
 }
-.Price .container .container__item__second .blok_first .bigBalloon,
-.Price .container .container__item__second .blok_second .bigBalloon {
+.Price .container__item__second .blok_first .bigBalloon,
+.Price .container__item__second .blok_second .bigBalloon {
   position: absolute;
   top: -67%;
   right: -5%;
 }
-.Price .container .container__item__second .blok_first .smallBallon,
-.Price .container .container__item__second .blok_second .smallBallon {
+.Price .container__item__second .blok_first .smallBallon,
+.Price .container__item__second .blok_second .smallBallon {
   position: absolute;
   top: 15%;
   right: 30%;
 }
-.Price .container .container__item__second .blok_first .smallBallon__second,
-.Price .container .container__item__second .blok_second .smallBallon__second {
+.Price .container__item__second .blok_first .smallBallon__second,
+.Price .container__item__second .blok_second .smallBallon__second {
   position: absolute;
   top: 50%;
   right: 14%;
 }
-.Price .container .container__item__second .blok_second {
+.Price .container__item__second .blok_second {
   padding-left: 70px;
 }
-.Price .container .container__item__threeth {
+
+.BookNow .container__item__threeth {
   display: flex;
 }
-.Price .container .container__item__threeth .blok__text {
+.BookNow .container__item__threeth .blok__text {
   width: 50%;
   position: relative;
   padding-top: 105px;
 }
-.Price .container .container__item__threeth .blok__text .title,
-.Price .container .container__item__threeth .blok__text .subtitle {
+.BookNow .container__item__threeth .blok__text .title,
+.BookNow .container__item__threeth .blok__text .subtitle {
   position: relative;
   text-align: end;
   right: 201px;
@@ -360,53 +311,48 @@ input {
   display: block;
   padding: 5px 0;
 }
-.Price .container .container__item__threeth .blok__text .subtitle {
+.BookNow .container__item__threeth .blok__text .subtitle {
   right: 163px;
 }
-.Price .container .container__item__threeth form {
+.BookNow .container__item__threeth form {
   padding-top: 100px;
   width: 360px;
   position: absolute;
   top: 350px;
   right: 163px;
 }
-.Price .container .container__item__threeth form h1 {
+.BookNow .container__item__threeth form h1 {
   display: block;
   width: 100%;
   padding-bottom: 50px;
   font-size: 24px;
   text-align: center;
 }
-.Price .container .container__item__threeth form input {
+.BookNow .container__item__threeth form input {
   display: block;
   width: 100% !important;
   height: 50px;
   padding-left: 31px;
 }
-.Price .container .container__item__threeth form input + input {
+.BookNow .container__item__threeth form input + input {
   margin-top: 20px;
 }
-.Price .container .container__item__threeth form input:last-child {
+.BookNow .container__item__threeth form input:last-child {
   padding-left: 0px;
   margin: 20px auto 0 auto;
   width: 280px !important;
 }
-.Price .container .container__item__threeth .photo {
+.BookNow .container__item__threeth .photo {
   position: relative;
   width: 600px;
   height: 800px;
 }
-.Price .container .container__item__threeth .photo img {
+.BookNow .container__item__threeth .photo img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .footer .Contacts {
   background-image: url("../imgs/BalloonContacts.svg");
   background-repeat: no-repeat;
