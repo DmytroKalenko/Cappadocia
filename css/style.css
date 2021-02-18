@@ -363,6 +363,9 @@ input {
   border-radius: 30px;
 }
 
+.footer {
+  position: relative;
+}
 .footer .Contacts {
   background-image: url("../imgs/BalloonContacts.svg");
   background-repeat: no-repeat;
@@ -427,4 +430,103 @@ input {
   padding-left: 186px;
   font-family: 'balqis';
   font-size: 95px;
+}
+.footer div {
+  position: absolute;
+}
+.footer div:nth-child(1) {
+  right: 10%;
+  bottom: 0;
+  animation: anim 12s infinite;
+}
+.footer div:nth-child(2) {
+  right: 17%;
+  bottom: 0;
+  animation: anim 16s infinite;
+}
+.footer div:nth-child(3) {
+  right: 22%;
+  bottom: 0;
+  animation: anim 20s infinite;
+}
+.footer div:nth-child(4) {
+  right: 32%;
+  bottom: 0;
+  animation: anim 17s infinite;
+}
+.footer div:nth-child(5) {
+  right: 48%;
+  bottom: 0;
+  animation: anim 18s infinite;
+}
+.footer div:nth-child(6) {
+  right: 55%;
+  bottom: 0;
+  animation: anim 22s infinite;
+}
+.footer div:nth-child(7) {
+  right: 60%;
+  bottom: 0;
+  animation: anim 12s infinite;
+}
+.footer div:nth-child(8) {
+  right: 66%;
+  bottom: 0;
+  animation: anim 10s infinite;
+}
+.footer div:nth-child(9) {
+  right: 70%;
+  bottom: 0;
+  animation: anim 13s infinite;
+}
+.footer div:nth-child(10) {
+  right: 75%;
+  bottom: 0;
+  animation: anim 15s infinite;
+}
+.footer div:nth-child(11) {
+  right: 80%;
+  bottom: 0;
+  animation: anim 10s infinite;
+}
+.footer div:nth-child(12) {
+  right: 86%;
+  bottom: 0;
+  animation: anim 14s infinite;
+}
+.footer div:nth-child(13) {
+  right: 90%;
+  bottom: 0;
+  animation: anim 17s infinite;
+}
+.footer div:nth-child(14) {
+  right: 97%;
+  bottom: 0;
+  animation: anim 10s infinite;
+}
+.footer div:last-child {
+  right: 50%;
+  bottom: 0;
+}
+@keyframes anim {
+  0% {
+    bottom: -10%;
+    transform: translateX(15px) rotate(7deg);
+  }
+  20% {
+    transform: translateX(25px) rotate(-7deg);
+  }
+  40% {
+    transform: translateX(20px) rotate(9deg);
+  }
+  60% {
+    transform: translateX(15px) rotate(-9deg);
+  }
+  80% {
+    transform: translateX(15px) rotate(5deg);
+  }
+  100% {
+    bottom: 110%;
+    transform: translateX(15px) rotate(0deg);
+  }
 }
