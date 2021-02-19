@@ -487,19 +487,38 @@ input{
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-right: -50%;
+
         transform: translate(-50%, -50%);
         background-image: url('../imgs/BalloonContacts.svg');
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: center;
         height: 50%;
         width: 19%;
         display: flex;
-        justify-content: center;
         align-items: center;
+  
         flex-direction: column;
         font-size: 32px;
+        padding-top: 170px;
+        .number,
+        .email{
+         padding: 10px;   
+        }
+        .number{
+            padding-top: 33px
+        }
+        .socoial__media{
+            ul{
+                list-style: none;
+                display: flex;
+                padding-top: 55px;
+                li+li{
+                    margin-left: 10px;  
 
+                }
+            }
+        }
        
     }
 
