@@ -98,18 +98,6 @@ input {
 .header .container .container__item:first-child .menu__second ul li:hover {
   border-bottom: 1px solid red;
 }
-.header .container .container__item:first-child .header__number::before {
-  position: absolute;
-  top: auto;
-  right: 10%;
-  content: ' ';
-  background-image: url("../imgs/icons/Phone.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30px;
-  width: 30px;
-}
 .header .container .container__item:last-child {
   position: relative;
   display: flex;
@@ -296,6 +284,9 @@ input {
 }
 
 .BookNow {
+  position: relative;
+  z-index: 1;
+  background-color: white;
   height: 100vh;
   display: flex;
   align-items: center;
