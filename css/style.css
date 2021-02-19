@@ -366,147 +366,95 @@ input {
 .footer {
   position: relative;
 }
-.footer .Contacts {
+.footer div.balloon {
+  position: absolute;
+}
+.footer div.balloon:nth-child(1) {
+  right: 10%;
+  bottom: 0;
+  animation: anim 12s infinite ease-in;
+}
+.footer div.balloon:nth-child(2) {
+  right: 17%;
+  bottom: 0;
+  animation: anim 16s infinite;
+}
+.footer div.balloon:nth-child(3) {
+  right: 22%;
+  bottom: 0;
+  animation: anim 20s infinite;
+}
+.footer div.balloon:nth-child(4) {
+  right: 32%;
+  bottom: 0;
+  animation: anim 17s infinite ease-in;
+}
+.footer div.balloon:nth-child(5) {
+  right: 48%;
+  bottom: 0;
+  animation: anim 18s infinite;
+}
+.footer div.balloon:nth-child(6) {
+  right: 55%;
+  bottom: 0;
+  animation: anim 22s infinite ease-in;
+}
+.footer div.balloon:nth-child(7) {
+  right: 60%;
+  bottom: 0;
+  animation: anim 12s infinite;
+}
+.footer div.balloon:nth-child(8) {
+  right: 66%;
+  bottom: 0;
+  animation: anim 10s infinite ease-in-out;
+}
+.footer div.balloon:nth-child(9) {
+  right: 70%;
+  bottom: 0;
+  animation: anim 13s infinite ease-in;
+}
+.footer div.balloon:nth-child(10) {
+  right: 75%;
+  bottom: 0;
+  animation: anim 15s infinite ease-in-out;
+}
+.footer div.balloon:nth-child(11) {
+  right: 80%;
+  bottom: 0;
+  animation: anim 10s infinite;
+}
+.footer div.balloon:nth-child(12) {
+  right: 86%;
+  bottom: 0;
+  animation: anim 14s infinite;
+}
+.footer div.balloon:nth-child(13) {
+  right: 90%;
+  bottom: 0;
+  animation: anim 17s infinite;
+}
+.footer div.balloon:nth-child(14) {
+  right: 97%;
+  bottom: 0;
+  animation: anim 10s infinite ease-in-out;
+}
+.footer div.balloon:nth-child(15) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   background-image: url("../imgs/BalloonContacts.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 50%;
   width: 19%;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 21px;
-  position: relative;
-  padding-top: 4%;
-}
-.footer .Contacts .title {
-  font-size: 86px;
-  margin-bottom: 50px;
-}
-.footer .Contacts .number {
-  padding-bottom: 20px;
-}
-.footer .Contacts .number::after {
-  position: absolute;
-  top: 34%;
-  left: 24%;
-  content: ' ';
-  background-image: url("../imgs/icons/phone2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30px;
-  width: 30px;
-}
-.footer .Contacts .email {
-  padding-bottom: 38px;
-}
-.footer .Contacts .email::after {
-  position: absolute;
-  top: 40%;
-  left: 14%;
-  content: ' ';
-  background-image: url("../imgs/icons/mail.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30px;
-  width: 30px;
-}
-.footer .Contacts .socoial__media ul li {
-  display: inline-block;
-  position: relative;
-  height: 40px;
-  width: 40px;
-}
-.footer .Contacts .socoial__media ul li img {
-  width: 100%;
-  height: 100%;
-}
-.footer .Contacts .socoial__media ul li + li {
-  margin-left: 15px;
-}
-.footer .footer__title {
-  padding-left: 186px;
-  font-family: 'balqis';
-  font-size: 95px;
-}
-.footer div {
-  position: absolute;
-}
-.footer div:nth-child(1) {
-  right: 10%;
-  bottom: 0;
-  animation: anim 12s infinite;
-}
-.footer div:nth-child(2) {
-  right: 17%;
-  bottom: 0;
-  animation: anim 16s infinite;
-}
-.footer div:nth-child(3) {
-  right: 22%;
-  bottom: 0;
-  animation: anim 20s infinite;
-}
-.footer div:nth-child(4) {
-  right: 32%;
-  bottom: 0;
-  animation: anim 17s infinite;
-}
-.footer div:nth-child(5) {
-  right: 48%;
-  bottom: 0;
-  animation: anim 18s infinite;
-}
-.footer div:nth-child(6) {
-  right: 55%;
-  bottom: 0;
-  animation: anim 22s infinite;
-}
-.footer div:nth-child(7) {
-  right: 60%;
-  bottom: 0;
-  animation: anim 12s infinite;
-}
-.footer div:nth-child(8) {
-  right: 66%;
-  bottom: 0;
-  animation: anim 10s infinite;
-}
-.footer div:nth-child(9) {
-  right: 70%;
-  bottom: 0;
-  animation: anim 13s infinite;
-}
-.footer div:nth-child(10) {
-  right: 75%;
-  bottom: 0;
-  animation: anim 15s infinite;
-}
-.footer div:nth-child(11) {
-  right: 80%;
-  bottom: 0;
-  animation: anim 10s infinite;
-}
-.footer div:nth-child(12) {
-  right: 86%;
-  bottom: 0;
-  animation: anim 14s infinite;
-}
-.footer div:nth-child(13) {
-  right: 90%;
-  bottom: 0;
-  animation: anim 17s infinite;
-}
-.footer div:nth-child(14) {
-  right: 97%;
-  bottom: 0;
-  animation: anim 10s infinite;
-}
-.footer div:last-child {
-  right: 50%;
-  bottom: 0;
+  font-size: 32px;
 }
 @keyframes anim {
   0% {

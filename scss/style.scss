@@ -401,157 +401,105 @@ input{
 
 .footer{
     position: relative;
-    .Contacts{
+    
+
+    
+    div.balloon{
+        position: absolute;
+        
+    }
+    div.balloon:nth-child(1){
+        right: 10%;
+        bottom: 0;
+        animation: anim 12s infinite ease-in;
+    }
+    div.balloon:nth-child(2){
+        right: 17%;
+        bottom: 0;
+        animation: anim 16s infinite;
+    }
+    div.balloon:nth-child(3){
+        right: 22%;
+        bottom: 0;
+        animation: anim 20s infinite;
+    }
+    div.balloon:nth-child(4){
+        right: 32%;
+        bottom: 0;
+        animation: anim 17s infinite ease-in;
+    }
+
+    div.balloon:nth-child(5){
+        right: 48%;
+        bottom: 0;
+        animation: anim 18s infinite;
+    }
+
+    div.balloon:nth-child(6){
+        right: 55%;
+        bottom: 0;
+        animation: anim 22s infinite ease-in;
+    }
+
+    div.balloon:nth-child(7){
+        right: 60%;
+        bottom: 0;
+        animation: anim 12s infinite;
+    }
+
+    div.balloon:nth-child(8){
+        right: 66%;
+        bottom: 0;
+        animation: anim 10s infinite ease-in-out;
+    }
+
+    div.balloon:nth-child(9){
+        right: 70%;
+        bottom: 0;
+        animation: anim 13s infinite ease-in;
+    }
+    div.balloon:nth-child(10){
+        right: 75%;
+        bottom: 0;
+        animation: anim 15s infinite ease-in-out;
+    }
+    div.balloon:nth-child(11){
+        right: 80%;
+        bottom: 0;
+        animation: anim 10s infinite;
+    }
+    div.balloon:nth-child(12){
+        right: 86%;
+        bottom: 0;
+        animation: anim 14s infinite;
+    }
+    div.balloon:nth-child(13){
+        right: 90%;
+        bottom: 0;
+        animation: anim 17s infinite;
+    }
+    div.balloon:nth-child(14){
+        right: 97%;
+        bottom: 0;
+        animation: anim 10s infinite ease-in-out;
+    }
+    div.balloon:nth-child(15){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         background-image: url('../imgs/BalloonContacts.svg');
         background-repeat: no-repeat;
         background-size: contain;
         height: 50%;
         width: 19%;
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 21px;
-        position: relative;
-        padding-top: 4%;
-        .title{
-            font-size: 86px;
-            margin-bottom: 50px;
-        } 
-        .number{
-            padding-bottom: 20px;
-        }
-        .number::after{
-            position: absolute;
-            top: 34%;
-            left: 24%;
-            content: ' ';
-            background-image: url('../imgs/icons/phone2.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 30px;
-            width: 30px;
-        }
-        .email{
-            padding-bottom: 38px;
-        }
-        .email::after{
-            position: absolute;
-            top: 40%;
-            left: 14%;
-            content: ' ';
-            background-image: url('../imgs/icons/mail.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 30px;
-            width: 30px;
-        }
-        .socoial__media ul li{
-            display: inline-block;
-            position: relative;
-            height: 40px;
-            width: 40px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            +li{
-                margin-left: 15px;
-                
-            }
+        font-size: 32px;
 
-        }
-    }
-    .footer__title{
-        padding-left: 186px;
-        font-family: 'balqis';
-        font-size: 95px;
-    }
-
-    
-    div{
-        position: absolute;
-        
-    }
-    div:nth-child(1){
-        right: 10%;
-        bottom: 0;
-        animation: anim 12s infinite;
-    }
-    div:nth-child(2){
-        right: 17%;
-        bottom: 0;
-        animation: anim 16s infinite;
-    }
-    div:nth-child(3){
-        right: 22%;
-        bottom: 0;
-        animation: anim 20s infinite;
-    }
-    div:nth-child(4){
-        right: 32%;
-        bottom: 0;
-        animation: anim 17s infinite;
-    }
-
-    div:nth-child(5){
-        right: 48%;
-        bottom: 0;
-        animation: anim 18s infinite;
-    }
-
-    div:nth-child(6){
-        right: 55%;
-        bottom: 0;
-        animation: anim 22s infinite;
-    }
-
-    div:nth-child(7){
-        right: 60%;
-        bottom: 0;
-        animation: anim 12s infinite;
-    }
-
-    div:nth-child(8){
-        right: 66%;
-        bottom: 0;
-        animation: anim 10s infinite;
-    }
-
-    div:nth-child(9){
-        right: 70%;
-        bottom: 0;
-        animation: anim 13s infinite;
-    }
-    div:nth-child(10){
-        right: 75%;
-        bottom: 0;
-        animation: anim 15s infinite;
-    }
-    div:nth-child(11){
-        right: 80%;
-        bottom: 0;
-        animation: anim 10s infinite;
-    }
-    div:nth-child(12){
-        right: 86%;
-        bottom: 0;
-        animation: anim 14s infinite;
-    }
-    div:nth-child(13){
-        right: 90%;
-        bottom: 0;
-        animation: anim 17s infinite;
-    }
-    div:nth-child(14){
-        right: 97%;
-        bottom: 0;
-        animation: anim 10s infinite;
-    }
-    div:last-child{
-        right: 50%;
-        bottom: 0;
        
     }
 
@@ -562,7 +510,7 @@ input{
         60%  { transform: translateX(15px) rotate(-9deg)}
         80%  { transform: translateX(15px) rotate(5deg)}
         100% {bottom: 110%; transform: translateX(15px) rotate(0deg)}
-
     }
-
+       
+    
 }
