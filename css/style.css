@@ -43,18 +43,19 @@ img {
   color: #eb1810;
   font-family: 'balqis';
   font-size: 90px;
+  text-align: center;
 }
 
 .subtitle {
-  display: inline;
   position: relative;
   padding-top: 10px;
   font-style: italic;
-  font-size: 38px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .container__title {
-  padding: 70px 0;
+  padding: 70px;
 }
 
 input {
@@ -75,6 +76,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .header .container {
@@ -88,6 +90,7 @@ input {
   position: relative;
   padding-top: 4%;
   font-size: 26px;
+  z-index: 1;
 }
 .header .container .container__item:first-child .menu__first ul li,
 .header .container .container__item:first-child .menu__second ul li {
@@ -98,25 +101,104 @@ input {
 .header .container .container__item:first-child .menu__second ul li:hover {
   border-bottom: 1px solid red;
 }
-.header .container .container__item:last-child {
+.header .container .container__item:nth-child(2) {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
 }
-.header .container .container__item:last-child .header__title {
+.header .container .container__item:nth-child(2) .header__title {
   font-family: 'balqis';
   font-size: 200pt;
   text-align: center;
 }
-.header .container .container__item:last-child .header__subtitle {
+.header .container .container__item:nth-child(2) .header__subtitle {
   display: flex;
   justify-content: flex-end;
   font-size: 36px;
   font-style: italic;
   padding-right: 26%;
 }
+.header .container .container__item__threeth div.balloon {
+  position: absolute;
+}
+.header .container .container__item__threeth div.balloon:nth-child(1) {
+  right: 0;
+  bottom: 0;
+  animation: anim 12s infinite ease-in;
+}
+.header .container .container__item__threeth div.balloon:nth-child(2) {
+  right: 10%;
+  bottom: 0;
+  animation: anim 12s infinite ease-in;
+}
+.header .container .container__item__threeth div.balloon:nth-child(3) {
+  right: 22%;
+  bottom: 0;
+  animation: anim 20s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(4) {
+  right: 32%;
+  bottom: 0;
+  animation: anim 17s infinite ease-in;
+}
+.header .container .container__item__threeth div.balloon:nth-child(5) {
+  right: 48%;
+  bottom: 0;
+  animation: anim 18s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(6) {
+  right: 55%;
+  bottom: 0;
+  animation: anim 22s infinite ease-in;
+}
+.header .container .container__item__threeth div.balloon:nth-child(7) {
+  right: 60%;
+  bottom: 0;
+  animation: anim 12s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(8) {
+  right: 66%;
+  bottom: 0;
+  animation: anim 10s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(9) {
+  right: 70%;
+  bottom: 0;
+  animation: anim 13s infinite ease-in;
+}
+.header .container .container__item__threeth div.balloon:nth-child(10) {
+  right: 75%;
+  bottom: 0;
+  animation: anim 15s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(11) {
+  right: 80%;
+  bottom: 0;
+  animation: anim 10s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(12) {
+  right: 86%;
+  bottom: 0;
+  animation: anim 14s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(13) {
+  right: 90%;
+  bottom: 0;
+  animation: anim 17s infinite;
+}
+.header .container .container__item__threeth div.balloon:nth-child(14) {
+  right: 97%;
+  bottom: 0;
+  animation: anim 10s infinite ease-in-out;
+}
 
+.FairyTail {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
 .FairyTail .onescreen .container .container__title .title {
   padding-left: 10%;
 }
@@ -147,7 +229,7 @@ input {
 }
 
 .OurTrip .onescreen .subtitle {
-  left: 10%;
+  left: 7%;
 }
 .OurTrip .onescreen .container__title .container.buttom,
 .OurTrip .onescreen .container__title .container.text {
@@ -234,8 +316,25 @@ input {
   display: flex;
   align-items: center;
 }
+.Price:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/backgrounds/Uchisar-Castle-Guided-Cappadocia-Tours.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px) opacity(90%);
+}
 .Price .container {
   height: auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
 }
 .Price .subtitle {
   left: 110px;
@@ -245,6 +344,7 @@ input {
   font-size: 21px;
   line-height: 35px;
   padding-top: 100px;
+  padding-left: 70px;
   margin-bottom: 150px;
 }
 .Price .container__item__second .blok__title {
@@ -264,8 +364,8 @@ input {
 .Price .container__item__second .blok_first .bigBalloon,
 .Price .container__item__second .blok_second .bigBalloon {
   position: absolute;
-  top: -67%;
-  right: -5%;
+  top: -60%;
+  right: 7%;
 }
 .Price .container__item__second .blok_first .smallBallon,
 .Price .container__item__second .blok_second .smallBallon {
@@ -277,7 +377,7 @@ input {
 .Price .container__item__second .blok_second .smallBallon__second {
   position: absolute;
   top: 50%;
-  right: 14%;
+  right: 19%;
 }
 .Price .container__item__second .blok_second {
   padding-left: 70px;
@@ -354,9 +454,6 @@ input {
   border-radius: 30px;
 }
 
-.footer {
-  position: relative;
-}
 .footer div.balloon {
   position: absolute;
 }
@@ -444,7 +541,7 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 32px;
+  font-size: 26px;
   padding-top: 170px;
 }
 .footer div.balloon:nth-child(15) .number,
@@ -462,6 +559,7 @@ input {
 .footer div.balloon:nth-child(15) .socoial__media ul li + li {
   margin-left: 10px;
 }
+
 @keyframes anim {
   0% {
     bottom: -10%;

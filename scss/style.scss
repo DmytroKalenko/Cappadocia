@@ -41,17 +41,18 @@ img{
     color: $titleColor;
     font-family: 'balqis';
     font-size: 90px;
+    text-align: center;
 }
 .subtitle{
-    display: inline;
     position: relative; 
     padding-top: 10px;
     font-style: italic;
-    font-size: 38px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .container__title{
-    padding: 70px 0;
+    padding: 70px ;
 }
 
 
@@ -73,12 +74,15 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 .header{
+    
     .container{
         height: 100%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+
 
         .container__item:first-child{
             display: flex;
@@ -86,6 +90,7 @@ input{
             position: relative;
             padding-top: 4%;
             font-size: 26px;
+            z-index: 1;
             
             .menu__first ul li,
             .menu__second ul li{
@@ -98,11 +103,12 @@ input{
             }
             
         }
-        .container__item:last-child{
+        .container__item:nth-child(2){
             position: relative;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            z-index: 1;
             .header__title{
                 font-family: 'balqis';
                 font-size: 200pt;  
@@ -116,12 +122,97 @@ input{
                 padding-right: 26%;
             }
         }
+        .container__item__threeth{
+            
+            div.balloon{
+                position: absolute;
+                
+            }
+            div.balloon:nth-child(1){
+                right: 0;
+                bottom: 0;
+                animation: anim 12s infinite ease-in;
+            }
+            div.balloon:nth-child(2){
+                right: 10%;
+                bottom: 0;
+                animation: anim 12s infinite ease-in;
+            }
+            div.balloon:nth-child(3){
+                right: 22%;
+                bottom: 0;
+                animation: anim 20s infinite;
+            }
+            div.balloon:nth-child(4){
+                right: 32%;
+                bottom: 0;
+                animation: anim 17s infinite ease-in;
+            }
+        
+            div.balloon:nth-child(5){
+                right: 48%;
+                bottom: 0;
+                animation: anim 18s infinite;
+            }
+        
+            div.balloon:nth-child(6){
+                right: 55%;
+                bottom: 0;
+                animation: anim 22s infinite ease-in;
+            }
+        
+            div.balloon:nth-child(7){
+                right: 60%;
+                bottom: 0;
+                animation: anim 12s infinite;
+            }
+        
+            div.balloon:nth-child(8){
+                right: 66%;
+                bottom: 0;
+                animation: anim 10s infinite ease-in-out;
+            }
+        
+            div.balloon:nth-child(9){
+                right: 70%;
+                bottom: 0;
+                animation: anim 13s infinite ease-in;
+            }
+            div.balloon:nth-child(10){
+                right: 75%;
+                bottom: 0;
+                animation: anim 15s infinite ease-in-out;
+            }
+            div.balloon:nth-child(11){
+                right: 80%;
+                bottom: 0;
+                animation: anim 10s infinite;
+            }
+            div.balloon:nth-child(12){
+                right: 86%;
+                bottom: 0;
+                animation: anim 14s infinite;
+            }
+            div.balloon:nth-child(13){
+                right: 90%;
+                bottom: 0;
+                animation: anim 17s infinite;
+            }
+            div.balloon:nth-child(14){
+                right: 97%;
+                bottom: 0;
+                animation: anim 10s infinite ease-in-out;
+            }
+        }
     }
 }
 
 .FairyTail{
+    position: relative;
+    z-index: 1;
+    background-color: white;
    .onescreen{
-
+    
         .container{
             .container__title{
                 & .title{
@@ -164,7 +255,7 @@ input{
 .OurTrip{
     .onescreen{
         .subtitle{
-            left: 10%;
+            left: 7%;
         }    
         
         .container__title{
@@ -267,12 +358,29 @@ input{
     }   
 }
 
-.Price{ 
+.Price{
     height: 100vh;
     display: flex;
     align-items: center;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../imgs/backgrounds/Uchisar-Castle-Guided-Cappadocia-Tours.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(3px) opacity(90%);
+    }
     & .container{
         height: auto;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 30px;
     }        
         .subtitle{
             left: 110px;
@@ -282,6 +390,7 @@ input{
             font-size: 21px;
             line-height: 35px;
             padding-top: 100px;
+            padding-left: 70px;
             margin-bottom: 150px;
             .blok__title{
                 font-weight: bold;
@@ -297,8 +406,8 @@ input{
                 }
                 .bigBalloon{
                     position: absolute;
-                    top: -67%;
-                    right: -5%;
+                    top: -60%;
+                    right: 7%;
                 }
                 .smallBallon{
                     position: absolute;
@@ -308,7 +417,7 @@ input{
                 .smallBallon__second{
                     position: absolute;
                     top: 50%;
-                    right: 14%;
+                    right: 19%;
                 }
             }    
             .blok_second{
@@ -393,7 +502,7 @@ input{
 }
 
 .footer{
-    position: relative;
+    
     
 
     
@@ -492,7 +601,7 @@ input{
         align-items: center;
   
         flex-direction: column;
-        font-size: 32px;
+        font-size: 26px;
         padding-top: 170px;
         .number,
         .email{
@@ -515,7 +624,11 @@ input{
        
     }
 
-    @keyframes anim{
+    
+       
+    
+}
+@keyframes anim{
         0%   {bottom: -10%; transform: translateX(15px) rotate(7deg);}
         20%  { transform: translateX(25px) rotate(-7deg)}
         40%  { transform: translateX(20px) rotate(9deg)}
@@ -523,6 +636,3 @@ input{
         80%  { transform: translateX(15px) rotate(5deg)}
         100% {bottom: 110%; transform: translateX(15px) rotate(0deg)}
     }
-       
-    
-}
