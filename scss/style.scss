@@ -126,6 +126,22 @@ input {
   }
 
 .header {
+    color: white;
+    .Slider{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        img{
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            filter: brightness(75%)
+            
+        }
+    }
+
   .container {
     height: 100%;
     display: grid;
@@ -146,8 +162,12 @@ input {
         border-bottom: 2px solid transparent;
         padding-bottom: 10px;
         transition: all 0.5s;
+        
         &:hover {
           border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        & a {
+            color: white;
         }
       }
     }
@@ -269,6 +289,11 @@ input {
         bottom: 0;
         animation: anim 15s infinite ease-in-out;
       }
+      div.balloon:nth-child(19) {
+        right: 8%;
+        bottom: 0;
+        animation: anim 15s infinite ease-in-out;
+      }
     }
   }
 }
@@ -330,11 +355,12 @@ input {
     }
 
     .container__item_second {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
+      display: flex;
+ 
       .days {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 70%;
         justify-items: center;
         .text__blok {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -351,23 +377,9 @@ input {
         }
       }
 
-      .our__slider {
-        border: 1px solid rgb(231, 73, 10);
-        height: 900px;
-        width: 84%;
-        position: relative;
-        .slider__item {
-          width: 100%;
-          height: 100%;
-
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
+      
     .Slider{
-        width: 100%;
+        width: 30%;
         height: 900px;
     }
     }
