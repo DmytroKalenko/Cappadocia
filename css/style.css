@@ -96,10 +96,13 @@ input {
 .header .container .container__item:first-child .menu__second ul li {
   display: inline;
   margin-right: 52px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+  transition: all 0.5s;
 }
 .header .container .container__item:first-child .menu__first ul li:hover,
 .header .container .container__item:first-child .menu__second ul li:hover {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid black;
 }
 .header .container .container__item:nth-child(2) {
   position: relative;
@@ -191,7 +194,27 @@ input {
 .header .container .container__item__threeth div.balloon:nth-child(14) {
   right: 97%;
   bottom: 0;
+  animation: anim 13s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(15) {
+  right: 20%;
+  bottom: 0;
+  animation: anim 12s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(16) {
+  right: 40%;
+  bottom: 0;
+  animation: anim 9s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(17) {
+  right: 50%;
+  bottom: 0;
   animation: anim 10s infinite ease-in-out;
+}
+.header .container .container__item__threeth div.balloon:nth-child(18) {
+  right: 100%;
+  bottom: 0;
+  animation: anim 15s infinite ease-in-out;
 }
 
 .FairyTail {
@@ -207,15 +230,32 @@ input {
 }
 .FairyTail .onescreen .container .FairyTail__item_second {
   display: flex;
+  position: relative;
 }
 .FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider {
-  border: 1px solid #dbdbdb;
+  width: 50%;
+  border: 2px solid red;
+  position: relative;
 }
-.FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider .slider__item img {
+.FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider .slick-list {
+  border: 2px solid #4319ff;
   height: 100%;
   width: 100%;
 }
+.FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider .slick-track {
+  border: 20px solid #00ff2a;
+  height: 100%;
+  width: 100% !important;
+}
+.FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider .slider__item {
+  border: 20px solid magenta;
+  height: 100%;
+}
+.FairyTail .onescreen .container .FairyTail__item_second .FairyTail_slider .slick-slide {
+  height: 100%;
+}
 .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+  width: 50%;
   margin-left: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -264,6 +304,7 @@ input {
 .OurTrip .onescreen .container__item_second .our__slider {
   border: 1px solid #e7490a;
   height: 900px;
+  width: 84%;
   position: relative;
 }
 .OurTrip .onescreen .container__item_second .our__slider .slider__item {
@@ -402,6 +443,7 @@ input {
 .BookNow .container__item__threeth .blok__text {
   position: relative;
   padding-top: 105px;
+  width: 50%;
 }
 .BookNow .container__item__threeth .blok__text .title,
 .BookNow .container__item__threeth .blok__text .subtitle {
@@ -442,15 +484,24 @@ input {
   padding-left: 0px;
   margin: 20px auto 0 auto;
   width: 280px !important;
+  border: 1px solid white;
+  background-color: #E2AB3F;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.BookNow .container__item__threeth form input:last-child:hover {
+  color: #E2AB3F;
+  background-color: white;
+  border: 1px solid #E2AB3F;
 }
 .BookNow .container__item__threeth .photo {
   position: relative;
-  width: 600px;
-  height: 800px;
+  width: 50%;
 }
 .BookNow .container__item__threeth .photo img {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 800px;
   border-radius: 30px;
 }
 
@@ -542,7 +593,7 @@ input {
   align-items: center;
   flex-direction: column;
   font-size: 26px;
-  padding-top: 170px;
+  padding-top: 120px;
 }
 .footer div.balloon:nth-child(15) .number,
 .footer div.balloon:nth-child(15) .email {
@@ -557,7 +608,17 @@ input {
   padding-top: 55px;
 }
 .footer div.balloon:nth-child(15) .socoial__media ul li + li {
-  margin-left: 10px;
+  margin-left: 15px;
+}
+.footer div.balloon:nth-child(15) .socoial__media img {
+  height: 35px;
+  width: 35px;
+  transition: all 0.5s;
+}
+.footer div.balloon:nth-child(15) .socoial__media img:hover {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes anim {

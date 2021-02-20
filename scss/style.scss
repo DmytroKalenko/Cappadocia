@@ -11,6 +11,7 @@
         url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
 }
 $titleColor:#eb1810;
+$buttons:#E2AB3F;
 *{
     box-sizing: border-box;
 }
@@ -60,11 +61,11 @@ input{
     width: 302px !important;
     height: 61px;
     background: transparent;
-    border: 1px solid #E2AB3F;
+    border: 1px solid $buttons;
     border-radius: 20px;
     display: inline-block;
     font-size: 23px;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
 }
 
 .header,
@@ -77,12 +78,10 @@ input{
     position: relative;
 }
 .header{
-    
     .container{
         height: 100%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-
 
         .container__item:first-child{
             display: flex;
@@ -96,9 +95,11 @@ input{
             .menu__second ul li{
                 display: inline;
                 margin-right: 52px;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 10px;
+                transition: all 0.5s;
                 &:hover{
-                    border-bottom: 1px solid red;
-                    
+                    border-bottom: 2px solid rgb(0, 0, 0);
                 }
             }
             
@@ -201,7 +202,27 @@ input{
             div.balloon:nth-child(14){
                 right: 97%;
                 bottom: 0;
+                animation: anim 13s infinite ease-in-out;
+            }
+            div.balloon:nth-child(15){
+                right: 20%;
+                bottom: 0;
+                animation: anim 12s infinite ease-in-out;
+            }
+            div.balloon:nth-child(16){
+                right: 40%;
+                bottom: 0;
+                animation: anim 9s infinite ease-in-out;
+            }
+            div.balloon:nth-child(17){
+                right: 50%;
+                bottom: 0;
                 animation: anim 10s infinite ease-in-out;
+            }
+            div.balloon:nth-child(18){
+                right: 100%;
+                bottom: 0;
+                animation: anim 15s infinite ease-in-out;
             }
         }
     }
@@ -224,16 +245,34 @@ input{
             }
             .FairyTail__item_second{
                 display: flex;
+                position: relative;
+                
                 .FairyTail_slider{
-                    border: 1px solid rgb(219, 219, 219);
-                    
-                    .slider__item img{
+                    width: 50%;
+                    border: 2px solid red;
+                    position: relative;
+                    .slick-list{
+                        border: 2px solid rgb(67, 25, 255);
                         height: 100%;
                         width: 100%;
+
+                    } 
+                    .slick-track{
+                        border: 20px solid rgb(0, 255, 42);
+                        height: 100%;
+                        width: 100% !important;
                     }
-        
+
+                    .slider__item{
+                        border: 20px solid rgb(255, 0, 255);
+                        height: 100%;
+                    }
+                    .slick-slide{
+                        height: 100%;
+                    }
                 }
                 .FairyTail.text{
+                    width: 50%; 
                     margin-left: 50px;
                     box-shadow: 0 0 10px rgba(0,0,0,0.5);
                     border-radius: 30px;
@@ -295,7 +334,7 @@ input{
             .our__slider{
                 border: 1px solid rgb(231, 73, 10);
                 height: 900px;    
-              
+                width: 84%;
                 position: relative;
                 .slider__item{
                     width: 100%;
@@ -443,6 +482,7 @@ input{
         .blok__text{
             position: relative;
             padding-top: 105px;
+            width: 50%;
             .title,
             .subtitle{
                 position: relative;
@@ -469,7 +509,6 @@ input{
                 padding-bottom: 50px; 
                 font-size: 24px;
                 text-align: center;
-               
             }
             input{
                 display: block;
@@ -479,22 +518,30 @@ input{
 
             }
             input+input{
-                margin-top: 20px;
-                   
+                margin-top: 20px;  
             }
             input:last-child{
                 padding-left: 0px;
                 margin: 20px auto 0 auto;
                 width: 280px !important;
+                border: 1px solid white;
+                background-color: $buttons;
+                color: white;
+                transition: all 0.5s;
+                cursor: pointer;
+                &:hover{
+                    color: $buttons;
+                    background-color: white;
+                    border: 1px solid $buttons;  
+                }
             }
         }
         .photo{
             position: relative;
-            width: 600px;
-            height: 800px;
+            width: 50%;
             img{
-                width: 100%;
-                height: 100%;
+                width: 600px;
+                height: 800px;
                 border-radius: 30px;
             }
         }
@@ -502,13 +549,8 @@ input{
 }
 
 .footer{
-    
-    
-
-    
     div.balloon{
         position: absolute;
-        
     }
     div.balloon:nth-child(1){
         right: 10%;
@@ -589,7 +631,6 @@ input{
         position: absolute;
         top: 50%;
         left: 50%;
-
         transform: translate(-50%, -50%);
         background-image: url('../imgs/BalloonContacts.svg');
         background-repeat: no-repeat;
@@ -602,7 +643,7 @@ input{
   
         flex-direction: column;
         font-size: 26px;
-        padding-top: 170px;
+        padding-top: 120px;
         .number,
         .email{
          padding: 10px;   
@@ -616,8 +657,19 @@ input{
                 display: flex;
                 padding-top: 55px;
                 li+li{
-                    margin-left: 10px;  
+                    margin-left: 15px;  
+                    
+                }
+            }
+            img{
+                height: 35px;
+                width: 35px;
+                transition: all 0.5s; 
 
+                &:hover{
+                height: 50px;
+                width: 50px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
                 }
             }
         }
