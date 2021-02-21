@@ -479,6 +479,36 @@ input {
   padding-left: 70px;
 }
 
+.Attractions {
+  height: 100%;
+}
+.Attractions .Slider {
+  position: absolute;
+  width: 100%;
+  max-height: 80%;
+  background-color: blueviolet;
+  z-index: 0;
+}
+.Attractions .Slider .item {
+  display: flex;
+}
+.Attractions .Slider .item:nth-child(1) {
+  display: flex;
+}
+.Attractions .Slider .item:nth-child(1) .item__text {
+  width: 50%;
+}
+.Attractions .Slider .item:nth-child(1) .item__text .text__tittle {
+  font-size: 40px;
+}
+.Attractions .Slider .item:nth-child(1) .item__pictures {
+  width: 50%;
+}
+.Attractions .Slider img {
+  width: auto;
+  height: auto;
+}
+
 .BookNow {
   position: relative;
   z-index: 1;
