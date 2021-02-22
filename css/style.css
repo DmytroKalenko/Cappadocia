@@ -441,11 +441,31 @@ input {
   position: absolute;
   z-index: 2000;
   top: 50%;
+  font-size: 0;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  border: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-arrow:hover {
+  transform: scale(1.25);
+  top: 45%;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-prev.slick-arrow {
+  background-image: url("../imgs/icons/prev_arrow.svg");
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-next.slick-arrow {
   right: 0;
+  background-image: url("../imgs/icons/next_arrow.svg");
 }
 .Hotel .Pop-up .main__contant .pop_up__slider img {
+  border-radius: 0;
   height: 100%;
   width: 100%;
 }
@@ -465,7 +485,6 @@ input {
   padding-left: 20px;
 }
 .Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item img {
-  border-radius: 0;
   height: 40px;
   width: 40px;
 }
@@ -489,15 +508,15 @@ input {
 .Hotel .container__item__second .text .text_images {
   display: grid;
   position: relative;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 30px;
   justify-items: center;
 }
 .Hotel .container__item__second .text .text_images .blok {
   background-color: #eb1810;
-  height: 40px;
-  width: 50px;
+  height: 250px;
+  width: 400px;
 }
 .Hotel .container__item__second .text .text_images img {
   width: 500px;
