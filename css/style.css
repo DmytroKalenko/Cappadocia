@@ -517,6 +517,17 @@ input {
   display: flex;
   align-items: center;
 }
+.BookNow .pop_up {
+  opacity: 0;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background-color: chartreuse;
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.9s ease 0s;
+}
 .BookNow .container {
   height: auto;
   width: 100%;

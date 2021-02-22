@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 
     new fullpage('#fullPage', {
-        scrollingSpeed: 1500,
+        scrollingSpeed: 500,
     });
 
 
