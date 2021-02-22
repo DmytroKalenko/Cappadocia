@@ -372,7 +372,9 @@ input {
 }
 
 .Hotel .Pop-upFirst,
-.Hotel .Pop-upSecond {
+.Hotel .Pop-upSecond,
+.Hotel .Pop-upThreeth,
+.Hotel .Pop-upFourth {
   display: none;
   background-color: #eb1810;
 }
