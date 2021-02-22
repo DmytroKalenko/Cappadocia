@@ -39,7 +39,19 @@ img {
   height: 100%;
 }
 .container.Pop_up {
-  max-width: 1200px;
+  max-width: 1240px;
+  max-height: 1000px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: bisque;
+  padding: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.container.Pop_up .pop_up__contant {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .title {
@@ -357,7 +369,6 @@ input {
   padding-bottom: 10px;
 }
 .OurTrip .onescreen .container__item_second .our__slider {
-  border: 1px solid #e7490a;
   height: 900px;
   width: 84%;
   position: relative;
@@ -376,32 +387,36 @@ input {
 
 .Hotel .Pop-up {
   display: block;
-  background-color: #eb1810;
+  background-color: #000000bd;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 1;
 }
 .Hotel .Pop-up .contant__head {
+  font-size: 32px;
   display: flex;
   justify-content: space-between;
 }
 .Hotel .Pop-up .main__contant {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 41px;
 }
 .Hotel .Pop-up .main__contant .pop_up__text {
   width: 30%;
-  border: 1px solid green;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 20px;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider {
   max-height: 470px;
   width: 70%;
-  border: 1px solid blue;
   position: relative;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-list.draggable, .Hotel .Pop-up .main__contant .pop_up__slider .slick-track {
   height: 100%;
+  display: flex;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-arrow {
   position: absolute;
@@ -419,9 +434,20 @@ input {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   padding: 0 70px;
-  justify-items: center;
-  border: 1px solid #fffb00;
+  margin-top: 60px;
+}
+.Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item {
+  display: flex;
+  align-items: center;
+}
+.Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item .item__text {
+  padding-left: 20px;
+}
+.Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item img {
+  height: 40px;
+  width: 40px;
 }
 .Hotel .subtitle {
   left: 112px;

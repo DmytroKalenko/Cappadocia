@@ -42,7 +42,19 @@ img {
     position: relative;
     height: 100%;
     &.Pop_up {
-        max-width: 1200px;
+        max-width: 1240px;
+        max-height: 1000px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: bisque;
+        padding: 40px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .pop_up__contant {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 
@@ -370,7 +382,6 @@ input {
                 }
             }
             .our__slider {
-                border: 1px solid rgb(231, 73, 10);
                 height: 900px;
                 width: 84%;
                 position: relative;
@@ -394,30 +405,34 @@ input {
     .Pop-up,
     {
         display: block;
-        background-color: #eb1810;
+        background-color: #000000bd;
         position: absolute;
         height: 100%;
         width: 100%;
         z-index: 1;
         .contant__head {
+            font-size: 32px;
             display: flex;
             justify-content: space-between;
         }
         .main__contant {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 41px;
             .pop_up__text {
                 width: 30%;
-                border: 1px solid green;
+                font-size: 24px;
+                line-height: 33px;
+                padding: 20px;
             }
             .pop_up__slider {
                 max-height: 470px;
                 width: 70%;
-                border: 1px solid blue;
                 position: relative;
                 & .slick-list.draggable,
                 & .slick-track {
                     height: 100%;
+                    display: flex;
                 }
                 & .slick-arrow {
                     position: absolute;
@@ -436,9 +451,20 @@ input {
                 width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
                 padding: 0 70px;
-                justify-items: center;
-                border: 1px solid #fffb00;
+                margin-top: 60px;
+                .RoomEquipment__item {
+                    display: flex;
+                    align-items: center;
+                    & .item__text {
+                        padding-left: 20px;
+                    }
+                    & img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
             }
         }
     }
