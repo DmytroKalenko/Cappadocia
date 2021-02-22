@@ -11,5 +11,12 @@ $(document).ready(function() {
         scrollingSpeed: 500,
     });
 
+    $('.pop_up__slider').slick({
+
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 
 });

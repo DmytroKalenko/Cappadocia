@@ -41,6 +41,9 @@ img {
     margin: 0 auto;
     position: relative;
     height: 100%;
+    &.Pop_up {
+        max-width: 1200px;
+    }
 }
 
 .title {
@@ -388,12 +391,56 @@ input {
 }
 
 .Hotel {
-    .Pop-upFirst,
-    .Pop-upSecond,
-    .Pop-upThreeth,
-    .Pop-upFourth {
-        display: none;
+    .Pop-up,
+    {
+        display: block;
         background-color: #eb1810;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        .contant__head {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main__contant {
+            display: flex;
+            flex-wrap: wrap;
+            .pop_up__text {
+                width: 30%;
+                border: 1px solid green;
+            }
+            .pop_up__slider {
+                max-height: 470px;
+                width: 70%;
+                border: 1px solid blue;
+                position: relative;
+                & .slick-list.draggable,
+                & .slick-track {
+                    height: 100%;
+                }
+                & .slick-arrow {
+                    position: absolute;
+                    z-index: 2000;
+                    top: 50%;
+                }
+                & .slick-next.slick-arrow {
+                    right: 0;
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .RoomEquipment {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding: 0 70px;
+                justify-items: center;
+                border: 1px solid #fffb00;
+            }
+        }
     }
     .subtitle {
         left: 112px;

@@ -38,6 +38,9 @@ img {
   position: relative;
   height: 100%;
 }
+.container.Pop_up {
+  max-width: 1200px;
+}
 
 .title {
   color: #eb1810;
@@ -371,12 +374,54 @@ input {
   height: 900px;
 }
 
-.Hotel .Pop-upFirst,
-.Hotel .Pop-upSecond,
-.Hotel .Pop-upThreeth,
-.Hotel .Pop-upFourth {
-  display: none;
+.Hotel .Pop-up {
+  display: block;
   background-color: #eb1810;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.Hotel .Pop-up .contant__head {
+  display: flex;
+  justify-content: space-between;
+}
+.Hotel .Pop-up .main__contant {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Hotel .Pop-up .main__contant .pop_up__text {
+  width: 30%;
+  border: 1px solid green;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider {
+  max-height: 470px;
+  width: 70%;
+  border: 1px solid blue;
+  position: relative;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-list.draggable, .Hotel .Pop-up .main__contant .pop_up__slider .slick-track {
+  height: 100%;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-arrow {
+  position: absolute;
+  z-index: 2000;
+  top: 50%;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-next.slick-arrow {
+  right: 0;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider img {
+  height: 100%;
+  width: 100%;
+}
+.Hotel .Pop-up .main__contant .RoomEquipment {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 70px;
+  justify-items: center;
+  border: 1px solid #fffb00;
 }
 .Hotel .subtitle {
   left: 112px;

@@ -1,8 +1,8 @@
 //Pop_upsHotelPage
-var pop_up1 = document.getElementsByClassName("Pop-upFirst")[0];
-var pop_up2 = document.getElementsByClassName("Pop-upSecond")[0];
-var pop_up3 = document.getElementsByClassName("Pop-upThreeth")[0];
-var pop_up4 = document.getElementsByClassName("Pop-upFourth")[0];
+var pop_up1 = document.getElementsByClassName("Pop-up First")[0];
+var pop_up2 = document.getElementsByClassName("Pop-up Second")[0];
+var pop_up3 = document.getElementsByClassName("Pop-up Threeth")[0];
+var pop_up4 = document.getElementsByClassName("Pop-up Fourth")[0];
 var btn = document.getElementsByClassName("blok first")[0];
 var btn2 = document.getElementsByClassName("blok second")[0];
 var btn3 = document.getElementsByClassName("blok threeth")[0];
