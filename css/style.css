@@ -43,7 +43,8 @@ img {
   max-height: 1000px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: bisque;
+  background-color: white;
+  border-radius: 10px;
   padding: 40px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -52,6 +53,20 @@ img {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+.container.Pop_up .pop_up__contant input {
+  padding-left: 0px;
+  width: 130px !important;
+  border: 1px solid white;
+  background-color: #e2ab3f;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.container.Pop_up .pop_up__contant input:hover {
+  color: #e2ab3f;
+  background-color: white;
+  border: 1px solid #e2ab3f;
 }
 
 .title {
@@ -386,7 +401,7 @@ input {
 }
 
 .Hotel .Pop-up {
-  display: block;
+  display: none;
   background-color: #000000bd;
   position: absolute;
   height: 100%;
@@ -413,6 +428,10 @@ input {
   max-height: 470px;
   width: 70%;
   position: relative;
+  min-width: 0;
+}
+.Hotel .Pop-up .main__contant .pop_up__slider .slick-list {
+  overflow: hidden;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-list.draggable, .Hotel .Pop-up .main__contant .pop_up__slider .slick-track {
   height: 100%;
@@ -446,6 +465,7 @@ input {
   padding-left: 20px;
 }
 .Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item img {
+  border-radius: 0;
   height: 40px;
   width: 40px;
 }

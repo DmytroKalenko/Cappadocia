@@ -46,7 +46,8 @@ img {
         max-height: 1000px;
         top: 50%;
         transform: translateY(-50%);
-        background-color: bisque;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
         padding: 40px;
         overflow-y: auto;
         overflow-x: hidden;
@@ -54,6 +55,20 @@ img {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+            input {
+                padding-left: 0px;
+                width: 130px !important;
+                border: 1px solid white;
+                background-color: $buttons;
+                color: white;
+                transition: all 0.5s;
+                cursor: pointer;
+                &:hover {
+                    color: $buttons;
+                    background-color: white;
+                    border: 1px solid $buttons;
+                }
+            }
         }
     }
 }
@@ -403,7 +418,7 @@ input {
 
 .Hotel {
     .Pop-up {
-        display: block;
+        display: none;
         background-color: #000000bd;
         position: absolute;
         height: 100%;
@@ -428,6 +443,10 @@ input {
                 max-height: 470px;
                 width: 70%;
                 position: relative;
+                min-width: 0;
+                & .slick-list {
+                    overflow: hidden;
+                }
                 & .slick-list.draggable,
                 & .slick-track {
                     height: 100%;
@@ -460,6 +479,7 @@ input {
                         padding-left: 20px;
                     }
                     & img {
+                        border-radius: 0;
                         height: 40px;
                         width: 40px;
                     }
