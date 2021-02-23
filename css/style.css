@@ -425,10 +425,8 @@ input {
   padding: 20px;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider {
-  max-height: 470px;
-  width: 70%;
   position: relative;
-  min-width: 0;
+  width: 70%;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-list {
   overflow: hidden;
@@ -517,6 +515,50 @@ input {
   background-color: #eb1810;
   height: 250px;
   width: 400px;
+  position: relative;
+}
+.Hotel .container__item__second .text .text_images .blok.first, .Hotel .container__item__second .text .text_images .blok.second, .Hotel .container__item__second .text .text_images .blok.threeth, .Hotel .container__item__second .text .text_images .blok.fourth, .Hotel .container__item__second .text .text_images .blok.fifth, .Hotel .container__item__second .text .text_images .blok.sixth {
+  background: url("../imgs/rooms/FairyChimneySuite/Main.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.Hotel .container__item__second .text .text_images .blok.first .blok__background, .Hotel .container__item__second .text .text_images .blok.second .blok__background, .Hotel .container__item__second .text .text_images .blok.threeth .blok__background, .Hotel .container__item__second .text .text_images .blok.fourth .blok__background, .Hotel .container__item__second .text .text_images .blok.fifth .blok__background, .Hotel .container__item__second .text .text_images .blok.sixth .blok__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: #0000008a;
+  cursor: pointer;
+}
+.Hotel .container__item__second .text .text_images .blok.first .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.second .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.threeth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.fourth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.fifth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.sixth .blok__background .blok__text {
+  font-size: 30px;
+  color: white;
+}
+.Hotel .container__item__second .text .text_images .blok.first:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.second:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.threeth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.fourth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.fifth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.sixth:hover .blok__background {
+  opacity: 0;
+}
+.Hotel .container__item__second .text .text_images .blok.second {
+  background-image: url("../imgs/rooms/SultanSuite/Main.jpg");
+}
+.Hotel .container__item__second .text .text_images .blok.threeth {
+  background-image: url("../imgs/rooms/");
+}
+.Hotel .container__item__second .text .text_images .blok.fourth {
+  background-image: url("../imgs/rooms/");
+}
+.Hotel .container__item__second .text .text_images .blok.fifth {
+  background-image: url("../imgs/rooms/");
+}
+.Hotel .container__item__second .text .text_images .blok.sixth {
+  background-image: url("../imgs/rooms/");
 }
 .Hotel .container__item__second .text .text_images img {
   width: 500px;

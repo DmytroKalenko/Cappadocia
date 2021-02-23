@@ -440,10 +440,8 @@ input {
                 padding: 20px;
             }
             .pop_up__slider {
-                max-height: 470px;
-                width: 70%;
                 position: relative;
-                min-width: 0;
+                width: 70%;
                 & .slick-list {
                     overflow: hidden;
                 }
@@ -532,6 +530,55 @@ input {
                     background-color: #eb1810;
                     height: 250px;
                     width: 400px;
+                    position: relative;
+                    &.first,
+                    &.second,
+                    &.threeth,
+                    &.fourth,
+                    &.fifth,
+                    &.sixth {
+                        background: url("../imgs/rooms/FairyChimneySuite/Main.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        .blok__background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 100%;
+                            width: 100%;
+                            transition: .5s ease;
+                            background-color: #0000008a;
+                            cursor: pointer;
+                            & .blok__text {
+                                font-size: 30px;
+                                color: white;
+                            }
+                        }
+                        &:hover .blok__background {
+                            opacity: 0;
+                        }
+                    }
+                    &.second {
+                        background-image: url("../imgs/rooms/SultanSuite/Main.jpg");
+                    }
+                    &.threeth {
+                        background-image: url("../imgs/rooms/");
+                    }
+                    &.fourth {
+                        background-image: url("../imgs/rooms/");
+                    }
+                    &.fifth {
+                        background-image: url("../imgs/rooms/");
+                    }
+                    &.sixth {
+                        background-image: url("../imgs/rooms/");
+                    }
                 }
                 img {
                     width: 500px;
