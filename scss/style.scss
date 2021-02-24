@@ -170,6 +170,18 @@ input {
     }
 }
 
+.UPButton {
+    display: block;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    right: 6%;
+    bottom: 5%;
+    background-image: url(../imgs/icons/UP.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .header {
     color: white;
     .Slider {
