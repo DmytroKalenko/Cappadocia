@@ -5,9 +5,10 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        dots:true,
+        dots: true,
+
     });
-  
+
 
     new fullpage('#fullPage', {
         scrollingSpeed: 500,

@@ -113,7 +113,7 @@ input {
   width: 42%;
   position: relative;
   min-width: 0;
-  height: 700px;
+  height: 582px;
 }
 .Slider .slick-list {
   overflow: hidden;
@@ -558,16 +558,16 @@ input {
   background-image: url("../imgs/rooms/SultanSuite/Main.jpg");
 }
 .Hotel .container__item__second .text .text_images .blok.threeth {
-  background-image: url("../imgs/rooms/");
+  background-image: url("../imgs/rooms/Pacha/main.jpg");
 }
 .Hotel .container__item__second .text .text_images .blok.fourth {
-  background-image: url("../imgs/rooms/");
+  background-image: url("../imgs/rooms/King/main.jpg");
 }
 .Hotel .container__item__second .text .text_images .blok.fifth {
-  background-image: url("../imgs/rooms/");
+  background-image: url("../imgs/rooms/Family/main.jpg");
 }
 .Hotel .container__item__second .text .text_images .blok.sixth {
-  background-image: url("../imgs/rooms/");
+  background-image: url("../imgs/rooms/junior/main.jpg");
 }
 .Hotel .container__item__second .text .text_images img {
   width: 500px;
@@ -989,3 +989,5 @@ input {
     transform: translateX(15px) rotate(0deg);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
