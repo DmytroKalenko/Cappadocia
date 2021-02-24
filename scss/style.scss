@@ -78,6 +78,8 @@ img {
     font-family: "balqis";
     font-size: 90px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .subtitle {
@@ -686,6 +688,9 @@ input {
 
 .Attractions {
     height: 100%;
+    .title {
+        top: 70px;
+    }
     .Slider {
         top: 50%;
         transform: translateY(-50%);
