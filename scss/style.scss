@@ -801,17 +801,33 @@ input {
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: rgb(255, 81, 0);
-        z-index: 1;
+        background-color: rgba(255, 81, 0, 0);
+        z-index: 2;
         overflow-y: auto;
         overflow-x: hidden;
         transition: all 0.9s ease 0s;
         & .pop_up__content {
-            height: 50%;
-            width: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 660px;
+            width: 800px;
             top: 50%;
             left: 50%;
-            background-color: #60eb10;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            p {
+                padding: 20px;
+                text-align: center;
+            }
+            img {
+                width: 500px;
+                border-radius: 0;
+            }
         }
     }
     & .container {
@@ -860,21 +876,6 @@ input {
             input+input {
                 margin-top: 20px;
             }
-            input:last-child {
-                padding-left: 0px;
-                margin: 20px auto 0 auto;
-                width: 280px !important;
-                border: 1px solid white;
-                background-color: $buttons;
-                color: white;
-                transition: all 0.5s;
-                cursor: pointer;
-                &:hover {
-                    color: $buttons;
-                    background-color: white;
-                    border: 1px solid $buttons;
-                }
-            }
         }
         .photo {
             position: relative;
@@ -884,6 +885,22 @@ input {
                 height: 800px;
                 border-radius: 30px;
             }
+        }
+    }
+    form input:last-child,
+    input.close {
+        padding-left: 0px;
+        margin: 20px auto 0 auto;
+        width: 280px !important;
+        border: 1px solid white;
+        background-color: $buttons;
+        color: white;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+            color: $buttons;
+            background-color: white;
+            border: 1px solid $buttons;
         }
     }
 }

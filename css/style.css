@@ -782,18 +782,34 @@ input {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #ff5100;
-  z-index: 1;
+  background-color: rgba(255, 81, 0, 0);
+  z-index: 2;
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.9s ease 0s;
 }
 .BookNow .pop_up .pop_up__content {
-  height: 50%;
-  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 660px;
+  width: 800px;
   top: 50%;
   left: 50%;
-  background-color: #60eb10;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.BookNow .pop_up .pop_up__content p {
+  padding: 20px;
+  text-align: center;
+}
+.BookNow .pop_up .pop_up__content img {
+  width: 500px;
+  border-radius: 0;
 }
 .BookNow .container {
   height: auto;
@@ -843,7 +859,17 @@ input {
 .BookNow .container__item__threeth form input + input {
   margin-top: 20px;
 }
-.BookNow .container__item__threeth form input:last-child {
+.BookNow .container__item__threeth .photo {
+  position: relative;
+  width: 50%;
+}
+.BookNow .container__item__threeth .photo img {
+  width: 600px;
+  height: 800px;
+  border-radius: 30px;
+}
+.BookNow form input:last-child,
+.BookNow input.close {
   padding-left: 0px;
   margin: 20px auto 0 auto;
   width: 280px !important;
@@ -853,19 +879,11 @@ input {
   transition: all 0.5s;
   cursor: pointer;
 }
-.BookNow .container__item__threeth form input:last-child:hover {
+.BookNow form input:last-child:hover,
+.BookNow input.close:hover {
   color: #e2ab3f;
   background-color: white;
   border: 1px solid #e2ab3f;
-}
-.BookNow .container__item__threeth .photo {
-  position: relative;
-  width: 50%;
-}
-.BookNow .container__item__threeth .photo img {
-  width: 600px;
-  height: 800px;
-  border-radius: 30px;
 }
 
 .footer div.balloon {
