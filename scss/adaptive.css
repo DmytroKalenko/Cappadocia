@@ -1,6 +1,6 @@
 @media screen and (max-width: 1920px) {
   .container {
-    max-width: 1300px; }
+    max-width: 300px; }
 
   .container__title {
     padding: 50px; }
@@ -147,53 +147,12 @@
 @media screen and (max-width: 1441px) {
   .Hotel .container .container__item__second img {
     height: 550px; }
-  .Hotel .container .container__item__second .text {
-    padding-left: 0; }
-    .Hotel .container .container__item__second .text .text_images .blok {
-      height: 112px;
-      width: 269px; }
-
-  .Attractions .Slider {
-    height: 570px; }
-
-  .Price .container .container__item__second .blok_second .bigBalloon {
-    height: 250px; }
-  .Price .container .container__item__second .blok_second .smallBallon {
-    height: 90px;
-    top: 75%; }
-  .Price .container .container__item__second .blok_second .smallBallon__second {
-    height: 90px;
-    top: 58%; }
-
-  .BookNow .container__item__threeth .photo img {
-    margin-top: 30px;
-    width: 430px;
-    height: 535px; }
-  .BookNow .container__item__threeth .blok__text {
-    padding-top: 30px; }
 
   .footer div.balloon:nth-child(15) {
-    padding-top: 60px; } }
+    padding-top: 122px; } }
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 900px; }
-
-  .container__title {
-    padding: 30px;
-    padding-bottom: 25px; }
-
-  .title {
-    font-size: 50px;
-    padding-left: 0 !important; }
-
-  .subtitle {
-    font-size: 20px; }
-
-  .UPButton {
-    height: 40px;
-    width: 45px;
-    right: 2%;
-    bottom: 2%; }
 
   .header .Slider .slick-arrow {
     height: 35px;
@@ -207,121 +166,30 @@
   .header .container .container__item:first-child {
     padding-top: 7%;
     font-size: 21px; }
-    .header .container .container__item:first-child .menu__second ul li,
-    .header .container .container__item:first-child .menu__first ul li {
-      margin-right: 20px; }
+    .header .container .container__item:first-child .menu__second ul li {
+      margin-right: 30px; }
   .header .container .container__item:nth-child(2) .header__title {
     font-size: 135px; }
   .header .container .container__item:nth-child(2) .header__subtitle {
     font-size: 26px; }
 
   .FairyTail .onescreen .container .FairyTail__item_second {
-    top: 20px; }
+    top: 20px;
+    flex-direction: column; }
     .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
       width: 100%;
-      margin-left: 10px; }
-      .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p {
-        font-size: 15px;
-        line-height: 20px; }
+      margin-left: 0; }
     .FairyTail .onescreen .container .FairyTail__item_second .Slider {
-      height: 175px;
+      height: 460px;
       margin: 0 auto 50px;
-      width: 50%; }
-      .FairyTail .onescreen .container .FairyTail__item_second .Slider .slick-arrow {
-        height: 25px;
-        width: 25px; }
-        .FairyTail .onescreen .container .FairyTail__item_second .Slider .slick-arrow:hover {
-          top: 43%; }
+      width: 74%; }
 
-  .OurTrip .onescreen .container__item_second .Slider {
-    margin: 0 auto 30px;
-    height: 460px;
-    width: 42%; }
-    .OurTrip .onescreen .container__item_second .Slider .slick-arrow:hover {
-      top: 45%; }
-  .OurTrip .onescreen .container__item_second .days {
-    height: 571px;
-    width: 58%; }
-    .OurTrip .onescreen .container__item_second .days .text__blok {
-      height: 174px;
-      width: 230px; }
-      .OurTrip .onescreen .container__item_second .days .text__blok p {
-        font-size: 15px;
-        line-height: 20px; }
-
-  .Hotel .container__item__second {
-    display: flex; }
-    .Hotel .container__item__second img {
-      display: none; }
-
-  .Attractions .Slider {
-    height: 380px; }
-    .Attractions .Slider .item {
-      padding: 10px; }
-      .Attractions .Slider .item .item__text {
-        padding: 10px; }
-        .Attractions .Slider .item .item__text ul {
-          font-size: 12px;
-          line-height: 15px; }
-        .Attractions .Slider .item .item__text .text__tittle {
-          font-size: 20px; }
-        .Attractions .Slider .item .item__text p {
-          font-size: 15px;
-          line-height: 20px; }
-
-  .Price .container .container__item__second {
-    padding-top: 0;
-    margin: 0;
-    padding-left: 25px; }
-    .Price .container .container__item__second .blok__title {
-      font-size: 21px;
-      padding-bottom: 10px; }
-    .Price .container .container__item__second p {
-      font-size: 15px;
-      line-height: 20px; }
-    .Price .container .container__item__second .blok_second .bigBalloon {
-      top: -22%;
-      height: 170px; }
-    .Price .container .container__item__second .blok_second .smallBallon {
-      height: 70px;
-      top: 75%; }
-    .Price .container .container__item__second .blok_second .smallBallon__second {
-      height: 70px;
-      top: 58%;
-      right: 10%; }
-
-  .BookNow .container__item__threeth .photo img {
-    margin-top: 30px;
-    width: 327px;
-    height: 448px; }
-  .BookNow .container__item__threeth .blok__text {
-    padding-top: 30px; }
-    .BookNow .container__item__threeth .blok__text .title {
-      right: 93px; }
-    .BookNow .container__item__threeth .blok__text .subtitle {
-      right: 60px; }
-  .BookNow .container__item__threeth form {
-    padding-top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 250px;
-    right: 60px; }
-    .BookNow .container__item__threeth form input {
-      display: block;
-      margin: 0;
-      font-size: 15px;
-      height: 40px;
-      width: 100%; }
-    .BookNow .container__item__threeth form .OpenPop_upBtn {
-      width: 100% !important; }
-    .BookNow .container__item__threeth form h1 {
-      font-size: 20px;
-      padding-bottom: 10px; }
-
-  .footer div.balloon:nth-child(15) {
-    height: 60%;
-    width: 45%; } }
+  .OurTrip .onescreen .container__item_second {
+    flex-direction: column-reverse; }
+    .OurTrip .onescreen .container__item_second .Slider {
+      margin: 0 auto 30px; }
+    .OurTrip .onescreen .container__item_second .days {
+      height: 571px;
+      width: 100%; } }
 
 /*# sourceMappingURL=adaptive.css.map */

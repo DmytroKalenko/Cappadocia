@@ -242,13 +242,56 @@
         img {
           height: 550px;
         }
+        .text {
+          padding-left: 0;
+          .text_images .blok {
+            height: 112px;
+            width: 269px;
+          }
+        }
       }
+    }
+  }
+  .Attractions {
+    .Slider {
+      height: 570px;
+    }
+  }
+
+  .Price {
+    .container {
+      .container__item__second {
+        .blok_second {
+          .bigBalloon {
+            height: 250px;
+          }
+          .smallBallon {
+            height: 90px;
+            top: 75%;
+          }
+          .smallBallon__second {
+            height: 90px;
+            top: 58%;
+          }
+        }
+      }
+    }
+  }
+
+  .BookNow .container__item__threeth {
+    .photo img {
+      margin-top: 30px;
+      width: 430px;
+      height: 535px;
+    }
+    .blok__text {
+      padding-top: 30px;
     }
   }
 
   .footer {
     div.balloon:nth-child(15) {
-      padding-top: 122px;
+      padding-top: 60px;
     }
   }
 }
@@ -257,6 +300,28 @@
   .container {
     max-width: 900px;
   }
+  .container__title {
+    padding: 30px;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: 50px;
+    padding-left: 0 !important;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .UPButton {
+    height: 40px;
+    width: 45px;
+    right: 2%;
+    bottom: 2%;
+  }
+
+  
+
+
   .header {
     & .Slider {
       .slick-arrow {
@@ -277,8 +342,9 @@
       &:first-child {
         padding-top: 7%;
         font-size: 21px;
-        .menu__second ul li {
-          margin-right: 30px;
+        .menu__second ul li,
+        .menu__first ul li {
+          margin-right: 20px;
         }
       }
       &:nth-child(2) {
@@ -293,32 +359,171 @@
   }
   .FairyTail .onescreen .container .FairyTail__item_second {
     top: 20px;
-    flex-direction: column;
+
     .FairyTail.text {
       width: 100%;
-      margin-left: 0;
+      margin-left: 10px;
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
     .Slider {
-      height: 460px;
+      height: 175px;
       margin: 0 auto 50px;
-      width: 74%;
+      width: 50%;
+      .slick-arrow {
+        height: 25px;
+        width: 25px;
+        &:hover {
+          top: 43%;
+        }
+      }
     }
   }
   .OurTrip {
     .onescreen {
       .container__item_second {
-        flex-direction: column-reverse;
         .Slider {
           margin: 0 auto 30px;
+          height: 460px;
+          width: 42%;
+          .slick-arrow {
+            &:hover {
+              top: 45%;
+            }
+          }
         }
         .days {
           height: 571px;
-          width: 100%;
+          width: 58%;
+          .text__blok {
+            height: 174px;
+            width: 230px;
+            p {
+              font-size: 15px;
+              line-height: 20px;
+            }
+          }
         }
       }
     }
   }
+  .Hotel {
+    .container__item__second {
+      display: flex;
+      img {
+        display: none;
+      }
+    }
+  }
+  .Attractions {
+    .Slider {
+      height: 380px;
+      .item {
+        padding: 10px;
+        .item__text {
+          padding: 10px;
+          ul {
+            font-size: 12px;
+            line-height: 15px;
+          }
+          .text__tittle {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .Price {
+    .container {
+      .container__item__second {
+        padding-top: 0;
+        margin: 0;
+        padding-left: 25px;
+        .blok__title {
+          font-size: 21px;
+          padding-bottom: 10px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        .blok_second {
+          .bigBalloon {
+            top: -22%;  
+            height: 170px;
+          }
+          .smallBallon {
+            height: 70px;
+            top: 75%;
+            
+          }
+          .smallBallon__second {
+            height: 70px;
+            top: 58%;
+            right: 10%;
+          }
+        }
+      }
+    }
+  }
+  .BookNow .container__item__threeth {
+    .photo img {
+      margin-top: 30px;
+      width: 327px;
+    height: 448px;
+    }
+    .blok__text {
+      padding-top: 30px;
+      .title{
+        right: 93px;
+      }
+      .subtitle{
+          right: 60px;
+      }
+    }
+    form {
+        padding-top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 250px;
+        right: 60px;
+        input{
+            display: block;
+            margin: 0;
+            font-size: 15px;
+            height: 40px;
+            width: 100%;
+        }
+        .OpenPop_upBtn{
+            width: 100% !important;
+        }
+        h1{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    }
+  }
+  .footer div.balloon:nth-child(15){
+      height: 60%;
+      width: 45%;
+  }
+
 }
+
+
+
+  
+
+
+
 
 @media (min-width: 768px) and (max-width: 979px) {
 }
