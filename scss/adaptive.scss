@@ -235,6 +235,17 @@
                 }
                 
                 @media screen and (max-width: 1441px) {
+                    .Hotel {
+                        .container {
+                            .container__item__second {
+                                img {
+                                     height: 550px;
+                    
+                                }
+                            }    
+                        }
+                    }
+                       
                     .footer {
                         div.balloon:nth-child(15) {
                             padding-top: 122px;

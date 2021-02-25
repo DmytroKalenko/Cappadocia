@@ -680,6 +680,7 @@ input {
   background-color: white;
   z-index: 0;
   margin: 0 auto;
+  height: 750px;
 }
 .Attractions .Slider .slick-list {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1024,5 +1025,3 @@ input {
     transform: translateX(15px) rotate(0deg);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
