@@ -1,180 +1,316 @@
-        @media (min-width: 1442px) and (max-width: 1920px) {
-            .container {
-                max-width: 1300px;
-            }
-            .container__title {
-                padding: 50px;
-            }
-            .Slider .slick-arrow {
-                height: 50px;
-                width: 50px;
-            }
-            .title {
-                font-size: 70px;
-            }
-            .subtitle {
-                padding-top: 7px;
-                font-size: 25px;
-            }
-            .header {
-                & .Slider .slick-prev.slick-arrow {
-                    left: 10px;
-                    &:hover {
-                        top: 47%
+                @media screen and (max-width: 1920px) {
+                    .container {
+                        max-width: 1300px;
                     }
-                }
-                & .Slider .slick-next.slick-arrow {
-                    right: 10px;
-                    &:hover {
-                        top: 47%
+                    .container__title {
+                        padding: 50px;
                     }
-                }
-                & .container .container__item {
-                    &:first-child {
-                        font-size: 18px;
-                        .menu__second ul li {
-                            margin-right: 30px;
-                        }
+                    .Slider .slick-arrow {
+                        height: 50px;
+                        width: 50px;
                     }
-                    &:nth-child(2) {
-                        .header__title {
-                            font-size: 160px;
-                        }
-                        .header__subtitle {
-                            font-size: 26px;
-                        }
+                    .title {
+                        font-size: 70px;
                     }
-                }
-            }
-            .FairyTail {
-                .FairyTail__item_second {
-                    top: 50px;
-                    .Slider {
-                        height: 358px;
-                        .slick-arrow {
-                            height: 35px;
-                            width: 35px;
-                        }
-                        .slick-prev.slick-arrow {
-                            left: 5px;
-                            &:hover {
-                                top: 45%
-                            }
-                        }
-                        .slick-next.slick-arrow {
-                            right: 5px;
-                            &:hover {
-                                top: 45%
-                            }
-                        }
+                    .subtitle {
+                        padding-top: 7px;
+                        font-size: 25px;
                     }
-                    .FairyTail.text {
-                        p {
-                            font-size: 20px;
-                            line-height: 27px;
-                        }
-                        p+p {
-                            padding-top: 15px !important;
-                        }
-                    }
-                }
-            }
-            .OurTrip {
-                .onescreen .container__item_second {
-                    .days {
-                        height: 675px;
-                        .text__blok {
-                            height: 230px;
-                            width: 300px;
-                            .text__title {
-                                font-size: 26px;
-                            }
-                            p {
-                                font-size: 20px;
-                                line-height: 27px;
-                            }
-                        }
-                    }
-                    .Slider {
-                        height: 556px;
-                        .slick-arrow {
-                            height: 35px;
-                            width: 35px;
-                        }
-                        .slick-prev.slick-arrow {
-                            left: 7px;
+                    .header {
+                        & .Slider .slick-prev.slick-arrow {
+                            left: 10px;
                             &:hover {
                                 top: 47%
                             }
                         }
-                        .slick-next.slick-arrow {
-                            right: 7px;
+                        & .Slider .slick-next.slick-arrow {
+                            right: 10px;
                             &:hover {
                                 top: 47%
                             }
                         }
-                        img {
-                            height: 100%;
-                            width: 100%;
+                        & .container .container__item {
+                            &:first-child {
+                                font-size: 18px;
+                                .menu__second ul li,
+                                .menu__second ul li {
+                                    margin-right: 30px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                .header__title {
+                                    font-size: 160px;
+                                }
+                                .header__subtitle {
+                                    font-size: 26px;
+                                }
+                            }
                         }
                     }
-                }
-            }
-            .Hotel {
-                .container {
-                    .container__item__second {
-                        img {
-                            height: auto;
-                        }
-                        .text {
-                            p {
-                                font-size: 20px;
-                                line-height: 27px;
+                    .FairyTail {
+                        .FairyTail__item_second {
+                            top: 50px;
+                            .Slider {
+                                height: 358px;
+                                .slick-arrow {
+                                    height: 35px;
+                                    width: 35px;
+                                }
+                                .slick-prev.slick-arrow {
+                                    left: 5px;
+                                    &:hover {
+                                        top: 45%
+                                    }
+                                }
+                                .slick-next.slick-arrow {
+                                    right: 5px;
+                                    &:hover {
+                                        top: 45%
+                                    }
+                                }
                             }
-                            .text_images {
-                                .blok {
-                                    height: 150px;
-                                    width: 213px;
-                                    .blok__background {
-                                        .blok__text {
-                                            font-size: 20px;
+                            .FairyTail.text {
+                                p {
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                }
+                                p+p {
+                                    padding-top: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                    .OurTrip {
+                        .onescreen .container__item_second {
+                            .days {
+                                height: 675px;
+                                .text__blok {
+                                    height: 230px;
+                                    width: 300px;
+                                    .text__title {
+                                        font-size: 26px;
+                                    }
+                                    p {
+                                        font-size: 20px;
+                                        line-height: 27px;
+                                    }
+                                }
+                            }
+                            .Slider {
+                                height: 556px;
+                                .slick-arrow {
+                                    height: 35px;
+                                    width: 35px;
+                                }
+                                .slick-prev.slick-arrow {
+                                    left: 7px;
+                                    &:hover {
+                                        top: 47%
+                                    }
+                                }
+                                .slick-next.slick-arrow {
+                                    right: 7px;
+                                    &:hover {
+                                        top: 47%
+                                    }
+                                }
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .Hotel {
+                        .container {
+                            .container__item__second {
+                                img {
+                                    height: 636px;
+                                }
+                                .text {
+                                    p {
+                                        font-size: 20px;
+                                        line-height: 27px;
+                                    }
+                                    .text_images {
+                                        .blok {
+                                            height: 150px;
+                                            width: 213px;
+                                            .blok__background {
+                                                .blok__text {
+                                                    font-size: 20px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
-            }
-            .Attractions {
-                .Slider {
-                    .item {
-                        .item__text {
-                            ul {
-                                font-size: 17px;
-                                line-height: 22px;
+                    .Attractions {
+                        .Slider {
+                            .item {
+                                .item__text {
+                                    ul {
+                                        font-size: 17px;
+                                        line-height: 22px;
+                                    }
+                                    .text__tittle {
+                                        font-size: 26px;
+                                    }
+                                    p {
+                                        font-size: 20px;
+                                        line-height: 27px;
+                                    }
+                                }
                             }
-                            .text__tittle {
-                                font-size: 26px;
+                        }
+                    }
+                    .Price {
+                        .container {
+                            height: 70%;
+                            .container__item__second {
+                                padding-top: 0;
+                                margin: 0;
+                                .blok__title {
+                                    padding-bottom: 20px;
+                                }
+                                p {
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                }
+                                .blok_first {}
+                                .blok_second {
+                                    .bigBalloon {
+                                        top: -38%;
+                                        right: 7%;
+                                    }
+                                    .smallBallon {
+                                        top: 91%;
+                                        right: 35%;
+                                    }
+                                    .smallBallon__second {
+                                        top: 71%;
+                                        right: 14%;
+                                    }
+                                }
                             }
-                            p {
-                                font-size: 20px;
-                                line-height: 27px;
+                        }
+                    }
+                    .BookNow {
+                        .container {
+                            height: 100%;
+                        }
+                        .container__item__threeth {
+                            .blok__text {
+                                padding-top: 70px;
+                            }
+                            form {
+                                padding-top: 50px;
+                                top: 270px
+                            }
+                            .photo img {
+                                margin-top: 70px;
+                                width: 450px;
+                                height: 550px;
+                            }
+                        }
+                    }
+                    .footer {
+                        div.balloon:nth-child(15) {
+                            font-size: 20px;
+                            padding-top: 105px;
+                            .number {
+                                padding: 5px;
+                            }
+                            .socoial__media ul {
+                                padding-top: 15px;
+                                img:hover {
+                                    height: 40px;
+                                    width: 40px;
+                                }
                             }
                         }
                     }
                 }
-            }
-        }
-        
-        @media (min-width: 980px) and (max-width: 1441px) {
-            .container {
-                max-width: 850px;
-            }
-        }
-        
-        @media (min-width: 768px) and (max-width: 979px) {}
-        
-        @media (min-width: 481px) and (max-width: 767px) {}
-        
-        @media (max-width: 480px) {}
+                
+                @media screen and (max-width: 1441px) {
+                    .footer {
+                        div.balloon:nth-child(15) {
+                            padding-top: 122px;
+                        }
+                    }
+                }
+                
+                @media screen and (max-width: 1024px) {
+                    .container {
+                        max-width: 900px;
+                    }
+                    .header {
+                        & .Slider {
+                            .slick-arrow {
+                                height: 35px;
+                                width: 35px;
+                                &:hover {
+                                    top: 49%
+                                }
+                            }
+                            .slick-prev.slick-arrow {
+                                left: 15px;
+                            }
+                            .slick-next.slick-arrow {
+                                right: 15px;
+                            }
+                        }
+                        & .container .container__item {
+                            &:first-child {
+                                padding-top: 7%;
+                                font-size: 21px;
+                                .menu__second ul li {
+                                    margin-right: 30px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                .header__title {
+                                    font-size: 135px;
+                                }
+                                .header__subtitle {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                    .FairyTail .onescreen .container .FairyTail__item_second {
+                        top: 20px;
+                        flex-direction: column;
+                        .FairyTail.text {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+                        .Slider {
+                            height: 460px;
+                            margin: 0 auto 50px;
+                            width: 74%;
+                        }
+                    }
+                    .OurTrip {
+                        .onescreen {
+                            .container__item_second {
+                                flex-direction: column-reverse;
+                                .Slider {
+                                    margin: 0 auto 30px;
+                                }
+                                .days {
+                                    height: 571px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                @media (min-width: 768px) and (max-width: 979px) {}
+                
+                @media (min-width: 481px) and (max-width: 767px) {}
+                
+                @media (max-width: 480px) {}
