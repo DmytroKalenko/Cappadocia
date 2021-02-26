@@ -323,5 +323,90 @@
   .footer div.balloon:nth-child(15) {
     height: 60%;
     width: 45%; } }
+@media (max-width: 1024px) and (max-height: 1366px) {
+  img {
+    border-radius: 0; }
+
+  .title {
+    font-size: 70px; }
+
+  .subtitle {
+    font-size: 23px; }
+
+  .FairyTail .onescreen .container .FairyTail__item_second {
+    flex-direction: column;
+    height: 80%; }
+    .FairyTail .onescreen .container .FairyTail__item_second .Slider {
+      height: 45%;
+      width: 70%; }
+    .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+      height: 50%; }
+      .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p {
+        font-size: 23px;
+        line-height: 29px; }
+
+  .OurTrip .onescreen .container__item_second {
+    flex-direction: column-reverse; }
+    .OurTrip .onescreen .container__item_second .Slider {
+      height: 556px;
+      width: 50%; }
+    .OurTrip .onescreen .container__item_second .days {
+      width: 100%;
+      margin-top: 50px; }
+      .OurTrip .onescreen .container__item_second .days .text__blok {
+        height: 231px;
+        width: 317px; }
+        .OurTrip .onescreen .container__item_second .days .text__blok p {
+          font-size: 23px;
+          line-height: 29px;
+          padding-top: 10px; }
+
+  .Hotel .container .container__item__second .text p {
+    font-size: 23px;
+    line-height: 29px; }
+  .Hotel .container .container__item__second .text .text_images {
+    grid-template-columns: 1fr; }
+    .Hotel .container .container__item__second .text .text_images .blok {
+      height: 115px;
+      width: 100%; }
+      .Hotel .container .container__item__second .text .text_images .blok .blok__background .blok__text {
+        font-size: 23px;
+        line-height: 29px; }
+
+  .Attractions .title {
+    top: 100px; }
+  .Attractions .Slider {
+    height: auto; }
+    .Attractions .Slider .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse; }
+      .Attractions .Slider .item .item__pictures {
+        width: 100%;
+        margin-bottom: 10px; }
+      .Attractions .Slider .item .item__text {
+        width: 100%; }
+        .Attractions .Slider .item .item__text .text__tittle {
+          font-size: 25px; }
+        .Attractions .Slider .item .item__text p {
+          font-size: 23px;
+          line-height: 29px; }
+
+  .Price .container .container__item__second p {
+    font-size: 23px;
+    line-height: 34px; }
+  .Price .container .container__item__second .blok_second .bigBalloon {
+    right: 20%;
+    top: 62%;
+    height: 250px; }
+  .Price .container .container__item__second .blok_second .smallBallon {
+    height: 103px;
+    top: 113%;
+    right: 56%; }
+  .Price .container .container__item__second .blok_second .smallBallon__second {
+    height: 119px;
+    top: 121%;
+    right: 12%; } }
 
 /*# sourceMappingURL=adaptive.css.map */

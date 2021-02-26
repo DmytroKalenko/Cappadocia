@@ -319,9 +319,6 @@
     bottom: 2%;
   }
 
-  
-
-
   .header {
     & .Slider {
       .slick-arrow {
@@ -455,13 +452,12 @@
         }
         .blok_second {
           .bigBalloon {
-            top: -22%;  
+            top: -22%;
             height: 170px;
           }
           .smallBallon {
             height: 70px;
             top: 75%;
-            
           }
           .smallBallon__second {
             height: 70px;
@@ -476,54 +472,170 @@
     .photo img {
       margin-top: 30px;
       width: 327px;
-    height: 448px;
+      height: 448px;
     }
     .blok__text {
       padding-top: 30px;
-      .title{
+      .title {
         right: 93px;
       }
-      .subtitle{
-          right: 60px;
+      .subtitle {
+        right: 60px;
       }
     }
     form {
-        padding-top: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        width: 250px;
-        right: 60px;
-        input{
-            display: block;
-            margin: 0;
-            font-size: 15px;
-            height: 40px;
-            width: 100%;
-        }
-        .OpenPop_upBtn{
-            width: 100% !important;
-        }
-        h1{
-            font-size: 20px;
-            padding-bottom: 10px;
-        }
+      padding-top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 250px;
+      right: 60px;
+      input {
+        display: block;
+        margin: 0;
+        font-size: 15px;
+        height: 40px;
+        width: 100%;
+      }
+      .OpenPop_upBtn {
+        width: 100% !important;
+      }
+      h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
     }
   }
-  .footer div.balloon:nth-child(15){
-      height: 60%;
-      width: 45%;
+  .footer div.balloon:nth-child(15) {
+    height: 60%;
+    width: 45%;
   }
-
 }
 
+@media (max-width: 1024px) and (max-height: 1366px) {
+  @mixin P_Size {
+    font-size: 23px;
+    line-height: 29px;
+  }
 
+  img {
+    border-radius: 0;
+  }
+  .title {
+    font-size: 70px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .FairyTail .onescreen .container .FairyTail__item_second {
+    flex-direction: column;
+    height: 80%;
+    .Slider {
+      height: 45%;
+      width: 70%;
+    }
+    .FairyTail.text {
+      height: 50%;
+      p {
+        @include P_Size;
+      }
+    }
+  }
+  .OurTrip .onescreen .container__item_second {
+    flex-direction: column-reverse;
+    .Slider {
+      height: 556px;
+      width: 50%;
+    }
+    .days {
+      width: 100%;
+      margin-top: 50px;
+      .text__blok {
+        height: 231px;
+        width: 317px;
+        p {
+          @include P_Size;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
 
-  
-
-
-
+  .Hotel {
+    .container {
+      .container__item__second {
+        .text {
+          p {
+            @include P_Size;
+          }
+          .text_images {
+            grid-template-columns: 1fr;
+            .blok {
+              height: 115px;
+              width: 100%;
+              .blok__background {
+                .blok__text {
+                  @include P_Size;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Attractions {
+    .title {
+      top: 100px;
+    }
+    .Slider {
+      height: auto;
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        .item__pictures {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .item__text {
+          width: 100%;
+          .text__tittle {
+            font-size: 25px;
+          }
+          p {
+            @include P_Size;
+          }
+        }
+      }
+    }
+  }
+  .Price .container .container__item__second {
+    p {
+      font-size: 23px;
+      line-height: 34px;
+    }
+    .blok_second {
+      .bigBalloon {
+        right: 20%;
+        top: 62%;
+        height: 250px;
+      }
+      .smallBallon {
+        height: 103px;
+        top: 113%;
+        right: 56%;
+      }
+      .smallBallon__second {
+        height: 119px;
+        top: 121%;
+        right: 12%;
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
 }
