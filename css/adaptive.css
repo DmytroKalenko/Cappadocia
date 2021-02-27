@@ -407,6 +407,41 @@
   .Price .container .container__item__second .blok_second .smallBallon__second {
     height: 119px;
     top: 121%;
-    right: 12%; } }
+    right: 12%; }
+
+  .BookNow .container .container__item__threeth {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .BookNow .container .container__item__threeth .photo {
+      width: auto; }
+      .BookNow .container .container__item__threeth .photo img {
+        width: auto;
+        height: 500px; }
+    .BookNow .container .container__item__threeth form {
+      width: 350px; }
+      .BookNow .container .container__item__threeth form input {
+        margin: 10px;
+        font-size: 23px;
+        height: 60px;
+        width: 100%; }
+      .BookNow .container .container__item__threeth form h1 {
+        font-size: 23px;
+        padding: 15px; }
+
+  .footer div.balloon:nth-child(15) {
+    font-size: 32px;
+    padding-top: 175px; }
+    .footer div.balloon:nth-child(15) .title {
+      font-size: 90px; }
+    .footer div.balloon:nth-child(15) .number {
+      padding: 10px; }
+    .footer div.balloon:nth-child(15) .socoial__media ul img {
+      height: 50px;
+      width: 50px;
+      margin-top: 10px; }
+      .footer div.balloon:nth-child(15) .socoial__media ul img:hover {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%; } }
 
 /*# sourceMappingURL=adaptive.css.map */
