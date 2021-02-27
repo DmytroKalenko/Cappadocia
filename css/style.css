@@ -216,6 +216,7 @@ input {
   border-bottom: 2px solid transparent;
   padding-bottom: 10px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .header .container .container__item:first-child .menu__first ul li:hover,
 .header .container .container__item:first-child .menu__second ul li:hover {
@@ -1025,5 +1026,3 @@ input {
     transform: translateX(15px) rotate(0deg);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
