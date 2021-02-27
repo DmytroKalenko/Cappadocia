@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     //ScrollPAge
     new fullpage('#fullPage', {
-        scrollingSpeed: 900,
+        scrollingSpeed: 1500,
         parallax: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
     });
