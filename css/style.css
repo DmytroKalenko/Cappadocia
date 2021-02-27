@@ -180,6 +180,14 @@ input {
   background-position: center;
 }
 
+.header__body {
+  display: none;
+}
+
+.header__list {
+  display: none;
+}
+
 .header {
   color: white;
 }
@@ -1026,3 +1034,5 @@ input {
     transform: translateX(15px) rotate(0deg);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
