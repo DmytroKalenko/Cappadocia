@@ -11,6 +11,7 @@ $(document).ready(function() {
     //bURGER MENU
     $('.header__burger , .header__list li a').on('click', function() {
         $('.header__list').slideToggle();
+        $('.header__burger').removeClass("Action");
     });
     $('.header__burger').on('click', function() {
         $('.header__burger').toggleClass("Action");
