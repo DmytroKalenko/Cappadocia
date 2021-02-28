@@ -183,6 +183,8 @@ input {
     background-size: cover;
     background-position: center;
     z-index: 4;
+    background-color: transparent;
+    border: none;
 }
 
 .header__body {
@@ -887,6 +889,9 @@ input {
             input+input {
                 margin-top: 20px;
             }
+        }
+        .photoTOadaptive {
+            display: none;
         }
         .photo {
             position: relative;

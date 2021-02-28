@@ -443,9 +443,19 @@
         height: 55px;
         width: 55px;
         border-radius: 50%; } }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 979px) {
   .container {
-    width: 700px; }
+    width: 700px;
+    padding-top: 60px; }
+
+  .container__title {
+    padding-bottom: 0; }
+
+  .title {
+    font-size: 55px; }
+
+  .subtitle {
+    font-size: 18px; }
 
   .header__body {
     display: block;
@@ -525,7 +535,104 @@
     display: block;
     transform: translateY(0%); }
 
-  .header .container .container__item:first-child {
-    display: none; } }
+  .header .container {
+    padding-top: 0; }
+    .header .container .container__item nav {
+      display: none; }
+
+  .FairyTail .onescreen .container .FairyTail__item_second .Slider {
+    margin-bottom: 15px; }
+  .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+    height: 55%;
+    margin-left: 0; }
+    .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p {
+      font-size: 18px;
+      line-height: 23px; }
+    .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p + p {
+      padding-top: 10px !important; }
+
+  .OurTrip .onescreen .container__item_second .Slider {
+    height: 45%; }
+  .OurTrip .onescreen .container__item_second .days {
+    grid-row-gap: 25px;
+    height: 55%;
+    margin-top: 0; }
+    .OurTrip .onescreen .container__item_second .days .text__blok {
+      height: 185px;
+      width: 285px; }
+      .OurTrip .onescreen .container__item_second .days .text__blok p {
+        font-size: 18px;
+        line-height: 23px;
+        padding-top: 0; }
+      .OurTrip .onescreen .container__item_second .days .text__blok .text__title {
+        font-size: 20px; }
+
+  .Hotel .container .container__item__second .text p {
+    font-size: 18px;
+    line-height: 23px; }
+    .Hotel .container .container__item__second .text p:nth-child(3) {
+      padding-bottom: 0; }
+  .Hotel .container .container__item__second .text p + p {
+    padding-top: 10px; }
+  .Hotel .container .container__item__second .text .text_images {
+    margin-top: 15px;
+    grid-row-gap: 9px; }
+    .Hotel .container .container__item__second .text .text_images .blok {
+      height: 95px; }
+      .Hotel .container .container__item__second .text .text_images .blok .blok__background .blok__text {
+        font-size: 18px;
+        line-height: 23px; }
+
+  .Attractions .Slider .item .item__text .text__tittle {
+    font-size: 20px; }
+  .Attractions .Slider .item .item__text p {
+    font-size: 18px;
+    line-height: 23px; }
+
+  .Price .container {
+    padding-top: 0px;
+    height: 50%;
+    width: 95%; }
+    .Price .container .container__item__second {
+      padding-top: 10px; }
+      .Price .container .container__item__second p {
+        font-size: 18px;
+        line-height: 23px; }
+      .Price .container .container__item__second .blok_second {
+        padding-left: 35px; }
+        .Price .container .container__item__second .blok_second .bigBalloon {
+          right: 19%;
+          top: -18%;
+          height: 66px; }
+        .Price .container .container__item__second .blok_second .smallBallon {
+          height: 101px;
+          top: 67%;
+          right: 56%; }
+        .Price .container .container__item__second .blok_second .smallBallon__second {
+          height: 76px;
+          top: 81%;
+          right: 29%; }
+
+  .BookNow .container .container__item__threeth .photoTOadaptive {
+    display: block;
+    margin-top: 15px; }
+  .BookNow .container .container__item__threeth .photo img {
+    display: none; }
+  .BookNow .container .container__item__threeth .blok__text {
+    padding-top: 10px; }
+    .BookNow .container .container__item__threeth .blok__text form {
+      right: 0;
+      top: 195px; }
+      .BookNow .container .container__item__threeth .blok__text form input {
+        margin: 10px 0; }
+
+  .footer div.balloon:nth-child(15) {
+    font-size: 26px;
+    padding-top: 120px; }
+    .footer div.balloon:nth-child(15) .title {
+      font-size: 70px; } }
 
 /*# sourceMappingURL=adaptive.css.map */

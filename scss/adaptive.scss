@@ -678,9 +678,23 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 979px) {
+    @mixin P_size {
+        font-size: 18px;
+        line-height: 23px;
+    }
     .container {
         width: 700px;
+        padding-top: 60px;
+    }
+    .container__title {
+        padding-bottom: 0;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .subtitle {
+        font-size: 18px;
     }
     .header__body {
         display: block;
@@ -777,13 +791,170 @@
     }
     .header {
         .container {
-            .container__item:first-child {
+            padding-top: 0;
+            .container__item nav {
                 display: none;
             }
         }
     }
+    .FairyTail {
+        .onescreen {
+            .container {
+                .FairyTail__item_second {
+                    .Slider {
+                        margin-bottom: 15px;
+                    }
+                    .FairyTail.text {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+                .FairyTail__item_second {
+                    .FairyTail.text {
+                        height: 55%;
+                        margin-left: 0;
+                        p {
+                            @include P_size
+                        }
+                        p+p {
+                            padding-top: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .OurTrip {
+        .onescreen {
+            .container__item_second {
+                .Slider {
+                    height: 45%;
+                }
+                .days {
+                    grid-row-gap: 25px;
+                    height: 55%;
+                    margin-top: 0;
+                    .text__blok {
+                        height: 185px;
+                        width: 285px;
+                        p {
+                            @include P_size;
+                            padding-top: 0
+                        }
+                        .text__title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Hotel {
+        .container {
+            .container__item__second {
+                .text {
+                    p {
+                        @include P_size();
+                        &:nth-child(3) {
+                            padding-bottom: 0;
+                        }
+                    }
+                    p+p {
+                        padding-top: 10px;
+                    }
+                    .text_images {
+                        margin-top: 15px;
+                        grid-row-gap: 9px;
+                        .blok {
+                            height: 95px;
+                            .blok__background {
+                                .blok__text {
+                                    @include P_size();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Attractions {
+        .Slider {
+            .item {
+                .item__text {
+                    .text__tittle {
+                        font-size: 20px;
+                    }
+                    p {
+                        @include P_size()
+                    }
+                }
+            }
+        }
+    }
+    .Price {
+        .container {
+            padding-top: 0px;
+            height: 50%;
+            width: 95%;
+            .container__item__second {
+                padding-top: 10px;
+                p {
+                    @include P_size()
+                }
+                .blok_second {
+                    padding-left: 35px;
+                    .bigBalloon {
+                        right: 19%;
+                        top: -18%;
+                        height: 66px;
+                    }
+                    .smallBallon {
+                        height: 101px;
+                        top: 67%;
+                        right: 56%;
+                    }
+                    .smallBallon__second {
+                        height: 76px;
+                        top: 81%;
+                        right: 29%;
+                    }
+                }
+            }
+        }
+    }
+    .BookNow {
+        .container {
+            .container__item__threeth {
+                .photoTOadaptive {
+                    display: block;
+                    margin-top: 15px;
+                }
+                .photo {
+                    img {
+                        display: none;
+                    }
+                }
+                .blok__text {
+                    padding-top: 10px;
+                    form {
+                        right: 0;
+                        top: 195px;
+                        input {
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer div.balloon:nth-child(15) {
+        font-size: 26px;
+        padding-top: 120px;
+        .title {
+            font-size: 70px;
+        }
+    }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {}
-
-@media (max-width: 480px) {}
+@media (max-width: 767px) {}

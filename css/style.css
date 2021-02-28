@@ -179,6 +179,8 @@ input {
   background-size: cover;
   background-position: center;
   z-index: 4;
+  background-color: transparent;
+  border: none;
 }
 
 .header__body {
@@ -869,6 +871,9 @@ input {
 }
 .BookNow .container__item__threeth form input + input {
   margin-top: 20px;
+}
+.BookNow .container__item__threeth .photoTOadaptive {
+  display: none;
 }
 .BookNow .container__item__threeth .photo {
   position: relative;
