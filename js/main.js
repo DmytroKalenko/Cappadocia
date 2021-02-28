@@ -6,6 +6,12 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear',
         dots: true,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+            }
+        }]
 
     });
     //bURGER MENU

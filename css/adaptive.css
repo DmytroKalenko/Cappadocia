@@ -634,5 +634,168 @@
     padding-top: 120px; }
     .footer div.balloon:nth-child(15) .title {
       font-size: 70px; } }
+@media (max-width: 767px) {
+  .title {
+    font-size: 43px; }
+
+  .subtitle {
+    font-size: 14px; }
+
+  .container {
+    width: 90%;
+    padding-top: 12%; }
+    .container .container__title {
+      padding: 15px; }
+
+  .header__body {
+    height: 45px; }
+    .header__body .header__burger {
+      width: 35px; }
+      .header__body .header__burger span {
+        height: 2px; }
+        .header__body .header__burger span::before {
+          height: 2px;
+          top: 9px; }
+        .header__body .header__burger span::after {
+          position: relative;
+          bottom: 7px;
+          height: 2px; }
+      .header__body .header__burger.Action span::before {
+        top: 0; }
+      .header__body .header__burger.Action span::after {
+        bottom: 2px; }
+
+  .header__menu .header__list ul {
+    top: 10%;
+    transform: none; }
+    .header__menu .header__list ul li {
+      margin-bottom: 10px; }
+      .header__menu .header__list ul li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px; }
+
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 70px; }
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 19px;
+    padding-right: 14%; }
+
+  .FairyTail .onescreen .container .FairyTail__item_second {
+    height: auto;
+    top: 0px; }
+    .FairyTail .onescreen .container .FairyTail__item_second .Slider {
+      width: 100%;
+      height: 50%;
+      margin-bottom: 0; }
+    .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+      margin: 10px auto;
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none; }
+      .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p {
+        font-size: 14px;
+        line-height: 20px; }
+      .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p + p {
+        padding-top: 5px !important; }
+
+  .OurTrip .onescreen .container__item_second .Slider {
+    margin: 0 auto 15px; }
+  .OurTrip .onescreen .container__item_second .days {
+    grid-template-columns: 1fr;
+    grid-row-gap: 9px; }
+    .OurTrip .onescreen .container__item_second .days .text__blok {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      border: 1px solid rgba(0, 0, 0, 0.493);
+      box-shadow: none;
+      border-radius: 0; }
+      .OurTrip .onescreen .container__item_second .days .text__blok p {
+        font-size: 12px;
+        line-height: 16px; }
+      .OurTrip .onescreen .container__item_second .days .text__blok .text__title {
+        font-size: 15px;
+        padding-bottom: 5px; }
+
+  .Hotel .container .container__item__second .text p {
+    font-size: 12px;
+    line-height: 16px; }
+  .Hotel .container .container__item__second .text .text_images .blok {
+    height: 73px; }
+    .Hotel .container .container__item__second .text .text_images .blok .blok__background .blok__text {
+      font-size: 15px; }
+
+  .Attractions .Slider {
+    width: 96%; }
+    .Attractions .Slider .slick-dots {
+      bottom: 11px; }
+    .Attractions .Slider .item .item__text p {
+      font-size: 15px;
+      line-height: 20px; }
+    .Attractions .Slider .item .item__text .text__tittle {
+      font-size: 18px; }
+  .Attractions .title {
+    top: 7%; }
+
+  .Price .container {
+    height: 70%; }
+    .Price .container .container__item__second {
+      padding-top: 0; }
+      .Price .container .container__item__second .blok__title {
+        font-size: 16px; }
+      .Price .container .container__item__second .blok_first p,
+      .Price .container .container__item__second .blok_second p {
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 10px; }
+      .Price .container .container__item__second .blok_first .bigBalloon,
+      .Price .container .container__item__second .blok_second .bigBalloon {
+        top: 75%; }
+      .Price .container .container__item__second .blok_first .smallBallon__second,
+      .Price .container .container__item__second .blok_second .smallBallon__second {
+        top: 95%; }
+
+  .BookNow .container {
+    width: 90%; }
+    .BookNow .container .container__item__threeth {
+      height: 90%;
+      position: relative; }
+      .BookNow .container .container__item__threeth .photoTOadaptive {
+        height: 40%;
+        width: 100%;
+        position: relative; }
+        .BookNow .container .container__item__threeth .photoTOadaptive img {
+          width: 100%;
+          height: 100%; }
+      .BookNow .container .container__item__threeth .blok__text {
+        height: 60%;
+        width: 100%; }
+        .BookNow .container .container__item__threeth .blok__text .title {
+          right: 0;
+          text-align: center; }
+        .BookNow .container .container__item__threeth .blok__text .subtitle {
+          right: 0;
+          text-align: center; }
+        .BookNow .container .container__item__threeth .blok__text form {
+          position: relative;
+          top: 0;
+          width: 100%; }
+          .BookNow .container .container__item__threeth .blok__text form h1 {
+            font-size: 20px;
+            padding: 10px; }
+          .BookNow .container .container__item__threeth .blok__text form input {
+            font-size: 16px;
+            height: 50px; }
+
+  .footer div.balloon:nth-child(15) {
+    padding-top: 90px;
+    width: 90%;
+    font-size: 22px; }
+    .footer div.balloon:nth-child(15) .socoial__media ul img {
+      height: 35px;
+      width: 35px;
+      margin-top: 0px; } }
 
 /*# sourceMappingURL=adaptive.css.map */
