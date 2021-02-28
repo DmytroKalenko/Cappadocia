@@ -689,7 +689,7 @@
         background-color: rgba(51, 51, 51, 1);
         box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
         position: absolute;
-        z-index: 3;
+        z-index: 5;
         right: 0;
         .header__burger {
             position: absolute;
@@ -745,8 +745,10 @@
             width: 100%;
             background-color: rgba(51, 51, 51, 1);
             height: 100%;
-            z-index: 2;
-            display: none;
+            z-index: 4;
+            display: block;
+            transform: translateY(-100%);
+            transition: all .5s;
             ul {
                 position: relative;
                 top: 50%;
@@ -767,6 +769,10 @@
                     }
                 }
             }
+        }
+        .header__list.Action {
+            display: block;
+            transform: translateY(0%);
         }
     }
     .header {

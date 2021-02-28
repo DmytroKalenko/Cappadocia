@@ -454,7 +454,7 @@
     background-color: #333333;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     right: 0; }
     .header__body .header__burger {
       position: absolute;
@@ -500,8 +500,10 @@
     width: 100%;
     background-color: #333333;
     height: 100%;
-    z-index: 2;
-    display: none; }
+    z-index: 4;
+    display: block;
+    transform: translateY(-100%);
+    transition: all .5s; }
     .header__menu .header__list ul {
       position: relative;
       top: 50%;
@@ -519,6 +521,9 @@
           padding-bottom: 20px;
           font-size: 44px;
           color: white; }
+  .header__menu .header__list.Action {
+    display: block;
+    transform: translateY(0%); }
 
   .header .container .container__item:first-child {
     display: none; } }

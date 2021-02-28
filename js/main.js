@@ -9,12 +9,10 @@ $(document).ready(function() {
 
     });
     //bURGER MENU
-    $('.header__burger , .header__list li a').on('click', function() {
-        $('.header__list').slideToggle();
-        $('.header__burger').removeClass("Action");
-    });
-    $('.header__burger').on('click', function() {
-        $('.header__burger').toggleClass("Action");
+
+
+    $('.header__burger, .header__list ul li').on('click', function() {
+        $('.header__burger, .header__list').toggleClass("Action");
 
     });
 
