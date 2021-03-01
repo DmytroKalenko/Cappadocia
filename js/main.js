@@ -10,6 +10,7 @@ $(document).ready(function() {
             breakpoint: 480,
             settings: {
                 arrows: false,
+                dots: false,
             }
         }]
 

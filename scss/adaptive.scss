@@ -1205,3 +1205,343 @@
         }
     }
 }
+
+@media(max-width: 415px) and (max-height:737px) {
+    .FairyTail {
+        .onescreen {
+            .container {
+                .FairyTail__item_second {
+                    .Slider {
+                        width: 100%;
+                        height: 45%;
+                    }
+                    .FairyTail.text {
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .OurTrip {
+        .onescreen {
+            .container__item_second {
+                .Slider {
+                    display: none;
+                }
+            }
+        }
+    }
+    .Hotel {
+        .container {
+            .container__item__second {
+                .text {
+                    p {
+                        font-size: 12px;
+                    }
+                    .text_images {
+                        .blok {
+                            height: 60px;
+                            .blok__background {
+                                .blok__text {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .container__title {
+                padding: 10px;
+            }
+        }
+    }
+    .Attractions {
+        .Slider {
+            .item .item__text {
+                p {
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+                .text__tittle {
+                    font-size: 15px;
+                }
+                ul {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+        }
+        .title {
+            top: 7%;
+        }
+    }
+    .Price {
+        .container {
+            .container__item__second {
+                .blok__title {
+                    font-size: 14px;
+                }
+                .blok_first,
+                .blok_second {
+                    p {
+                        font-size: 13px;
+                        line-height: 17px;
+                        padding-top: 7px
+                    }
+                    .bigBalloon {
+                        top: 75%;
+                    }
+                    .smallBallon__second {
+                        top: 103%;
+                    }
+                }
+            }
+        }
+    }
+    .BookNow {
+        .container {
+            .container__item__threeth {
+                height: 90%;
+                .photoTOadaptive {
+                    margin-top: 0;
+                    height: 36%;
+                    width: 100%;
+                    position: relative;
+                }
+                .blok__text {
+                    height: 64%;
+                    width: 100%;
+                    form {
+                        h1 {
+                            font-size: 18px;
+                            padding: 5px;
+                        }
+                        input {
+                            font-size: 15px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer div.balloon:nth-child(15) {
+        height: 66%;
+    }
+}
+
+@media (max-height:668px) {
+    .container .container__title {
+        padding-bottom: 5px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .FairyTail .onescreen .container .FairyTail__item_second {
+        .Slider {
+            width: 82%;
+        }
+        .FairyTail.text p+p {
+            padding-top: 2px !important;
+        }
+    }
+    .OurTrip .onescreen .container__item_second .days {
+        grid-row-gap: 17px;
+        margin-top: 20px;
+    }
+    .Hotel .subtitle {
+        padding-top: 0;
+    }
+    .Hotel {
+        .container {
+            .container__item__second {
+                .text {
+                    p {
+                        line-height: 14px
+                    }
+                    p+p {
+                        padding-top: 7px;
+                    }
+                    .text_images .blok {
+                        height: 53px;
+                    }
+                }
+            }
+        }
+    }
+    .Attractions .Slider .item .item__text {
+        padding-top: 0;
+        p {
+            padding-top: 5px;
+        }
+        ul {
+            padding-top: 0;
+        }
+    }
+    .Price .container .container__item__second {
+        .blok__title {
+            padding-bottom: 0;
+        }
+        .blok_second {
+            .smallBallon {
+                top: 60%;
+            }
+            .bigBalloon {
+                top: 70%;
+            }
+            .smallBallon__second {
+                height: 55px;
+                top: 94%;
+                right: 42%;
+            }
+        }
+    }
+    .BookNow .container .container__item__threeth .blok__text form {
+        h1 {
+            font-size: 15px;
+        }
+        input {
+            margin: 5px 0;
+        }
+    }
+    .footer div.balloon:nth-child(15) {
+        padding-top: 80px;
+        .number,
+        .email,
+        ul {
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-height:569px) {
+    .subtitle {
+        padding: 0;
+        font-size: 13px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .FairyTail {
+        .onescreen {
+            .container {
+                .container__title {
+                    .subtitle {
+                        padding-left: 50%;
+                    }
+                }
+                .FairyTail__item_second .FairyTail.text {
+                    margin: 5px auto;
+                    p {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .OurTrip .onescreen .container__item_second .days {
+        grid-row-gap: 14px;
+        margin-top: 0
+    }
+    .Hotel {
+        .title {
+            padding-top: 10px;
+        }
+        .subtitle {
+            left: 85px;
+        }
+        .container {
+            .container__item__second {
+                .text {
+                    p+p {
+                        padding-top: 5px;
+                    }
+                    .text_images {
+                        margin-top: 10px;
+                        .blok {
+                            height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Attractions {
+        .title {
+            top: 7%;
+        }
+        .Slider {
+            .item {
+                .item__text {
+                    padding: 0;
+                    ul {
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                    .text__tittle {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .Price {
+        .subtitle {
+            left: 77px;
+        }
+        .container {
+            .container__item__second {
+                padding-left: 10px;
+                .blok_second {
+                    padding-left: 15px;
+                    .smallBallon {
+                        height: 75px;
+                        top: 65%;
+                        right: 58%;
+                    }
+                    .bigBalloon {
+                        right: 17%;
+                        top: 74%;
+                        height: 50px;
+                    }
+                    .smallBallon__second {
+                        height: 50px;
+                        top: 93%;
+                        right: 40%;
+                    }
+                }
+                .blok_first p,
+                .blok_second p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+    .BookNow {
+        .container {
+            .container__item__threeth {
+                .blok__text {
+                    padding: 0;
+                    .title,
+                    .subtitle {
+                        padding: 3px 0;
+                    }
+                    form {
+                        input {
+                            font-size: 13px;
+                            height: 39px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer div.balloon:nth-child(15) {
+        height: 79%;
+    }
+}
