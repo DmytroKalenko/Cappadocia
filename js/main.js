@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.Slider').slick({
         autoplay: true,
         infinite: true,
@@ -18,7 +18,7 @@ $(document).ready(function() {
     //bURGER MENU
 
 
-    $('.header__burger, .header__list ul li').on('click', function() {
+    $('.header__burger, .header__list ul li').on('click', function () {
         $('.header__burger, .header__list').toggleClass("Action");
 
     });
@@ -35,30 +35,33 @@ $(document).ready(function() {
         scrollingSpeed: 1500,
         parallax: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+
     });
+
+
     //adding the action to ScrollPAge
-    $(document).on('click', '#UPButton', function() {
+    $(document).on('click', '#UPButton', function () {
         fullpage_api.moveTo('page1');
     });
-    $(document).on('click', '#Our_trip', function() {
+    $(document).on('click', '#Our_trip', function () {
         fullpage_api.moveTo('page3', 1);
     });
-    $(document).on('click', '#FairyTail', function() {
+    $(document).on('click', '#FairyTail', function () {
         fullpage_api.moveTo('page2', 1);
     });
-    $(document).on('click', '#Hotel', function() {
+    $(document).on('click', '#Hotel', function () {
         fullpage_api.moveTo('page4', 1);
     });
-    $(document).on('click', '#Attractions', function() {
+    $(document).on('click', '#Attractions', function () {
         fullpage_api.moveTo('page5', 1);
     });
-    $(document).on('click', '#Price', function() {
+    $(document).on('click', '#Price', function () {
         fullpage_api.moveTo('page6', 1);
     });
-    $(document).on('click', '#BookNow', function() {
+    $(document).on('click', '#BookNow', function () {
         fullpage_api.moveTo('page7', 1);
     });
-    $(document).on('click', '#Contacts', function() {
+    $(document).on('click', '#Contacts', function () {
         fullpage_api.moveTo('page8', 1);
     });
 

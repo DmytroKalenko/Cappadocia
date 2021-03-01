@@ -991,5 +991,21 @@
 
   .footer div.balloon:nth-child(15) {
     height: 79%; } }
+#fullPage .section.one {
+  background-color: blue; }
+#fullPage .section.two {
+  background-color: #66ff00; }
+#fullPage .section.three {
+  background-color: red; }
+#fullPage .section.for {
+  background-color: #ff00c8; }
+#fullPage .section.six {
+  background-color: #ffd900; }
+#fullPage .section.seven {
+  background-color: #ffa928; }
+#fullPage .section.eight {
+  background-color: #00ffd5; }
+#fullPage .section.nine {
+  background-color: #ff6b08; }
 
 /*# sourceMappingURL=adaptive.css.map */

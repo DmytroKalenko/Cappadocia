@@ -359,7 +359,6 @@ input {
 .FairyTail {
   position: relative;
   z-index: 1;
-  background-color: white;
 }
 .FairyTail .onescreen .container .container__title .title {
   padding-left: 10%;
@@ -786,7 +785,6 @@ input {
 .BookNow {
   position: relative;
   z-index: 1;
-  background-color: white;
   height: 100vh;
   display: flex;
   align-items: center;
