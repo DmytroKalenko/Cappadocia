@@ -42,31 +42,53 @@ img {
     position: relative;
     height: 100%;
     &.Pop_up {
-        max-width: 1240px;
-        max-height: 1000px;
+        max-width: 60%;
+    max-height: 80%;
         top: 50%;
         transform: translateY(-50%);
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
-        padding: 40px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        padding: 30px;
         .pop_up__contant {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+            height: 100%;
             input {
                 padding-left: 0px;
-                width: 130px !important;
+                width: 90px !important;
                 border: 1px solid white;
                 background-color: $buttons;
                 color: white;
                 transition: all 0.5s;
+                height: 24px;
+                font-size: 13px;
                 cursor: pointer;
                 &:hover {
                     color: $buttons;
                     background-color: white;
                     border: 1px solid $buttons;
+                }
+            }
+            .contant__head{
+                font-size: 25px;
+            }
+            .main__contant{
+                margin-top: 10px;
+                position: relative;
+                .pop_up__text{
+                    padding: 10px;
+                    font-size: 22px;
+                    line-height: 30px;
+                    height: 60%;
+                }
+                .pop_up__slider {
+                    height: 60%;
+                }
+                .RoomEquipment{
+                    height: 40%;
+                    margin-top: 10px;
+                    padding: 0;
                 }
             }
         }
@@ -79,7 +101,7 @@ img {
     font-size: 90px;
     text-align: center;
     position: relative;
-    z-index: 1;
+    
 }
 
 .subtitle {
@@ -363,6 +385,7 @@ input {
 .FairyTail {
     position: relative;
     z-index: 1;
+    background-color: white;
     .onescreen {
         .container {
             .container__title {
@@ -375,7 +398,7 @@ input {
             }
             .FairyTail__item_second {
                 display: flex;
-                position: relative;
+               
                 min-width: 0;
                 .FairyTail.text {
                     width: 58%;
@@ -477,8 +500,10 @@ input {
             .pop_up__slider {
                 position: relative;
                 width: 70%;
+                height: 100%;
                 & .slick-list {
                     overflow: hidden;
+                    height: 100%;
                 }
                 & .slick-list.draggable,
                 & .slick-track {
@@ -515,7 +540,7 @@ input {
                 img {
                     border-radius: 0;
                     height: 100%;
-                    width: 100%;
+                    
                 }
             }
             .RoomEquipment {
@@ -717,7 +742,7 @@ input {
         }
         .item {
             display: flex;
-            padding: 40px;
+            padding: 20px;
             padding-left: 0;
             .item__text {
                 width: 50%;
@@ -808,6 +833,7 @@ input {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: white;
     .pop_up {
         display: none;
         position: absolute;
@@ -824,8 +850,8 @@ input {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 660px;
-            width: 800px;
+            height: 70%;
+            width: 60%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);

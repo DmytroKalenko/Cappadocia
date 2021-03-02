@@ -39,34 +39,56 @@ img {
   height: 100%;
 }
 .container.Pop_up {
-  max-width: 1240px;
-  max-height: 1000px;
+  max-width: 60%;
+  max-height: 80%;
   top: 50%;
   transform: translateY(-50%);
   background-color: white;
   border-radius: 10px;
-  padding: 40px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  padding: 30px;
 }
 .container.Pop_up .pop_up__contant {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  height: 100%;
 }
 .container.Pop_up .pop_up__contant input {
   padding-left: 0px;
-  width: 130px !important;
+  width: 90px !important;
   border: 1px solid white;
   background-color: #e2ab3f;
   color: white;
   transition: all 0.5s;
+  height: 24px;
+  font-size: 13px;
   cursor: pointer;
 }
 .container.Pop_up .pop_up__contant input:hover {
   color: #e2ab3f;
   background-color: white;
   border: 1px solid #e2ab3f;
+}
+.container.Pop_up .pop_up__contant .contant__head {
+  font-size: 25px;
+}
+.container.Pop_up .pop_up__contant .main__contant {
+  margin-top: 10px;
+  position: relative;
+}
+.container.Pop_up .pop_up__contant .main__contant .pop_up__text {
+  padding: 10px;
+  font-size: 22px;
+  line-height: 30px;
+  height: 60%;
+}
+.container.Pop_up .pop_up__contant .main__contant .pop_up__slider {
+  height: 60%;
+}
+.container.Pop_up .pop_up__contant .main__contant .RoomEquipment {
+  height: 40%;
+  margin-top: 10px;
+  padding: 0;
 }
 
 .title {
@@ -75,7 +97,6 @@ img {
   font-size: 90px;
   text-align: center;
   position: relative;
-  z-index: 1;
 }
 
 .subtitle {
@@ -359,6 +380,7 @@ input {
 .FairyTail {
   position: relative;
   z-index: 1;
+  background-color: white;
 }
 .FairyTail .onescreen .container .container__title .title {
   padding-left: 10%;
@@ -368,7 +390,6 @@ input {
 }
 .FairyTail .onescreen .container .FairyTail__item_second {
   display: flex;
-  position: relative;
   min-width: 0;
 }
 .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
@@ -462,9 +483,11 @@ input {
 .Hotel .Pop-up .main__contant .pop_up__slider {
   position: relative;
   width: 70%;
+  height: 100%;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-list {
   overflow: hidden;
+  height: 100%;
 }
 .Hotel .Pop-up .main__contant .pop_up__slider .slick-list.draggable, .Hotel .Pop-up .main__contant .pop_up__slider .slick-track {
   height: 100%;
@@ -500,7 +523,6 @@ input {
 .Hotel .Pop-up .main__contant .pop_up__slider img {
   border-radius: 0;
   height: 100%;
-  width: 100%;
 }
 .Hotel .Pop-up .main__contant .RoomEquipment {
   width: 100%;
@@ -699,7 +721,7 @@ input {
 }
 .Attractions .Slider .item {
   display: flex;
-  padding: 40px;
+  padding: 20px;
   padding-left: 0;
 }
 .Attractions .Slider .item .item__text {
@@ -788,6 +810,7 @@ input {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 .BookNow .pop_up {
   display: none;
@@ -806,8 +829,8 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 660px;
-  width: 800px;
+  height: 70%;
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
