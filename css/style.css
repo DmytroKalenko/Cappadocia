@@ -36,7 +36,6 @@ img {
   max-width: 2000px;
   margin: 0 auto;
   position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
