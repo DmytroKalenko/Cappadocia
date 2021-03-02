@@ -40,7 +40,10 @@ img {
     max-width: 2000px;
     margin: 0 auto;
     position: relative;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &.Pop_up {
         max-width: 60%;
     max-height: 80%;
@@ -237,6 +240,7 @@ input {
         height: 100%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+        justify-content: normal;
         .container__item:first-child {
             display: flex;
             justify-content: space-between;
