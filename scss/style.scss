@@ -22,10 +22,18 @@ body {
         color: black;
     }
 }
-
-.onescreen {
-    height: 100vh;
+.section2{
+    background-color: yellow;
+    position: relative;
+    height: 800px;
+    background-image: url(../imgs/backgrounds/Cappad.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
+.section{
+    position: relative;
+}
+
 
 p {
     font-size: 32px;
@@ -660,22 +668,9 @@ input {
 }
 
 .Price {
-    height: 100vh;
+   
     display: flex;
     align-items: center;
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../imgs/backgrounds/Uchisar-Castle-Guided-Cappadocia-Tours.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: blur(3px) opacity(90%);
-    }
     & .container {
         height: auto;
         width: 100%;
@@ -729,16 +724,16 @@ input {
 
 .Attractions {
     height: 100%;
+    position: relative;
     .title {
         top: 70px;
     }
     .Slider {
-        top: 50%;
-        transform: translateY(-50%);
+        
         width: 65%;
         max-height: 80%;
         background-color: white;
-        z-index: 0;
+
         margin: 0 auto;
         height: 750px;
         .slick-list {
@@ -817,24 +812,12 @@ input {
     }
 }
 
-.Attractions::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url(../imgs/backgrounds/Atracrions.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: blur(3px) opacity(90%);
-}
+
 
 .BookNow {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     background-color: white;
