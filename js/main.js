@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.Slider').slick({
+    $('.Main_Slider').slick({
         autoplay: true,
         infinite: true,
         speed: 500,
@@ -13,8 +13,40 @@ $(document).ready(function () {
                 dots: false,
             }
         }]
-
     });
+
+    $('.FairyTail__Slider').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots: false,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                dots: false,
+            }
+        }]
+    });
+    $('.OurTrip_Slider').slick({
+        autoplay: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots: false,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                dots: false,
+            }
+        }]
+    });
+
+    
     //bURGER MENU
 
 
@@ -23,12 +55,7 @@ $(document).ready(function () {
 
     });
 
-    //Sliders_in_PopUps
-    $('.pop_up__slider').slick({
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-    });
+
 
 
     //adding the action to ScrollPAge

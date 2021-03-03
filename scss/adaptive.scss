@@ -81,7 +81,7 @@
     }
   }
   .OurTrip {
-    .onescreen .container__item_second {
+     .container__item_second {
       .days {
         height: 675px;
         .text__blok {
@@ -147,6 +147,37 @@
       }
     }
   }
+  
+  .Price {
+    .container {
+      height: 70%;
+      .container__item__second {
+        padding-top: 0;
+        margin: 0;
+        .blok__title {
+          padding-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 27px;
+        }
+        .blok_second {
+          .bigBalloon {
+            top: -38%;
+            right: 7%;
+          }
+          .smallBallon {
+            top: 91%;
+            right: 35%;
+          }
+          .smallBallon__second {
+            top: 71%;
+            right: 14%;
+          }
+        }
+      }
+    }
+  }
   .Attractions {
     .Slider {
       .item {
@@ -161,38 +192,6 @@
           p {
             font-size: 20px;
             line-height: 27px;
-          }
-        }
-      }
-    }
-  }
-  .Price {
-    .container {
-      height: 70%;
-      .container__item__second {
-        padding-top: 0;
-        margin: 0;
-        .blok__title {
-          padding-bottom: 20px;
-        }
-        p {
-          font-size: 20px;
-          line-height: 27px;
-        }
-        .blok_first {
-        }
-        .blok_second {
-          .bigBalloon {
-            top: -38%;
-            right: 7%;
-          }
-          .smallBallon {
-            top: 91%;
-            right: 35%;
-          }
-          .smallBallon__second {
-            top: 71%;
-            right: 14%;
           }
         }
       }

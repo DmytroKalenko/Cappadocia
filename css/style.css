@@ -19,17 +19,35 @@ body a {
   color: black;
 }
 
-.section2 {
-  background-color: yellow;
+.parallax {
   position: relative;
-  height: 800px;
-  background-image: url(../imgs/backgrounds/Cappad.jpg);
+  height: 700px;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-
-.section {
-  position: relative;
+.parallax.first {
+  background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
+}
+.parallax.second {
+  background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
+}
+.parallax.threeth {
+  background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
+}
+.parallax.fourth {
+  background-image: url(../imgs/backgrounds/ihlara-valley-1920x700-capadocia.jpg);
+}
+.parallax.fifth {
+  background-image: url(../imgs/backgrounds/ortahisar-1920x700-capadocia.jpg);
+}
+.parallax.sixth {
+  background-image: url(../imgs/backgrounds/sunset-point-1920x700-capadocia.jpg);
+}
+.parallax.seventh {
+  background-image: url(../imgs/backgrounds/valle-palomas-1920x700-capadocia.jpg);
+  z-index: 1;
 }
 
 p {
@@ -45,9 +63,6 @@ img {
   max-width: 2000px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .container.Pop_up {
   max-width: 60%;
@@ -60,8 +75,6 @@ img {
 }
 .container.Pop_up .pop_up__contant {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   height: 100%;
 }
 .container.Pop_up .pop_up__contant input {
@@ -93,13 +106,17 @@ img {
   line-height: 30px;
   height: 60%;
 }
-.container.Pop_up .pop_up__contant .main__contant .pop_up__slider {
-  height: 60%;
-}
 .container.Pop_up .pop_up__contant .main__contant .RoomEquipment {
   height: 40%;
   margin-top: 10px;
   padding: 0;
+}
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0;
 }
 
 .title {
@@ -119,7 +136,7 @@ img {
 }
 
 .container__title {
-  padding: 70px;
+  padding: 0 70px 70px;
 }
 
 input {
@@ -143,21 +160,7 @@ input {
   position: relative;
 }
 
-.Slider {
-  width: 42%;
-  position: relative;
-  min-width: 0;
-  height: 582px;
-}
-.Slider .slick-list {
-  overflow: hidden;
-  height: 100%;
-}
-.Slider .slick-track {
-  display: flex;
-  height: 100%;
-}
-.Slider .slick-arrow {
+.Main_Slider .slick-arrow {
   position: absolute;
   z-index: 2000;
   top: 50%;
@@ -174,37 +177,24 @@ input {
   transition: all 0.5s;
   cursor: pointer;
 }
-.Slider .slick-arrow:hover {
+.Main_Slider .slick-arrow:hover {
   transform: scale(1.25);
   top: 45%;
 }
-.Slider .slick-prev.slick-arrow {
+.Main_Slider .slick-prev.slick-arrow {
   left: 0;
   background-image: url("../imgs/icons/prev_arrow.svg");
 }
-.Slider .slick-next.slick-arrow {
+.Main_Slider .slick-next.slick-arrow {
   right: 0;
   background-image: url("../imgs/icons/next_arrow.svg");
-}
-.Slider img {
-  width: 100%;
-  max-height: 100%;
-}
-.Slider .slick-dots {
-  display: none;
-}
-.Slider .slick-dots li {
-  list-style: none;
-}
-.Slider .slick-dots li button {
-  display: none;
 }
 
 .UPButton {
   display: block;
   height: 70px;
   width: 70px;
-  position: absolute;
+  position: fixed;
   right: 6%;
   bottom: 5%;
   background-image: url(../imgs/icons/UP.png);
@@ -227,15 +217,18 @@ input {
 .header {
   color: white;
 }
-.header .Slider {
+.header .Main_Slider {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
-.header .Slider img {
+.header .Main_Slider .slick-list .slick-track {
+  display: flex;
+}
+.header .Main_Slider .slick-list .slick-track .slick-slide img {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   border-radius: 0;
   filter: brightness(75%);
@@ -394,17 +387,29 @@ input {
   z-index: 1;
   background-color: white;
 }
-.FairyTail .onescreen .container .container__title .title {
+.FairyTail.container__inner .container__title .title {
   padding-left: 10%;
 }
-.FairyTail .onescreen .container .container__title .subtitle {
+.FairyTail.container__inner .container__title .subtitle {
   padding-left: 19%;
 }
-.FairyTail .onescreen .container .FairyTail__item_second {
+.FairyTail.container__inner .FairyTail__content {
   display: flex;
   min-width: 0;
 }
-.FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+.FairyTail.container__inner .FairyTail__content .FairyTail__Slider {
+  width: 42%;
+}
+.FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list {
+  overflow: hidden;
+}
+.FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list .slick-track {
+  display: flex;
+}
+.FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list .slick-track .slick-slide img {
+  width: 100%;
+}
+.FairyTail.container__inner .FairyTail__content .FairyTail.text {
   width: 58%;
   margin-left: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -414,58 +419,204 @@ input {
   max-width: 1200px;
   padding: 20px;
 }
-.FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text p + p {
+.FairyTail.container__inner .FairyTail__content .FairyTail.text p + p {
   padding-top: 50px;
 }
 
-.OurTrip .onescreen .subtitle {
+.OurTrip .subtitle {
   left: 7%;
 }
-.OurTrip .onescreen .container__title .container.buttom,
-.OurTrip .onescreen .container__title .container.text {
+.OurTrip .container__title .container.buttom,
+.OurTrip .container__title .container.text {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.OurTrip .onescreen .container__title .container.buttom {
+.OurTrip .container__title .container.buttom {
   margin-top: 70px;
 }
-.OurTrip .onescreen .container__item_second {
+.OurTrip .container__item_second {
   display: flex;
 }
-.OurTrip .onescreen .container__item_second .days {
+.OurTrip .container__item_second .days {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 70%;
   justify-items: center;
+  align-items: center;
 }
-.OurTrip .onescreen .container__item_second .days .text__blok {
+.OurTrip .container__item_second .days .text__blok {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   padding: 20px;
-  width: 400px;
+  max-width: 400px;
   max-height: 350px;
 }
-.OurTrip .onescreen .container__item_second .days .text__blok .text__title {
+.OurTrip .container__item_second .days .text__blok .text__title {
   font-size: 35px;
   text-align: center;
   padding-bottom: 10px;
 }
-.OurTrip .onescreen .container__item_second .our__slider {
-  height: 900px;
-  width: 84%;
+.OurTrip .container__item_second .OurTrip_Slider {
+  width: 30%;
+}
+.OurTrip .container__item_second .OurTrip_Slider .slick-list {
+  overflow: hidden;
+}
+.OurTrip .container__item_second .OurTrip_Slider .slick-list .slick-track {
+  display: flex;
+}
+.OurTrip .container__item_second .OurTrip_Slider .slick-list .slick-track .slick-slide img {
+  width: 100%;
+}
+
+.Price {
+  display: flex;
+  align-items: center;
+}
+.Price .container__inner {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+.Price .container__inner .title {
+  margin-top: 30px;
+}
+.Price .subtitle {
+  left: 110px;
+}
+.Price .container__item__second {
+  display: flex;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 70px;
+}
+.Price .container__item__second .blok__title {
+  font-weight: bold;
+  padding-bottom: 50px;
+  font-size: 26px;
+}
+.Price .container__item__second .blok_first,
+.Price .container__item__second .blok_second {
+  position: relative;
+  width: 50%;
+}
+.Price .container__item__second .blok_first p + p,
+.Price .container__item__second .blok_second p + p {
+  padding-top: 20px;
+}
+.Price .container__item__second .blok_first .bigBalloon,
+.Price .container__item__second .blok_second .bigBalloon {
+  position: absolute;
+  top: -60%;
+  right: 7%;
+}
+.Price .container__item__second .blok_first .smallBallon,
+.Price .container__item__second .blok_second .smallBallon {
+  position: absolute;
+  top: 15%;
+  right: 30%;
+}
+.Price .container__item__second .blok_first .smallBallon__second,
+.Price .container__item__second .blok_second .smallBallon__second {
+  position: absolute;
+  top: 50%;
+  right: 19%;
+}
+.Price .container__item__second .blok_second {
+  padding-left: 70px;
+}
+
+.Attractions {
+  height: 100%;
   position: relative;
 }
-.OurTrip .onescreen .container__item_second .our__slider .slider__item {
-  width: 100%;
-  height: 100%;
+.Attractions .title {
+  margin-bottom: 30px;
 }
-.OurTrip .onescreen .container__item_second .our__slider .slider__item img {
-  width: 100%;
-  height: 100%;
+.Attractions .Slider {
+  width: 65%;
+  max-height: 80%;
+  background-color: white;
+  margin: 0 auto;
 }
-.OurTrip .onescreen .container__item_second .Slider {
-  height: 900px;
+.Attractions .Slider .slick-list {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Attractions .Slider .item {
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+}
+.Attractions .Slider .item .item__text {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+.Attractions .Slider .item .item__text.text__title {
+  padding: 20px;
+}
+.Attractions .Slider .item .item__text p {
+  font-size: 27px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+.Attractions .Slider .item .item__text ul {
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+.Attractions .Slider .item .text__tittle {
+  font-size: 48px;
+}
+.Attractions .Slider .item .item__pictures {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.Attractions .Slider .slick-prev.slick-arrow {
+  left: -100px;
+}
+.Attractions .Slider .slick-next.slick-arrow {
+  right: -100px;
+}
+.Attractions .Slider img {
+  width: 100%;
+  border-radius: 0;
+}
+.Attractions .Slider .slick-dots {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  z-index: 999;
+}
+.Attractions .Slider .slick-dots li {
+  display: inline-block;
+}
+.Attractions .Slider .slick-dots li.slick-active button {
+  background-color: #7e7e81;
+}
+.Attractions .Slider .slick-dots li button {
+  display: block;
+  height: 10px;
+  width: 10px;
+  font-size: 0;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  margin-right: 5px;
 }
 
 .Hotel .Pop-up {
@@ -569,7 +720,7 @@ input {
 .Hotel .container__item__second .text {
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
+  margin-left: 67px;
   position: relative;
 }
 .Hotel .container__item__second .text .text_images {
@@ -640,152 +791,6 @@ input {
   padding-top: 20px;
 }
 
-.Price {
-  display: flex;
-  align-items: center;
-}
-.Price .container {
-  height: auto;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
-}
-.Price .subtitle {
-  left: 110px;
-}
-.Price .container__item__second {
-  display: flex;
-  font-size: 21px;
-  line-height: 35px;
-  padding-top: 100px;
-  padding-left: 70px;
-  margin-bottom: 150px;
-}
-.Price .container__item__second .blok__title {
-  font-weight: bold;
-  padding-bottom: 50px;
-  font-size: 26px;
-}
-.Price .container__item__second .blok_first,
-.Price .container__item__second .blok_second {
-  position: relative;
-  width: 50%;
-}
-.Price .container__item__second .blok_first p + p,
-.Price .container__item__second .blok_second p + p {
-  padding-top: 20px;
-}
-.Price .container__item__second .blok_first .bigBalloon,
-.Price .container__item__second .blok_second .bigBalloon {
-  position: absolute;
-  top: -60%;
-  right: 7%;
-}
-.Price .container__item__second .blok_first .smallBallon,
-.Price .container__item__second .blok_second .smallBallon {
-  position: absolute;
-  top: 15%;
-  right: 30%;
-}
-.Price .container__item__second .blok_first .smallBallon__second,
-.Price .container__item__second .blok_second .smallBallon__second {
-  position: absolute;
-  top: 50%;
-  right: 19%;
-}
-.Price .container__item__second .blok_second {
-  padding-left: 70px;
-}
-
-.Attractions {
-  height: 100%;
-  position: relative;
-}
-.Attractions .title {
-  top: 70px;
-}
-.Attractions .Slider {
-  width: 65%;
-  max-height: 80%;
-  background-color: white;
-  margin: 0 auto;
-  height: 750px;
-}
-.Attractions .Slider .slick-list {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Attractions .Slider .item {
-  display: flex;
-  padding: 20px;
-  padding-left: 0;
-}
-.Attractions .Slider .item .item__text {
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: justify;
-}
-.Attractions .Slider .item .item__text.text__title {
-  padding: 20px;
-}
-.Attractions .Slider .item .item__text p {
-  padding-top: 20px;
-}
-.Attractions .Slider .item .item__text ul {
-  font-size: 18px;
-  line-height: 25px;
-  padding-top: 20px;
-}
-.Attractions .Slider .item .text__tittle {
-  font-size: 48px;
-}
-.Attractions .Slider .item .item__pictures {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-}
-.Attractions .Slider .slick-prev.slick-arrow {
-  left: -100px;
-}
-.Attractions .Slider .slick-next.slick-arrow {
-  right: -100px;
-}
-.Attractions .Slider img {
-  width: 100%;
-  border-radius: 0;
-}
-.Attractions .Slider .slick-dots {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  right: 35px;
-  z-index: 999;
-}
-.Attractions .Slider .slick-dots li {
-  display: inline-block;
-}
-.Attractions .Slider .slick-dots li.slick-active button {
-  background-color: #7e7e81;
-}
-.Attractions .Slider .slick-dots li button {
-  display: block;
-  height: 10px;
-  width: 10px;
-  font-size: 0;
-  border-radius: 50%;
-  padding: 0;
-  border: none;
-  margin-right: 5px;
-}
-
 .BookNow {
   position: relative;
   z-index: 1;
@@ -834,6 +839,7 @@ input {
 .BookNow .container__item__threeth {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .BookNow .container__item__threeth .blok__text {
   position: relative;
@@ -883,8 +889,8 @@ input {
   width: 50%;
 }
 .BookNow .container__item__threeth .photo img {
-  width: 600px;
-  height: 800px;
+  max-width: 600px;
+  max-height: 800px;
   border-radius: 30px;
 }
 .BookNow form input:last-child,
