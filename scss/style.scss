@@ -23,6 +23,9 @@ body {
     text-decoration: none;
     color: black;
   }
+  &.NOScroll {
+    overflow: hidden;
+  }
 }
 
 .parallax {
@@ -34,6 +37,7 @@ body {
   background-size: cover;
   &.first {
     background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
+    z-index: 1001;
   }
   &.second {
     background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
@@ -69,56 +73,6 @@ img {
   max-width: 2000px;
   margin: 0 auto;
   position: relative;
-
-  &.Pop_up {
-    max-width: 60%;
-    max-height: 80%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 30px;
-    .pop_up__contant {
-      position: relative;
-
-      height: 100%;
-      input {
-        padding-left: 0px;
-        width: 90px !important;
-        border: 1px solid white;
-        background-color: $buttons;
-        color: white;
-        transition: all 0.5s;
-        height: 24px;
-        font-size: 13px;
-        cursor: pointer;
-        &:hover {
-          color: $buttons;
-          background-color: white;
-          border: 1px solid $buttons;
-        }
-      }
-      .contant__head {
-        font-size: 25px;
-      }
-      .main__contant {
-        margin-top: 10px;
-        position: relative;
-        .pop_up__text {
-          padding: 10px;
-          font-size: 22px;
-          line-height: 30px;
-          height: 60%;
-        }
-
-        .RoomEquipment {
-          height: 40%;
-          margin-top: 10px;
-          padding: 0;
-        }
-      }
-    }
-  }
 }
 .container__inner {
   display: flex;
@@ -209,10 +163,84 @@ input {
   background-image: url(../imgs/icons/UP.png);
   background-size: cover;
   background-position: center;
-  z-index: 4;
+  z-index: 1000;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.Pop_up {
+  display: none;
+  &.Active {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 1002;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(8, 8, 8, 0.493);
+    font-size: 30px;
+    line-height: 35px;
+    transition: all 0.5s;
+    .Pop_up__window {
+      background-color: white;
+      width: 50%;
+      height: 65%;
+      position: relative;
+      padding:20px;
+      display: grid;
+      .window__title {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+      .ClosePop-up{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .Pop_up__slider {
+        width: 100%;
+        position: relative;
+        // min-width: 0;
+        .slick-list {
+          overflow: hidden;
+     
+          // height: 100%;
+          .slick-track {
+            display: flex;
+      
+            // height: 100%;
+            .slick-slide {
+              // position: relative;
+              // display: flex;
+              // justify-content: center;
+              // align-items: center;
+             
+              img {
+                height: 200px;
+                width: 200px;
+             
+                // border-radius: 0;
+                // height: 300px;
+                // width: 200px;
+              }
+            }
+          }
+        }
+        .slick-dots{
+          li{
+            display: inline-block;
+            margin-left: 5px;
+
+          }
+        }
+      }
+      .about__room{
+        text-align: center;
+        ul{list-style: none;}
+      }
+    }
+  }
 }
 
 .header__body {
@@ -225,6 +253,7 @@ input {
 
 .header {
   color: white;
+  z-index: 1001;
   .Main_Slider {
     position: absolute;
     width: 100%;
@@ -557,15 +586,25 @@ input {
   .title {
     margin-bottom: 30px;
   }
-  .Slider {
+  .Attractions__Slider {
     width: 65%;
     max-height: 80%;
-    background-color: white;
     margin: 0 auto;
+    position: relative;
 
     .slick-list {
+      overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          img {
+            // width: 100%;
+          }
+        }
+      }
     }
+
     .item {
       display: flex;
       padding: 20px;
@@ -618,7 +657,7 @@ input {
     .slick-dots {
       display: block;
       position: absolute;
-      bottom: 20px;
+      bottom: 6%;
       right: 35px;
       z-index: 999;
     }
@@ -642,94 +681,6 @@ input {
 }
 
 .Hotel {
-  .Pop-up {
-    display: none;
-    background-color: #000000bd;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    .contant__head {
-      font-size: 32px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .main__contant {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 41px;
-      .pop_up__text {
-        width: 30%;
-        font-size: 24px;
-        line-height: 33px;
-        padding: 20px;
-      }
-      .pop_up__slider {
-        position: relative;
-        width: 70%;
-        height: 100%;
-        & .slick-list {
-          overflow: hidden;
-          height: 100%;
-        }
-        & .slick-list.draggable,
-        & .slick-track {
-          height: 100%;
-          display: flex;
-        }
-        & .slick-arrow {
-          position: absolute;
-          z-index: 2000;
-          top: 50%;
-          font-size: 0;
-          height: 40px;
-          width: 40px;
-          transform: translateY(-50%);
-          border: none;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-color: transparent;
-          transition: all 0.5s;
-          cursor: pointer;
-          &:hover {
-            transform: scale(1.25);
-            top: 45%;
-          }
-        }
-        & .slick-prev.slick-arrow {
-          background-image: url("../imgs/icons/prev_arrow.svg");
-        }
-        & .slick-next.slick-arrow {
-          right: 0;
-          background-image: url("../imgs/icons/next_arrow.svg");
-        }
-        img {
-          border-radius: 0;
-          height: 100%;
-        }
-      }
-      .RoomEquipment {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        padding: 0 70px;
-        margin-top: 60px;
-        .RoomEquipment__item {
-          display: flex;
-          align-items: center;
-          & .item__text {
-            padding-left: 20px;
-          }
-          & img {
-            height: 40px;
-            width: 40px;
-          }
-        }
-      }
-    }
-  }
   .subtitle {
     left: 112px;
   }

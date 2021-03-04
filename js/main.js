@@ -45,6 +45,26 @@ $(document).ready(function () {
             }
         }]
     });
+    $('.Attractions__Slider').slick({
+        autoplay: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots: true,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                dots: false,
+            }
+        }]
+    });
+
+    $('.Pop_up__slider').slick({
+        arrows: false,
+        dots: true,
+    });
 
     
     //bURGER MENU
@@ -55,34 +75,16 @@ $(document).ready(function () {
 
     });
 
+    $('.blok.first').on('click', function () {
+        $('.Pop_up').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+    });
 
-
-
-    //adding the action to ScrollPAge
-    $(document).on('click', '#UPButton', function () {
-        fullpage_api.moveTo('page1');
+    $('.ClosePop-up').on('click', function () {
+        $('.Pop_up').removeClass("Active");
+        $('body').removeClass("NOScroll");
     });
-    $(document).on('click', '#Our_trip', function () {
-        fullpage_api.moveTo('page3', 1);
-    });
-    $(document).on('click', '#FairyTail', function () {
-        fullpage_api.moveTo('page2', 1);
-    });
-    $(document).on('click', '#Hotel', function () {
-        fullpage_api.moveTo('page4', 1);
-    });
-    $(document).on('click', '#Attractions', function () {
-        fullpage_api.moveTo('page5', 1);
-    });
-    $(document).on('click', '#Price', function () {
-        fullpage_api.moveTo('page6', 1);
-    });
-    $(document).on('click', '#BookNow', function () {
-        fullpage_api.moveTo('page7', 1);
-    });
-    $(document).on('click', '#Contacts', function () {
-        fullpage_api.moveTo('page8', 1);
-    });
+  
 
 
 });
