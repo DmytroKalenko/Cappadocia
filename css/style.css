@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto";
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -181,11 +182,12 @@ input {
 }
 .Pop_up.Active .Pop_up__window {
   background-color: white;
-  width: 50%;
+  width: 80%;
   height: 65%;
   position: relative;
   padding: 20px;
-  display: grid;
+  display: flex;
+  min-width: 0;
 }
 .Pop_up.Active .Pop_up__window .window__title {
   font-size: 35px;
@@ -199,20 +201,66 @@ input {
 .Pop_up.Active .Pop_up__window .Pop_up__slider {
   width: 100%;
   position: relative;
+  min-width: 0;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list {
   overflow: hidden;
+  height: 100%;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list .slick-track {
   display: flex;
+  height: 100%;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list .slick-track .slick-slide img {
-  height: 200px;
-  width: 200px;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  list-style: none;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li {
   display: inline-block;
-  margin-left: 5px;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li.slick-active button {
+  background-color: #7a7a7a;
+  border: 1px solid white;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li + li {
+  margin-left: 10px;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots button {
+  font-size: 0;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  border: 1px solid #797979;
+  cursor: pointer;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-prev {
+  left: 0;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-next {
+  right: 0;
+}
+.Pop_up.Active .Pop_up__window .Pop_up__slider img {
+  border-radius: 0;
 }
 .Pop_up.Active .Pop_up__window .about__room {
   text-align: center;
