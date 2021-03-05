@@ -73,7 +73,7 @@ body {
     z-index: 1001;
   }
   &.second {
-    background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.webp);
   }
   &.threeth {
     background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
@@ -198,6 +198,7 @@ input {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-size: 0;
 }
 .Pop_up {
   display: none;
@@ -943,6 +944,7 @@ input {
       position: absolute;
       top: 350px;
       right: 163px;
+      label{font-size: 0;}
       h1 {
         display: block;
         width: 100%;
@@ -959,7 +961,7 @@ input {
       input + input {
         margin-top: 20px;
       }
-    }
+    }b
     .photo {
       position: relative;
       width: 50%;
@@ -1089,8 +1091,10 @@ input {
         list-style: none;
         display: flex;
         padding-top: 55px;
+        a{font-size: 0;}
         li + li {
           margin-left: 15px;
+          
         }
       }
       img {
