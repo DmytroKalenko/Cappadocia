@@ -617,7 +617,7 @@ input {
   display: flex;
   font-size: 21px;
   line-height: 35px;
-  padding: 70px;
+  padding: 50px;
 }
 .Price .container__item__second .blok__title {
   font-weight: bold;
@@ -636,20 +636,20 @@ input {
 .Price .container__item__second .blok_first .bigBalloon,
 .Price .container__item__second .blok_second .bigBalloon {
   position: absolute;
-  top: -60%;
-  right: 7%;
+  top: -44%;
+  right: 0;
 }
 .Price .container__item__second .blok_first .smallBallon,
 .Price .container__item__second .blok_second .smallBallon {
   position: absolute;
-  top: 15%;
-  right: 30%;
+  top: 30%;
+  right: 20%;
 }
 .Price .container__item__second .blok_first .smallBallon__second,
 .Price .container__item__second .blok_second .smallBallon__second {
   position: absolute;
-  top: 50%;
-  right: 19%;
+  top: 65%;
+  right: 5%;
 }
 .Price .container__item__second .blok_second {
   padding-left: 70px;
@@ -671,14 +671,17 @@ input {
 .Attractions .Attractions__Slider .slick-list {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 .Attractions .Attractions__Slider .slick-list .slick-track {
   display: flex;
+  height: 100%;
 }
 .Attractions .Attractions__Slider .item {
   display: flex;
   padding: 20px;
   padding-left: 0;
+  height: 100%;
 }
 .Attractions .Attractions__Slider .item .item__text {
   width: 50%;
@@ -693,17 +696,17 @@ input {
   padding: 20px;
 }
 .Attractions .Attractions__Slider .item .item__text p {
-  font-size: 27px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 34px;
   padding-top: 20px;
 }
 .Attractions .Attractions__Slider .item .item__text ul {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 34px;
   padding-top: 20px;
 }
 .Attractions .Attractions__Slider .item .text__tittle {
-  font-size: 48px;
+  font-size: 35px;
 }
 .Attractions .Attractions__Slider .item .item__pictures {
   width: 50%;
@@ -727,7 +730,7 @@ input {
   background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
 .Attractions .Attractions__Slider img {
-  width: 100%;
+  max-width: 100%;
 }
 .Attractions .Attractions__Slider .slick-dots {
   display: block;
@@ -759,10 +762,11 @@ input {
 .Hotel .container__item__second {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
 }
 .Hotel .container__item__second .photo {
   position: relative;
-  height: 100%;
 }
 .Hotel .container__item__second .text {
   display: flex;
@@ -926,9 +930,6 @@ input {
 .BookNow .container__item__threeth form input + input {
   margin-top: 20px;
 }
-.BookNow .container__item__threeth .photoTOadaptive {
-  display: none;
-}
 .BookNow .container__item__threeth .photo {
   position: relative;
   width: 50%;
@@ -1069,6 +1070,7 @@ input {
   height: 50px;
   width: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
