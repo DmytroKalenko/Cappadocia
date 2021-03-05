@@ -130,7 +130,7 @@ input {
   width: 302px !important;
   height: 61px;
   background: transparent;
-  border: 1px solid #e2ab3f;
+  border: 1px solid #ca6b2d;
   border-radius: 20px;
   display: inline-block;
   font-size: 23px;
@@ -291,10 +291,26 @@ input {
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-next.slick-arrow {
   background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
-.Pop_up.Active .Pop_up__window .about__room {
+.Pop_up.Active .Pop_up__window .windows__content {
+  display: flex;
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.Pop_up.Active .Pop_up__window .windows__content .window__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+.Pop_up.Active .Pop_up__window .windows__content .about__room {
+  margin-top: 30px;
   text-align: center;
 }
-.Pop_up.Active .Pop_up__window .about__room ul {
+.Pop_up.Active .Pop_up__window .windows__content .about__room ul {
   list-style: none;
 }
 .Pop_up.Active .Pop_up__window__Book {
@@ -313,7 +329,6 @@ input {
 .Pop_up.Active .Pop_up__window__Book .windows__content .photo_popup {
   width: 50%;
   height: 100%;
-  border: 2px solid;
   position: relative;
   overflow: hidden;
 }
@@ -329,6 +344,8 @@ input {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 20px;
+  line-height: 30px;
 }
 .Pop_up.Active .Pop_up__window__Book .windows__content .window__text span {
   display: block;
@@ -926,16 +943,16 @@ input {
   margin: 20px auto 0 auto;
   width: 280px !important;
   border: 1px solid white;
-  background-color: #e2ab3f;
+  background-color: #ca6b2d;
   color: white;
   transition: all 0.5s;
   cursor: pointer;
 }
 .BookNow form input:last-child:hover,
 .BookNow input.close:hover {
-  color: #e2ab3f;
+  color: #ca6b2d;
   background-color: white;
-  border: 1px solid #e2ab3f;
+  border: 1px solid #ca6b2d;
 }
 
 .footer div.balloon {
@@ -1054,6 +1071,12 @@ input {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
 @keyframes anim {
   0% {
     bottom: -10%;
