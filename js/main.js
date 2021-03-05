@@ -145,4 +145,16 @@ $(document).ready(function () {
         $('body').removeClass("NOScroll");
     });
 
+    //Book now
+    $('.OpenPop_upBtn').on('click', function () {
+        $('.Pop_up.Book').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+    
+    });
+
+    $('.ClosePop-up.Sixth').on('click', function () {
+        $('.Pop_up.Book').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+
 });

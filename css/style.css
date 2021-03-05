@@ -23,6 +23,39 @@ body.NOScroll {
   overflow: hidden;
 }
 
+.menu {
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  font-size: 26px;
+  width: 100%;
+}
+.menu ul li {
+  display: inline-block;
+  margin-right: 52px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  border-bottom: 2px solid white;
+}
+.menu ul li a {
+  color: white;
+}
+
+.menu__backgrount__blok {
+  position: fixed;
+  z-index: 1000;
+  background-color: #ca6b2d;
+  padding: 2%;
+  width: 100%;
+}
+
 .parallax {
   position: relative;
   height: 700px;
@@ -58,10 +91,6 @@ body.NOScroll {
 p {
   font-size: 32px;
   line-height: 40px;
-}
-
-img {
-  border-radius: 30px;
 }
 
 .container {
@@ -259,22 +288,49 @@ input {
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-next {
   right: 0;
 }
-.Pop_up.Active .Pop_up__window .Pop_up__slider img {
-  border-radius: 0;
-}
 .Pop_up.Active .Pop_up__window .about__room {
   text-align: center;
 }
 .Pop_up.Active .Pop_up__window .about__room ul {
   list-style: none;
 }
-
-.header__body {
-  display: none;
+.Pop_up.Active .Pop_up__window__Book {
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  padding: 20px;
 }
-
-.header__list {
-  display: none;
+.Pop_up.Active .Pop_up__window__Book .windows__content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+}
+.Pop_up.Active .Pop_up__window__Book .windows__content .photo_popup {
+  width: 50%;
+  height: 100%;
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+}
+.Pop_up.Active .Pop_up__window__Book .windows__content .photo_popup img {
+  height: 100%;
+}
+.Pop_up.Active .Pop_up__window__Book .windows__content .window__text {
+  padding: 10px;
+  text-align: justify;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Pop_up.Active .Pop_up__window__Book .windows__content .window__text span {
+  display: block;
+  text-align: center;
+  font-size: 25px;
 }
 
 .header {
@@ -294,7 +350,6 @@ input {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
-  border-radius: 0;
   filter: brightness(75%);
 }
 .header .container {
@@ -302,31 +357,6 @@ input {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: normal;
-}
-.header .container .container__item:first-child {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-top: 4%;
-  font-size: 26px;
-  z-index: 1;
-}
-.header .container .container__item:first-child .menu__first ul li,
-.header .container .container__item:first-child .menu__second ul li {
-  display: inline;
-  margin-right: 52px;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 10px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.header .container .container__item:first-child .menu__first ul li:hover,
-.header .container .container__item:first-child .menu__second ul li:hover {
-  border-bottom: 2px solid white;
-}
-.header .container .container__item:first-child .menu__first ul li a,
-.header .container .container__item:first-child .menu__second ul li a {
-  color: white;
 }
 .header .container .container__item:nth-child(2) {
   position: relative;
@@ -661,7 +691,6 @@ input {
 }
 .Attractions .Attractions__Slider img {
   width: 100%;
-  border-radius: 0;
 }
 .Attractions .Attractions__Slider .slick-dots {
   display: block;
@@ -811,7 +840,6 @@ input {
 }
 .BookNow .pop_up .pop_up__content img {
   width: 500px;
-  border-radius: 0;
 }
 .BookNow .container {
   height: auto;
@@ -824,7 +852,6 @@ input {
 }
 .BookNow .container__item__threeth .blok__text {
   position: relative;
-  padding-top: 105px;
   width: 50%;
 }
 .BookNow .container__item__threeth .blok__text .title,
@@ -872,7 +899,6 @@ input {
 .BookNow .container__item__threeth .photo img {
   max-width: 600px;
   max-height: 800px;
-  border-radius: 30px;
 }
 .BookNow form input:last-child,
 .BookNow input.close {

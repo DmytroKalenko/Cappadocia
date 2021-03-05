@@ -28,7 +28,40 @@ body {
     overflow: hidden;
   }
 }
+.menu {
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%    ;
+  font-size: 26px;
+  width: 100%;
+  
 
+  ul li {
+    display: inline-block;
+    margin-right: 52px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    & a {
+      color: white;
+    }
+  }
+}
+
+.menu__backgrount__blok{
+  position: fixed;
+  z-index: 1000;
+  background-color: #ca6b2d;
+  padding: 2%;
+  width: 100%;
+}
 .parallax {
   position: relative;
   height: 700px;
@@ -64,10 +97,6 @@ body {
 p {
   font-size: 32px;
   line-height: 40px;
-}
-
-img {
-  border-radius: 30px;
 }
 
 .container {
@@ -265,9 +294,6 @@ input {
         .slick-arrow.slick-next {
           right: 0;
         }
-        img{
-          border-radius: 0;
-        }
       }
       .about__room {
         text-align: center;
@@ -276,15 +302,45 @@ input {
         }
       }
     }
+    .Pop_up__window__Book {
+      background-color: white;
+      width: 50%;
+      height: 50%;
+      position: relative;
+      padding: 20px;
+      .windows__content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 100%;
+        .photo_popup {
+          width: 50%;
+          height: 100%;
+          border: 2px solid;
+          position: relative;
+          overflow: hidden;
+          img {
+            height: 100%;
+          }
+        }
+        .window__text {
+          padding: 10px;
+          text-align: justify;
+          width: 50%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+          }
+        }
+      }
+    }
   }
-}
-
-.header__body {
-  display: none;
-}
-
-.header__list {
-  display: none;
 }
 
 .header {
@@ -303,7 +359,6 @@ input {
             height: 100vh;
             width: 100vw;
             object-fit: cover;
-            border-radius: 0;
             filter: brightness(75%);
           }
         }
@@ -315,29 +370,6 @@ input {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: normal;
-    .container__item:first-child {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      padding-top: 4%;
-      font-size: 26px;
-      z-index: 1;
-      .menu__first ul li,
-      .menu__second ul li {
-        display: inline;
-        margin-right: 52px;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 10px;
-        transition: all 0.5s;
-        cursor: pointer;
-        &:hover {
-          border-bottom: 2px solid rgb(255, 255, 255);
-        }
-        & a {
-          color: white;
-        }
-      }
-    }
     .container__item:nth-child(2) {
       position: relative;
       display: flex;
@@ -688,7 +720,6 @@ input {
     }
     img {
       width: 100%;
-      border-radius: 0;
     }
     .slick-dots {
       display: block;
@@ -845,7 +876,6 @@ input {
       }
       img {
         width: 500px;
-        border-radius: 0;
       }
     }
   }
@@ -859,7 +889,6 @@ input {
     width: 100%;
     .blok__text {
       position: relative;
-      padding-top: 105px;
       width: 50%;
       .title,
       .subtitle {
@@ -906,7 +935,6 @@ input {
       img {
         max-width: 600px;
         max-height: 800px;
-        border-radius: 30px;
       }
     }
   }
