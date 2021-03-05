@@ -148,31 +148,36 @@ input {
 }
 
 .Main_Slider .slick-arrow {
-  position: absolute;
-  z-index: 2000;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0;
   height: 70px;
   width: 70px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000;
+  font-size: 0;
   padding: 0;
   border: none;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
   transition: all 0.5s;
   cursor: pointer;
 }
-.Main_Slider .slick-arrow:hover {
-  transform: scale(1.25);
-  top: 45%;
+.slick-arrow:hover {
+  transform: scale(1.15);
+  top: 47%;
 }
-.Main_Slider .slick-prev.slick-arrow {
+
+.slick-prev.slick-arrow {
   left: 0;
   background-image: url("../imgs/icons/prev_arrow.svg");
 }
-.Main_Slider .slick-next.slick-arrow {
+
+.slick-next.slick-arrow {
   right: 0;
   background-image: url("../imgs/icons/next_arrow.svg");
 }
@@ -277,16 +282,14 @@ input {
   cursor: pointer;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
+  height: 50px;
+  width: 50px;
 }
-.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-prev {
-  left: 0;
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-prev.slick-arrow {
+  background-image: url(../imgs/icons/prev_arrowCollor.svg);
 }
-.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-next {
-  right: 0;
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-next.slick-arrow {
+  background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
 .Pop_up.Active .Pop_up__window .about__room {
   text-align: center;
@@ -493,6 +496,8 @@ input {
 }
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider {
   width: 42%;
+  position: relative;
+  min-width: 0;
 }
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list {
   overflow: hidden;
@@ -502,6 +507,10 @@ input {
 }
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list .slick-track .slick-slide img {
   width: 100%;
+}
+.FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-arrow {
+  height: 50px;
+  width: 50px;
 }
 .FairyTail.container__inner .FairyTail__content .FairyTail.text {
   width: 58%;
@@ -514,7 +523,7 @@ input {
   padding: 20px;
 }
 .FairyTail.container__inner .FairyTail__content .FairyTail.text p + p {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .OurTrip .subtitle {
@@ -553,6 +562,7 @@ input {
 }
 .OurTrip .container__item_second .OurTrip_Slider {
   width: 30%;
+  position: relative;
 }
 .OurTrip .container__item_second .OurTrip_Slider .slick-list {
   overflow: hidden;
@@ -562,6 +572,10 @@ input {
 }
 .OurTrip .container__item_second .OurTrip_Slider .slick-list .slick-track .slick-slide img {
   width: 100%;
+}
+.OurTrip .container__item_second .OurTrip_Slider .slick-arrow {
+  height: 50px;
+  width: 50px;
 }
 
 .Price {
@@ -683,11 +697,17 @@ input {
   justify-content: center;
   align-items: center;
 }
+.Attractions .Attractions__Slider .slick-arrow {
+  height: 50px;
+  width: 50px;
+}
 .Attractions .Attractions__Slider .slick-prev.slick-arrow {
   left: -100px;
+  background-image: url(../imgs/icons/prev_arrowCollor.svg);
 }
 .Attractions .Attractions__Slider .slick-next.slick-arrow {
   right: -100px;
+  background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
 .Attractions .Attractions__Slider img {
   width: 100%;
@@ -695,7 +715,7 @@ input {
 .Attractions .Attractions__Slider .slick-dots {
   display: block;
   position: absolute;
-  bottom: 6%;
+  bottom: 2%;
   right: 35px;
   z-index: 999;
 }

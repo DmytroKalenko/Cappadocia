@@ -34,10 +34,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2%    ;
+  padding: 2%;
   font-size: 26px;
   width: 100%;
-  
 
   ul li {
     display: inline-block;
@@ -55,7 +54,7 @@ body {
   }
 }
 
-.menu__backgrount__blok{
+.menu__backgrount__blok {
   position: fixed;
   z-index: 1000;
   background-color: #ca6b2d;
@@ -153,34 +152,36 @@ input {
 
 .Main_Slider {
   .slick-arrow {
-    position: absolute;
-    z-index: 2000;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0;
     height: 70px;
     width: 70px;
-    padding: 0;
-    border: none;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    transition: all 0.5s;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.25);
-      top: 45%;
-    }
   }
-  .slick-prev.slick-arrow {
-    left: 0;
-    background-image: url("../imgs/icons/prev_arrow.svg");
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000;
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.15);
+    top: 47%;
   }
-  .slick-next.slick-arrow {
-    right: 0;
-    background-image: url("../imgs/icons/next_arrow.svg");
-  }
+}
+.slick-prev.slick-arrow {
+  left: 0;
+  background-image: url("../imgs/icons/prev_arrow.svg");
+}
+.slick-next.slick-arrow {
+  right: 0;
+  background-image: url("../imgs/icons/next_arrow.svg");
 }
 
 .UPButton {
@@ -283,16 +284,14 @@ input {
           }
         }
         .slick-arrow {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 2;
+          height: 50px;
+          width: 50px;
         }
-        .slick-arrow.slick-prev {
-          left: 0;
+        .slick-prev.slick-arrow {
+          background-image: url(../imgs/icons/prev_arrowCollor.svg);
         }
-        .slick-arrow.slick-next {
-          right: 0;
+        .slick-next.slick-arrow {
+          background-image: url(../imgs/icons//next_arrowCollor.svg);
         }
       }
       .about__room {
@@ -510,16 +509,24 @@ input {
       min-width: 0;
       .FairyTail__Slider {
         width: 42%;
+        position: relative;
+
+        min-width: 0;
         .slick-list {
           overflow: hidden;
           .slick-track {
             display: flex;
+
             .slick-slide {
               img {
                 width: 100%;
               }
             }
           }
+        }
+        .slick-arrow {
+          height: 50px;
+          width: 50px;
         }
       }
       .FairyTail.text {
@@ -532,7 +539,7 @@ input {
         max-width: 1200px;
         padding: 20px;
         p + p {
-          padding-top: 50px;
+          padding-top: 20px;
         }
       }
     }
@@ -577,6 +584,7 @@ input {
     }
     .OurTrip_Slider {
       width: 30%;
+      position: relative;
       .slick-list {
         overflow: hidden;
         .slick-track {
@@ -587,6 +595,10 @@ input {
             }
           }
         }
+      }
+      .slick-arrow {
+        height: 50px;
+        width: 50px;
       }
     }
   }
@@ -665,14 +677,8 @@ input {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       .slick-track {
         display: flex;
-        .slick-slide {
-          img {
-            // width: 100%;
-          }
-        }
       }
     }
-
     .item {
       display: flex;
       padding: 20px;
@@ -712,11 +718,17 @@ input {
         align-items: center;
       }
     }
+    .slick-arrow {
+      height: 50px;
+      width: 50px;
+    }
     .slick-prev.slick-arrow {
       left: -100px;
+      background-image: url(../imgs/icons/prev_arrowCollor.svg);
     }
     .slick-next.slick-arrow {
       right: -100px;
+      background-image: url(../imgs/icons//next_arrowCollor.svg);
     }
     img {
       width: 100%;
@@ -724,7 +736,7 @@ input {
     .slick-dots {
       display: block;
       position: absolute;
-      bottom: 6%;
+      bottom: 2%;
       right: 35px;
       z-index: 999;
     }
