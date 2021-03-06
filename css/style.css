@@ -69,7 +69,7 @@ body.NOScroll {
   z-index: 1001;
 }
 .parallax.second {
-  background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.webp);
+  background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
 }
 .parallax.threeth {
   background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
@@ -711,6 +711,8 @@ input {
 }
 .Attractions .Attractions__Slider .item .item__pictures {
   width: 50%;
+}
+.Attractions .Attractions__Slider .item .item__pictures picture {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "balqis";
+    src: url("../fonts/balqis.woff") format("woff"),
+      url("../fonts/balqis.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+      url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  }

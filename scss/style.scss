@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "balqis";
-  src: url("../fonts/balqis.woff") format("woff"),
-    url("../fonts/balqis.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
-    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
-}
+    font-family: "balqis";
+    src: url("../fonts/balqis.woff") format("woff"),
+      url("../fonts/balqis.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+      url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  }
 
 $titleColor: #eb1810;
 $buttons: #ca6b2d;
@@ -73,7 +73,7 @@ body {
     z-index: 1001;
   }
   &.second {
-    background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.webp);
+    background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
   }
   &.threeth {
     background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
@@ -732,12 +732,14 @@ input {
       }
       .item__pictures {
         width: 50%;
-        display: flex;
+        picture{
+          display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-items: center;
         justify-content: center;
         align-items: center;
+        }
       }
     }
     .slick-arrow {

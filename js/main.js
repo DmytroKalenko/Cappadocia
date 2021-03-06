@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     $('.FairyTail__Slider').slick({
-        autoplay: false,
+        autoplay: true,
         infinite: true,
         speed: 200,
         fade: true,
