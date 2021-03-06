@@ -153,5 +153,9 @@ $(document).ready(function () {
         $('.Pop_up.Book').removeClass("Active");
         $('body').removeClass("NOScroll");
     });
+    //lazyLoad
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+      });
 
 });
