@@ -7,12 +7,11 @@ $(document).ready(function () {
         speed: 100,
         fade: true,
         cssEase: 'linear',
-        dots: true,
+        dots: false,
         responsive: [{
-            breakpoint: 480,
+            breakpoint: 1051,
             settings: {
                 arrows: false,
-                dots: false,
             }
         }]
     });

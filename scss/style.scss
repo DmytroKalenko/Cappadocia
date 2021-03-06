@@ -68,6 +68,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(2px);
   &.first {
     background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
     z-index: 1001;
