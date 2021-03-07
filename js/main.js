@@ -157,4 +157,15 @@ $(document).ready(function () {
         // Your custom settings go here
       });
 
+    //BURGER___MENU
+    $('.burger').click(function(){
+        $('.burger').toggleClass("Active");
+        $('.menu').toggle()
+    });
+
+    $('.menu ul li').click(function(){
+        $('.burger').removeClass("Active");
+        $('.menu').toggle() 
+    })
+
 });

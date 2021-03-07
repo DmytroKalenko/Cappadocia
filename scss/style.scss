@@ -373,6 +373,7 @@ input {
     .slick-list {
       .slick-track {
         display: flex;
+        width: 100% !important;
         .slick-slide {
           img {
             height: 100vh;
@@ -413,12 +414,12 @@ input {
         position: absolute;
       }
       div.balloon:nth-child(1) {
-        right: 0;
+        right: 20px;
         bottom: 0;
         animation: anim 12s infinite ease-in;
       }
       div.balloon:nth-child(2) {
-        right: 10%;
+        right: 17%;
         bottom: 0;
         animation: anim 12s infinite ease-in;
       }

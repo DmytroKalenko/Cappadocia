@@ -234,6 +234,124 @@
     width: 35%; }
 
   .Pop_up.Active .Pop_up__window {
-    height: 30%; } }
+    height: 30%; }
+
+  .OurTrip .container__item_second .days {
+    grid-row-gap: 20px; }
+
+  div.balloon:nth-child(1) {
+    display: none; } }
+@media (max-width: 851px) {
+  .container {
+    padding: 0 20px; }
+
+  .header .container .container__item__threeth div.balloon:nth-child(1) {
+    right: 23px; }
+
+  .FairyTail.container__inner .container__title .title,
+  .FairyTail.container__inner .container__title .subtitle {
+    padding: 0; }
+
+  .Price .container__inner {
+    width: 100%; }
+    .Price .container__inner .subtitle {
+      left: 0; }
+
+  .OurTrip .subtitle {
+    left: 0; }
+  .OurTrip .container__item_second .OurTrip_Slider {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .slick-arrow:hover {
+    transform: scale(1.2);
+    top: 46%; }
+
+  .menu,
+  .menu__backgrount__blok {
+    display: none; }
+
+  .burger___menu {
+    position: relative;
+    background-color: chocolate;
+    height: 90px;
+    width: 100%;
+    z-index: 1005; }
+    .burger___menu .burger {
+      position: relative;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 60px;
+      background-color: red;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between; }
+      .burger___menu .burger span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 6px;
+        width: 100%;
+        background-color: #1df700; }
+        .burger___menu .burger span::before {
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: -30px;
+          background-color: #f7de00;
+          transition: all .5s; }
+        .burger___menu .burger span::after {
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: 30px;
+          background-color: #0010f7;
+          transition: all .5s; }
+      .burger___menu .burger.Active span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 0;
+        width: 100%;
+        background-color: #003af7; }
+        .burger___menu .burger.Active span::before {
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: 0px;
+          background-color: #15ff00;
+          transform: rotate(-45deg); }
+        .burger___menu .burger.Active span::after {
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: 0px;
+          background-color: #ef00f7;
+          transform: rotate(45deg); }
+
+  .menu {
+    display: none;
+    background-color: chocolate;
+    top: 89px;
+    text-align: center;
+    padding: 0;
+    position: absolute; }
+    .menu ul li {
+      display: block;
+      padding: 10px;
+      margin: 0; }
+
+  .Hotel .container__title .subtitle {
+    left: 0; }
+  .Hotel .container__item__second {
+    grid-template-columns: 1fr; }
+    .Hotel .container__item__second .photo {
+      display: none; } }
 
 /*# sourceMappingURL=adaptive.css.map */
