@@ -1,18 +1,18 @@
 @font-face {
-    font-family: "balqis";
-    src: url("../fonts/balqis.woff") format("woff"),
-      url("../fonts/balqis.woff2") format("woff2");
-  }
-  
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
-      url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
-  }
+  font-family: "balqis";
+  src: url("../fonts/balqis.woff") format("woff"),
+    url("../fonts/balqis.woff2") format("woff2");
+}
 
-$titleColor: #eb1810;
-$buttons: #ca6b2d;
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+}
+
+$titleColor: #d2691e;
+$buttons: #d2691e;
 * {
   box-sizing: border-box;
 }
@@ -215,6 +215,7 @@ input {
     font-size: 30px;
     line-height: 35px;
     transition: all 0.5s;
+    z-index: 2000;
     .Pop_up__window {
       background-color: white;
       width: 80%;
@@ -230,8 +231,13 @@ input {
       }
       .ClosePop-up {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+        z-index: 2;
+        border: none;
+        background-color: chocolate;
+        border-radius: 7px;
       }
       .Pop_up__slider {
         width: 100%;
@@ -355,6 +361,15 @@ input {
             display: block;
             text-align: center;
             font-size: 25px;
+          }
+          button {
+            background-color: #d2691e;
+            color: white;
+            cursor: pointer;
+            border: none;
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
           }
         }
       }
@@ -734,13 +749,13 @@ input {
       }
       .item__pictures {
         width: 50%;
-        picture{
+        picture {
           display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-items: center;
-        justify-content: center;
-        align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-items: center;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -948,7 +963,9 @@ input {
       position: absolute;
       top: 350px;
       right: 163px;
-      label{font-size: 0;}
+      label {
+        font-size: 0;
+      }
       h1 {
         display: block;
         width: 100%;
@@ -965,14 +982,17 @@ input {
       input + input {
         margin-top: 20px;
       }
-    }b
-    .photo {
+    }
+    b .photo {
       position: relative;
       width: 50%;
       img {
         max-width: 600px;
         max-height: 800px;
       }
+    }
+    .photo__mobile {
+      display: none;
     }
   }
   form input:last-child,
@@ -1095,10 +1115,11 @@ input {
         list-style: none;
         display: flex;
         padding-top: 55px;
-        a{font-size: 0;}
+        a {
+          font-size: 0;
+        }
         li + li {
           margin-left: 15px;
-          
         }
       }
       img {

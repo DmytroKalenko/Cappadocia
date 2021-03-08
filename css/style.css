@@ -51,7 +51,7 @@ body.NOScroll {
 .menu__backgrount__blok {
   position: fixed;
   z-index: 1000;
-  background-color: #ca6b2d;
+  background-color: #d2691e;
   padding: 2%;
   width: 100%;
 }
@@ -108,7 +108,7 @@ p {
 }
 
 .title {
-  color: #eb1810;
+  color: #d2691e;
   font-family: "balqis";
   font-size: 90px;
   text-align: center;
@@ -131,7 +131,7 @@ input {
   width: 302px !important;
   height: 61px;
   background: transparent;
-  border: 1px solid #ca6b2d;
+  border: 1px solid #d2691e;
   border-radius: 20px;
   display: inline-block;
   font-size: 23px;
@@ -215,6 +215,7 @@ input {
   font-size: 30px;
   line-height: 35px;
   transition: all 0.5s;
+  z-index: 2000;
 }
 .Pop_up.Active .Pop_up__window {
   background-color: white;
@@ -231,8 +232,13 @@ input {
 }
 .Pop_up.Active .Pop_up__window .ClosePop-up {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  background-color: chocolate;
+  border-radius: 7px;
 }
 .Pop_up.Active .Pop_up__window .Pop_up__slider {
   width: 100%;
@@ -353,6 +359,15 @@ input {
   display: block;
   text-align: center;
   font-size: 25px;
+}
+.Pop_up.Active .Pop_up__window__Book .windows__content .window__text button {
+  background-color: #d2691e;
+  color: white;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .header {
@@ -938,15 +953,16 @@ input {
 .BookNow .container__item__threeth form input + input {
   margin-top: 20px;
 }
-.BookNow .container__item__threeth b
-.photo {
+.BookNow .container__item__threeth b .photo {
   position: relative;
   width: 50%;
 }
-.BookNow .container__item__threeth b
-.photo img {
+.BookNow .container__item__threeth b .photo img {
   max-width: 600px;
   max-height: 800px;
+}
+.BookNow .container__item__threeth .photo__mobile {
+  display: none;
 }
 .BookNow form input:last-child,
 .BookNow input.close {
@@ -954,16 +970,16 @@ input {
   margin: 20px auto 0 auto;
   width: 280px !important;
   border: 1px solid white;
-  background-color: #ca6b2d;
+  background-color: #d2691e;
   color: white;
   transition: all 0.5s;
   cursor: pointer;
 }
 .BookNow form input:last-child:hover,
 .BookNow input.close:hover {
-  color: #ca6b2d;
+  color: #d2691e;
   background-color: white;
-  border: 1px solid #ca6b2d;
+  border: 1px solid #d2691e;
 }
 
 .footer div.balloon {

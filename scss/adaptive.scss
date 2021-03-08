@@ -309,6 +309,13 @@
   div.balloon:nth-child(1) {
     display: none;
   }
+
+  .Pop_up.Active .Pop_up__window {
+    height: 45%;
+  }
+  .Pop_up.Active .Pop_up__window__Book {
+    width: 75%;
+  }
 }
 
 @media (max-width: 851px) {
@@ -324,21 +331,53 @@
       padding: 0;
     }
   }
-
+  .FairyTail.container__inner .FairyTail__content .FairyTail__Slider {
+    width: 65%;
+  }
   .Price .container__inner {
     width: 100%;
     .subtitle {
       left: 0;
     }
+    .container__item__second .blok_second {
+      padding-left: 35px;
+      .bigBalloon {
+        top: -39%;
+        height: 43%;
+        right: 2%;
+      }
+      .smallBallon {
+        width: 14%;
+        top: 57%;
+        right: 37%;
+      }
+    }
+  }
+
+  .Attractions .Attractions__Slider {
+    width: 75%;
   }
   .OurTrip {
     .subtitle {
       left: 0;
     }
-    .container__item_second .OurTrip_Slider {
-      display: flex;
-      justify-content: center;
+    .container__item_second {
+      flex-direction: column-reverse;
       align-items: center;
+      .OurTrip_Slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+      .days {
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        .text__blok {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   .slick-arrow:hover {
@@ -351,47 +390,47 @@
   }
   // START____BURGER___MENU
   .burger___menu {
-    position: relative;
-    background-color: chocolate;
-    height: 90px;
-    width: 100%;
-    z-index: 1005;
+    position: fixed;
+    height: 60px;
+    z-index: 1006;
+    width: auto;
+    right: 0;
 
     .burger {
-      position: relative;
-      right: 0;
+      position: absolute;
+      right: 15px;
       top: 0;
       height: 100%;
       width: 60px;
-      background-color: red;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: space-between;
+
       span {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         height: 6px;
         width: 100%;
-        background-color: rgb(29, 247, 0);
-        
+        background-color: rgba(0, 0, 0, 0.507);
+        border-radius: 9px;
+
         &::before {
           content: "";
           position: absolute;
           height: 6px;
           width: 100%;
-          top: -30px;
-          background-color: rgb(247, 222, 0);
-          transition: all .5s;
+          top: -19px;
+          background-color: rgba(0, 0, 0, 0.507);
+          transition: all 0.5s;
+          border-radius: 9px;
         }
         &::after {
           content: "";
           position: absolute;
           height: 6px;
           width: 100%;
-          top: 30px;
-          background-color: rgb(0, 16, 247);
-          transition: all .5s;
+          top: 17px;
+          background-color: rgba(0, 0, 0, 0.507);
+          transition: all 0.5s;
+          border-radius: 9px;
         }
       }
       &.Active {
@@ -401,16 +440,17 @@
           transform: translateY(-50%);
           height: 0;
           width: 100%;
-          background-color: rgb(0, 58, 247);
-          
+          background-color: rgba(0, 0, 0, 0.507);
+
           &::before {
             content: "";
             position: absolute;
             height: 6px;
             width: 100%;
             top: 0px;
-            background-color: rgb(21, 255, 0);
+            background-color: rgba(0, 0, 0, 0.507);
             transform: rotate(-45deg);
+            border-radius: 9px;
           }
           &::after {
             content: "";
@@ -418,26 +458,39 @@
             height: 6px;
             width: 100%;
             top: 0px;
-            background-color: rgb(239, 0, 247);
+            background-color: rgba(0, 0, 0, 0.507);
             transform: rotate(45deg);
+            border-radius: 9px;
           }
         }
       }
     }
   }
-  .menu{
+  .menu {
     display: none;
     background-color: chocolate;
-    top: 89px;
     text-align: center;
     padding: 0;
-    position: absolute;
-    ul li{
+    position: fixed;
+    height: 100%;
+    z-index: 1005;
+    ul li {
       display: block;
-      padding: 10px;
       margin: 0;
+      border-top: 2px solid rgba(0, 0, 0, 0.514);
+      padding-bottom: 0;
+      &:hover {
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        padding: 25px;
+        font-size: 25px;
+      }
     }
   }
+  // Finish__BURGER__MENU
+
   .Hotel {
     .container__title {
       .subtitle {
@@ -448,6 +501,346 @@
       grid-template-columns: 1fr;
       .photo {
         display: none;
+      }
+      .text {
+        margin-left: 0;
+        .text_images {
+          .blok {
+            &.first,
+            &.second,
+            &.threeth,
+            &.fourth,
+            &.fifth,
+            &.sixth {
+              height: 75px;
+              .blok__background {
+                & .blok__text {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .BookNow .container__item__threeth {
+    .blok__text {
+      .title,
+      .subtitle {
+        text-align: center;
+      }
+
+      form {
+        position: relative;
+      }
+    }
+
+    .photo {
+      width: 50%;
+      img {
+        max-width: 85%;
+      }
+    }
+  }
+  .footer div.balloon:nth-child(15) {
+    padding-top: 30%;
+    width: 53%;
+  }
+  .Pop_up.Active {
+    .Pop_up__window {
+      height: 72%;
+      display: flex;
+      flex-direction: column;
+    }
+    .Pop_up__window__Book {
+      height: 40%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 27px;
+    padding-right: 9%;
+  }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 120px;
+  }
+  .Attractions .Attractions__Slider .slick-next.slick-arrow {
+    right: -20%;
+  }
+  .Attractions .Attractions__Slider .slick-prev.slick-arrow {
+    left: -20%;
+  }
+  .BookNow .container__item__threeth {
+    flex-direction: column-reverse;
+    align-items: center;
+    .blok__text {
+      width: auto;
+    }
+    .photo {
+      display: none;
+    }
+    .photo__mobile {
+      display: block;
+    }
+  }
+  .Price .container__inner .container__item__second .blok_second {
+    padding-left: 20px;
+  }
+  .OurTrip .container__item_second {
+    .days {
+      width: 100%;
+      grid-gap: 30px;
+    }
+    .OurTrip_Slider {
+      display: none;
+    }
+  }
+  .footer div.balloon:nth-child(15) {
+    padding-top: 31%;
+    width: 57%;
+  }
+}
+
+@media (max-width: 450px) {
+  .UPButton {
+    height: 50px;
+    width: 50px;
+    right: 2%;
+    bottom: 2%;
+  }
+  .container {
+    padding: 0px 10px;
+  }
+  .container__inner {
+    margin: 15px 0;
+  }
+  .container__title {
+    padding: 10px 0;
+  }
+  .parallax {
+    height: 150px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .subtitle {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 70px;
+  }
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 23px;
+    padding-right: 0;
+  }
+
+  .burger___menu {
+    height: 50px;
+    .burger {
+      width: 45px;
+      span {
+        &::before {
+          top: -14px;
+        }
+        &::after {
+          top: 14px;
+        }
+      }
+    }
+  }
+
+  .FairyTail.container__inner .FairyTail__content {
+    .FairyTail__Slider {
+      width: 100%;
+    }
+    .FairyTail.text {
+      border-radius: 10px;
+      padding: 15px;
+      text-align: justify;
+      p + p {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .OurTrip .container__item_second .days {
+    grid-gap: 15px;
+
+    .text__blok {
+      padding: 10px;
+      border-radius: 10px;
+      p {
+        line-height: 19px;
+      }
+      .text__title {
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .Price .container__inner {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    .container__title {
+      padding-bottom: 0;
+    }
+    .title {
+      margin: 0;
+    }
+    .container__item__second {
+      padding: 0 10px;
+      flex-direction: column;
+      .blok_first,
+      .blok_second {
+        padding-left: 0;
+        width: 100%;
+        text-align: justify;
+        .blok__title {
+          padding-bottom: 0;
+          font-size: 18px;
+          text-align: center;
+        }
+        p + p {
+          padding-top: 5px;
+        }
+        .bigBalloon {
+          top: -204%;
+          height: 69%;
+          right: -14%;
+        }
+        .smallBallon {
+          width: 22%;
+          top: -244%;
+          right: 92%;
+        }
+        .smallBallon__second {
+          top: 86%;
+          right: -3%;
+        }
+      }
+    }
+  }
+
+  .Attractions .container__inner {
+    .title {
+      margin-bottom: 10px;
+    }
+    .Attractions__Slider {
+      width: 100%;
+      .item {
+        padding: 10px 0px 0;
+        .text__tittle {
+          font-size: 18px;
+        }
+        .item__text {
+          padding: 10px 5px 17px;
+          p,
+          ul {
+            padding: 5px 0;
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .Hotel.container__inner {
+    .container__title {
+      padding: 0;
+    }
+    .container__item__second .text {
+      text-align: justify;
+      p + p {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .BookNow .container__item__threeth .blok__text {
+    .title {
+      font-size: 40px;
+    }
+    .subtitle {
+      padding: 0;
+    }
+    form {
+      h1 {
+        padding-top: 10px;
+        font-size: 18px;
+      }
+      input {
+        font-size: 18px;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        height: 40px;
+      }
+      label {
+        display: none;
+      }
+    }
+  }
+
+  .BookNow {
+    .container__title {
+      padding: 0px;
+    }
+    .container__item__threeth {
+      .photo__mobile img {
+        width: 100%;
+      }
+      .blok__text form {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer div.balloon:nth-child(15) {
+    width: 93%;
+    font-size: 20px;
+    .number {
+      padding-top: 17px;
+    }
+    .email {
+      padding: 0px;
+    }
+    .socoial__media {
+      ul {
+        padding-top: 19px;
+      }
+    }
+  }
+
+  .Pop_up.Active .Pop_up__window {
+    padding: 0;
+    width: 86%;
+    .windows__content .about__room {
+      margin: 0;
+    }
+  }
+
+  .Pop_up.Active .Pop_up__window__Book {
+    height: 62%;
+    .windows__content {
+      .photo_popup {
+        display: none;
+      }
+      .window__text {
+        width: 100%;
+        font-size: 17px;
+        line-height: 24px;
+        button {
+          height: 35px;
+        }
       }
     }
   }

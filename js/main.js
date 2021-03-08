@@ -51,8 +51,8 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 480,
             settings: {
+                
                 arrows: false,
-                dots: false,
             }
         }]
     });
@@ -60,6 +60,12 @@ $(document).ready(function () {
     $('.Pop_up__slider').slick({
         arrows: true,
         dots: true,
+        responsive: [{
+            breakpoint: 790,
+            settings: {
+                dots: false,
+            }
+        }]
     });
 
     
@@ -160,12 +166,15 @@ $(document).ready(function () {
     //BURGER___MENU
     $('.burger').click(function(){
         $('.burger').toggleClass("Active");
-        $('.menu').toggle()
+        $('.menu').slideToggle();
+        $('body').toggleClass("NOScroll");
     });
 
     $('.menu ul li').click(function(){
+        $('body').toggleClass("NOScroll");
         $('.burger').removeClass("Active");
-        $('.menu').toggle() 
+        $('.menu').slideToggle();
+        
     })
 
 });
