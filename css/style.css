@@ -71,7 +71,7 @@ body.NOScroll {
 }
 .parallax.first {
   background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
-  z-index: 1001;
+  z-index: 2001;
 }
 .parallax.second {
   background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
@@ -376,7 +376,7 @@ input {
 
 .header {
   color: white;
-  z-index: 1001;
+  z-index: 2001;
 }
 .header .Main_Slider {
   position: absolute;

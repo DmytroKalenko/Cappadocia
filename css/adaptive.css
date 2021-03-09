@@ -374,14 +374,14 @@
     padding: 0;
     position: fixed;
     height: 100%;
-    z-index: 1005;
+    z-index: 2005;
     top: -100%;
     transition: all .5s;
     display: block; }
     .menu.Active {
       display: block;
       opacity: 1;
-      z-index: 2001;
+      z-index: 2005;
       top: 0; }
     .menu ul li {
       display: block;
@@ -434,7 +434,7 @@
     padding-right: 9%; }
 
   .header .container .container__item:nth-child(2) .header__title {
-    font-size: 120px; }
+    font-size: 100px; }
 
   .Attractions .Attractions__Slider .slick-next.slick-arrow {
     right: -20%; }

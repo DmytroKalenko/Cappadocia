@@ -50,7 +50,7 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         responsive: [{
-            breakpoint: 480,
+            breakpoint: 680,
             settings: {
                 
                 arrows: false,

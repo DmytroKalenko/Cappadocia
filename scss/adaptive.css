@@ -1,0 +1,195 @@
+@media screen and (max-width: 1920px) {
+  .container {
+    max-width: 300px; }
+
+  .container__title {
+    padding: 50px; }
+
+  .Slider .slick-arrow {
+    height: 50px;
+    width: 50px; }
+
+  .title {
+    font-size: 70px; }
+
+  .subtitle {
+    padding-top: 7px;
+    font-size: 25px; }
+
+  .header .Slider .slick-prev.slick-arrow {
+    left: 10px; }
+    .header .Slider .slick-prev.slick-arrow:hover {
+      top: 47%; }
+  .header .Slider .slick-next.slick-arrow {
+    right: 10px; }
+    .header .Slider .slick-next.slick-arrow:hover {
+      top: 47%; }
+  .header .container .container__item:first-child {
+    font-size: 18px; }
+    .header .container .container__item:first-child .menu__second ul li,
+    .header .container .container__item:first-child .menu__second ul li {
+      margin-right: 30px; }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 160px; }
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 26px; }
+
+  .FairyTail .FairyTail__item_second {
+    top: 50px; }
+    .FairyTail .FairyTail__item_second .Slider {
+      height: 358px; }
+      .FairyTail .FairyTail__item_second .Slider .slick-arrow {
+        height: 35px;
+        width: 35px; }
+      .FairyTail .FairyTail__item_second .Slider .slick-prev.slick-arrow {
+        left: 5px; }
+        .FairyTail .FairyTail__item_second .Slider .slick-prev.slick-arrow:hover {
+          top: 45%; }
+      .FairyTail .FairyTail__item_second .Slider .slick-next.slick-arrow {
+        right: 5px; }
+        .FairyTail .FairyTail__item_second .Slider .slick-next.slick-arrow:hover {
+          top: 45%; }
+    .FairyTail .FairyTail__item_second .FairyTail.text p {
+      font-size: 20px;
+      line-height: 27px; }
+    .FairyTail .FairyTail__item_second .FairyTail.text p + p {
+      padding-top: 15px !important; }
+
+  .OurTrip .onescreen .container__item_second .days {
+    height: 675px; }
+    .OurTrip .onescreen .container__item_second .days .text__blok {
+      height: 230px;
+      width: 300px; }
+      .OurTrip .onescreen .container__item_second .days .text__blok .text__title {
+        font-size: 26px; }
+      .OurTrip .onescreen .container__item_second .days .text__blok p {
+        font-size: 20px;
+        line-height: 27px; }
+  .OurTrip .onescreen .container__item_second .Slider {
+    height: 556px; }
+    .OurTrip .onescreen .container__item_second .Slider .slick-arrow {
+      height: 35px;
+      width: 35px; }
+    .OurTrip .onescreen .container__item_second .Slider .slick-prev.slick-arrow {
+      left: 7px; }
+      .OurTrip .onescreen .container__item_second .Slider .slick-prev.slick-arrow:hover {
+        top: 47%; }
+    .OurTrip .onescreen .container__item_second .Slider .slick-next.slick-arrow {
+      right: 7px; }
+      .OurTrip .onescreen .container__item_second .Slider .slick-next.slick-arrow:hover {
+        top: 47%; }
+    .OurTrip .onescreen .container__item_second .Slider img {
+      height: 100%;
+      width: 100%; }
+
+  .Hotel .container .container__item__second img {
+    height: 636px; }
+  .Hotel .container .container__item__second .text p {
+    font-size: 20px;
+    line-height: 27px; }
+  .Hotel .container .container__item__second .text .text_images .blok {
+    height: 150px;
+    width: 213px; }
+    .Hotel .container .container__item__second .text .text_images .blok .blok__background .blok__text {
+      font-size: 20px; }
+
+  .Attractions .Slider .item .item__text ul {
+    font-size: 17px;
+    line-height: 22px; }
+  .Attractions .Slider .item .item__text .text__tittle {
+    font-size: 26px; }
+  .Attractions .Slider .item .item__text p {
+    font-size: 20px;
+    line-height: 27px; }
+
+  .Price .container {
+    height: 70%; }
+    .Price .container .container__item__second {
+      padding-top: 0;
+      margin: 0; }
+      .Price .container .container__item__second .blok__title {
+        padding-bottom: 20px; }
+      .Price .container .container__item__second p {
+        font-size: 20px;
+        line-height: 27px; }
+      .Price .container .container__item__second .blok_second .bigBalloon {
+        top: -38%;
+        right: 7%; }
+      .Price .container .container__item__second .blok_second .smallBallon {
+        top: 91%;
+        right: 35%; }
+      .Price .container .container__item__second .blok_second .smallBallon__second {
+        top: 71%;
+        right: 14%; }
+
+  .BookNow .container {
+    height: 100%; }
+  .BookNow .container__item__threeth .blok__text {
+    padding-top: 70px; }
+  .BookNow .container__item__threeth form {
+    padding-top: 50px;
+    top: 270px; }
+  .BookNow .container__item__threeth .photo img {
+    margin-top: 70px;
+    width: 450px;
+    height: 550px; }
+
+  .footer div.balloon:nth-child(15) {
+    font-size: 20px;
+    padding-top: 105px; }
+    .footer div.balloon:nth-child(15) .number {
+      padding: 5px; }
+    .footer div.balloon:nth-child(15) .socoial__media ul {
+      padding-top: 15px; }
+      .footer div.balloon:nth-child(15) .socoial__media ul img:hover {
+        height: 40px;
+        width: 40px; } }
+@media screen and (max-width: 1441px) {
+  .Hotel .container .container__item__second img {
+    height: 550px; }
+
+  .footer div.balloon:nth-child(15) {
+    padding-top: 122px; } }
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px; }
+
+  .header .Slider .slick-arrow {
+    height: 35px;
+    width: 35px; }
+    .header .Slider .slick-arrow:hover {
+      top: 49%; }
+  .header .Slider .slick-prev.slick-arrow {
+    left: 15px; }
+  .header .Slider .slick-next.slick-arrow {
+    right: 15px; }
+  .header .container .container__item:first-child {
+    padding-top: 7%;
+    font-size: 21px; }
+    .header .container .container__item:first-child .menu__second ul li {
+      margin-right: 30px; }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 135px; }
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 26px; }
+
+  .FairyTail .onescreen .container .FairyTail__item_second {
+    top: 20px;
+    flex-direction: column; }
+    .FairyTail .onescreen .container .FairyTail__item_second .FairyTail.text {
+      width: 100%;
+      margin-left: 0; }
+    .FairyTail .onescreen .container .FairyTail__item_second .Slider {
+      height: 460px;
+      margin: 0 auto 50px;
+      width: 74%; }
+
+  .OurTrip .onescreen .container__item_second {
+    flex-direction: column-reverse; }
+    .OurTrip .onescreen .container__item_second .Slider {
+      margin: 0 auto 30px; }
+    .OurTrip .onescreen .container__item_second .days {
+      height: 571px;
+      width: 100%; } }
+
+/*# sourceMappingURL=adaptive.css.map */
