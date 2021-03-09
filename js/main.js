@@ -4,22 +4,19 @@ $(document).ready(function () {
     $('.Main_Slider').slick({
         autoplay: true,
         infinite: true,
-        speed: 100,
+        speed: 900,
+        autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear',
         dots: false,
-        responsive: [{
-            breakpoint: 1051,
-            settings: {
-                arrows: false,
-            }
-        }]
+        arrows: false,
     });
 
     $('.FairyTail__Slider').slick({
         autoplay: true,
         infinite: true,
-        speed: 200,
+        speed: 900,
+        autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear',
         dots: false,
@@ -27,9 +24,10 @@ $(document).ready(function () {
        
     });
     $('.OurTrip_Slider').slick({
-        autoplay: false,
+        autoplay: true,
         infinite: true,
-        speed: 500,
+        speed: 1200,
+        autoplaySpeed: 3300,
         fade: true,
         cssEase: 'linear',
         dots: false,
