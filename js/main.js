@@ -48,11 +48,10 @@ $(document).ready(function () {
         fade: true,
         cssEase: 'linear',
         dots: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         responsive: [{
             breakpoint: 680,
             settings: {
-                adaptiveHeight: false,
                 arrows: false,
             }
         }]
