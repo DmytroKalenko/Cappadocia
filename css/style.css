@@ -7,6 +7,10 @@
   font-style: normal;
   src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,7 +29,7 @@ body.NOScroll {
 
 .menu {
   position: fixed;
-  z-index: 2000;
+  z-index: 2002;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +54,7 @@ body.NOScroll {
 
 .menu__backgrount__blok {
   position: fixed;
-  z-index: 1000;
+  z-index: 2001;
   background-color: #d2691e;
   padding: 2%;
   width: 100%;
@@ -682,24 +686,20 @@ input {
 }
 .Attractions .Attractions__Slider {
   width: 65%;
-  max-height: 80%;
   margin: 0 auto;
   position: relative;
 }
 .Attractions .Attractions__Slider .slick-list {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  height: 100%;
 }
 .Attractions .Attractions__Slider .slick-list .slick-track {
   display: flex;
-  height: 100%;
 }
 .Attractions .Attractions__Slider .item {
   display: flex;
   padding: 20px;
   padding-left: 0;
-  height: 100%;
 }
 .Attractions .Attractions__Slider .item .item__text {
   width: 50%;

@@ -48,6 +48,7 @@ $(document).ready(function () {
         fade: true,
         cssEase: 'linear',
         dots: true,
+        adaptiveHeight: true,
         responsive: [{
             breakpoint: 480,
             settings: {
@@ -72,7 +73,6 @@ $(document).ready(function () {
     //bURGER MENU
     $('.header__burger, .header__list ul li').on('click', function () {
         $('.header__burger, .header__list').toggleClass("Action");
-
     });
 
     //Pup-ups in Hotel Slide 
@@ -166,15 +166,13 @@ $(document).ready(function () {
     //BURGER___MENU
     $('.burger').click(function(){
         $('.burger').toggleClass("Active");
-        $('.menu').slideToggle();
+        $('.menu').toggleClass("Active");
         $('body').toggleClass("NOScroll");
     });
 
     $('.menu ul li').click(function(){
-        $('body').toggleClass("NOScroll");
-        $('.burger').removeClass("Active");
-        $('.menu').slideToggle();
-        
+         $('body').removeClass("NOScroll");
+        $('.burger, .menu').removeClass("Active");
     })
 
 });

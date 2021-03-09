@@ -11,6 +11,10 @@
     url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 $titleColor: #d2691e;
 $buttons: #d2691e;
 * {
@@ -30,7 +34,7 @@ body {
 }
 .menu {
   position: fixed;
-  z-index: 2000;
+  z-index: 2002;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +60,7 @@ body {
 
 .menu__backgrount__blok {
   position: fixed;
-  z-index: 1000;
+  z-index: 2001;
   background-color: $buttons;
   padding: 2%;
   width: 100%;
@@ -704,24 +708,24 @@ input {
   }
   .Attractions__Slider {
     width: 65%;
-    max-height: 80%;
+    // max-height: 80%;
     margin: 0 auto;
     position: relative;
 
     .slick-list {
       overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      height: 100%;
+      // height: 100%;
       .slick-track {
         display: flex;
-        height: 100%;
+        // height: 100%;
       }
     }
     .item {
       display: flex;
       padding: 20px;
       padding-left: 0;
-      height: 100%;
+      // height: 100%;
       .item__text {
         width: 50%;
         padding: 40px;

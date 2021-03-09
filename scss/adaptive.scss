@@ -392,7 +392,7 @@
   .burger___menu {
     position: fixed;
     height: 60px;
-    z-index: 1006;
+    z-index: 2006;
     width: auto;
     right: 0;
 
@@ -474,6 +474,10 @@
     position: fixed;
     height: 100%;
     z-index: 1005;
+    &.Active{
+      display: block;
+      z-index: 2001;
+    }
     ul li {
       display: block;
       margin: 0;
@@ -823,8 +827,18 @@
   .Pop_up.Active .Pop_up__window {
     padding: 0;
     width: 86%;
-    .windows__content .about__room {
-      margin: 0;
+    .windows__content {
+      font-size: 15px;
+    line-height: 22px;
+      .about__room {
+        margin: 0;
+      }
+    }
+    .ClosePop-up{
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      font-size: 21px;
     }
   }
 
@@ -844,4 +858,6 @@
       }
     }
   }
+
+ 
 }
