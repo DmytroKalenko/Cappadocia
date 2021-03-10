@@ -190,7 +190,7 @@ input {
 }
 
 .UPButton {
-  display: block;
+  display: none;
   height: 70px;
   width: 70px;
   position: fixed;
@@ -199,7 +199,7 @@ input {
   background-image: url(../imgs/icons/UP.png);
   background-size: cover;
   background-position: center;
-  z-index: 1000;
+  z-index: 2020;
   background-color: transparent;
   border: none;
   cursor: pointer;

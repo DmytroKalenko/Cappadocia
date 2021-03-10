@@ -177,4 +177,18 @@ $(document).ready(function () {
     $('.ClosePop-up').click(function(){
         $(".burger").fadeIn()
     })
+
+    ///Add__Button__UP
+    var UPbtn = $('.UPButton')
+    $(window).on("scroll",function(){
+       if ($(this).scrollTop() >= 20){
+           UPbtn.fadeIn();
+       } else{
+        UPbtn.fadeOut();
+       }
+    })
+    UPbtn.click(function(){
+        $("html, body").animate({scrollTop:0}, 100)
+    })
+
 });
