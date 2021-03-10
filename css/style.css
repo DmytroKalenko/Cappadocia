@@ -219,7 +219,7 @@ input {
   font-size: 30px;
   line-height: 35px;
   transition: all 0.5s;
-  z-index: 2000;
+  z-index: 2020;
 }
 .Pop_up.Active .Pop_up__window {
   background-color: white;
