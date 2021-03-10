@@ -1,11 +1,36 @@
 $(document).ready(function () {
-    $('.Slider').slick({
+    
+   //Sliders
+    $('.Main_Slider').slick({
         autoplay: true,
         infinite: true,
-        speed: 500,
+        speed: 900,
+        autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear',
-        dots: true,
+        dots: false,
+        arrows: false,
+    });
+
+    $('.FairyTail__Slider').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 900,
+        autoplaySpeed: 3000,
+        fade: true,
+        cssEase: 'linear',
+        dots: false,
+       
+       
+    });
+    $('.OurTrip_Slider').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 1200,
+        autoplaySpeed: 3300,
+        fade: true,
+        cssEase: 'linear',
+        dots: false,
         responsive: [{
             breakpoint: 480,
             settings: {
@@ -13,57 +38,157 @@ $(document).ready(function () {
                 dots: false,
             }
         }]
-
     });
-    //bURGER MENU
-
-
-    $('.header__burger, .header__list ul li').on('click', function () {
-        $('.header__burger, .header__list').toggleClass("Action");
-
-    });
-
-    //Sliders_in_PopUps
-    $('.pop_up__slider').slick({
-        autoplay: true,
+    $('.Attractions__Slider').slick({
+        autoplay: false,
         infinite: true,
         speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots: true,
+        adaptiveHeight: false,
+        responsive: [{
+            breakpoint: 680,
+            settings: {
+                arrows: false,
+            }
+        }]
     });
 
-    //ScrollPAge
-    new fullpage('#fullPage', {
-        scrollingSpeed: 1500,
-        parallax: true,
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-
+    $('.Pop_up__slider').slick({
+        arrows: true,
+        dots: true,
+        responsive: [{
+            breakpoint: 790,
+            settings: {
+                dots: false,
+            }
+        }]
     });
 
-
-    //adding the action to ScrollPAge
-    $(document).on('click', '#UPButton', function () {
-        fullpage_api.moveTo('page1');
-    });
-    $(document).on('click', '#Our_trip', function () {
-        fullpage_api.moveTo('page3', 1);
-    });
-    $(document).on('click', '#FairyTail', function () {
-        fullpage_api.moveTo('page2', 1);
-    });
-    $(document).on('click', '#Hotel', function () {
-        fullpage_api.moveTo('page4', 1);
-    });
-    $(document).on('click', '#Attractions', function () {
-        fullpage_api.moveTo('page5', 1);
-    });
-    $(document).on('click', '#Price', function () {
-        fullpage_api.moveTo('page6', 1);
-    });
-    $(document).on('click', '#BookNow', function () {
-        fullpage_api.moveTo('page7', 1);
-    });
-    $(document).on('click', '#Contacts', function () {
-        fullpage_api.moveTo('page8', 1);
+    
+    //bURGER MENU
+    $('.header__burger, .header__list ul li').on('click', function () {
+        $('.header__burger, .header__list').toggleClass("Action");
     });
 
+    //Pup-ups in Hotel Slide 
+    //first   
+    $('.blok.first').on('click', function () {
+        $('.Pop_up.First').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up').on('click', function () {
+        $('.Pop_up.First').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+    //Second
+    $('.blok.second').on('click', function () {
+        $('.Pop_up.Second').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up.Second').on('click', function () {
+        $('.Pop_up.Second').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+  
+    //Threeth
+    $('.blok.threeth').on('click', function () {
+        $('.Pop_up.Threeth').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up.Threeth').on('click', function () {
+        $('.Pop_up.Threeth').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+
+    //Fourth
+    $('.blok.fourth').on('click', function () {
+        $('.Pop_up.Fourth').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up.Fourth').on('click', function () {
+        $('.Pop_up.Fourth').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+
+    //Fifth
+    $('.blok.fifth').on('click', function () {
+        $('.Pop_up.Fifth').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up.Fifth').on('click', function () {
+        $('.Pop_up.Fifth').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+    
+    //Sixth
+    $('.blok.sixth').on('click', function () {
+        $('.Pop_up.Sixth').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+        $('.Pop_up__slider').slick('setPosition');
+    });
+
+    $('.ClosePop-up.Sixth').on('click', function () {
+        $('.Pop_up.Sixth').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+
+    //Book now
+    $('.OpenPop_upBtn').on('click', function () {
+        $('.Pop_up.Book').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+    
+    });
+
+    $('.ClosePop-up.Sixth').on('click', function () {
+        $('.Pop_up.Book').removeClass("Active");
+        $('body').removeClass("NOScroll");
+    });
+    //lazyLoad
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+      });
+
+    //BURGER___MENU
+    $('.burger').click(function(){
+        $('.burger').toggleClass("Active");
+        $('.menu').toggleClass("Active");
+        $('body').toggleClass("NOScroll");
+    });
+
+    $('.menu ul li').click(function(){
+         $('body').removeClass("NOScroll");
+        $('.burger, .menu').removeClass("Active");
+    })
+    $('.blok, .OpenPop_upBtn').click(function(){
+        $(".burger").fadeOut()
+    })
+    $('.ClosePop-up').click(function(){
+        $(".burger").fadeIn()
+    })
+
+    ///Add__Button__UP
+    var UPbtn = $('.UPButton')
+    $(window).on("scroll",function(){
+       if ($(this).scrollTop() >= 20){
+           UPbtn.fadeIn();
+       } else{
+        UPbtn.fadeOut();
+       }
+    })
+    UPbtn.click(function(){
+        $("html, body").animate({scrollTop:0}, 100)
+    })
 
 });

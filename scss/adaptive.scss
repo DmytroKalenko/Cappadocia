@@ -1,596 +1,293 @@
-@media screen and (max-width: 1920px) {
+@media (max-width: 2100px) {
   .container {
-    max-width: 1300px;
+    padding: 0 40px;
   }
-  .container__title {
-    padding: 50px;
+  .parallax {
+    height: 600px;
   }
-  .Slider .slick-arrow {
-    height: 50px;
-    width: 50px;
+  p {
+    font-size: 26px;
+    line-height: 35px;
   }
-  .title {
-    font-size: 70px;
-  }
-  .subtitle {
-    padding-top: 7px;
-    font-size: 25px;
-  }
-  .header {
-    & .Slider .slick-prev.slick-arrow {
-      left: 10px;
-      &:hover {
-        top: 47%;
-      }
-    }
-    & .Slider .slick-next.slick-arrow {
-      right: 10px;
-      &:hover {
-        top: 47%;
-      }
-    }
-    & .container .container__item {
-      &:first-child {
-        font-size: 18px;
-        .menu__second ul li,
-        .menu__second ul li {
-          margin-right: 30px;
-        }
-      }
-      &:nth-child(2) {
-        .header__title {
-          font-size: 160px;
-        }
-        .header__subtitle {
-          font-size: 26px;
-        }
-      }
-    }
-  }
-  .FairyTail {
-    .FairyTail__item_second {
-      top: 50px;
-      .Slider {
-        height: 358px;
-        .slick-arrow {
-          height: 35px;
-          width: 35px;
-        }
-        .slick-prev.slick-arrow {
-          left: 5px;
-          &:hover {
-            top: 45%;
-          }
-        }
-        .slick-next.slick-arrow {
-          right: 5px;
-          &:hover {
-            top: 45%;
-          }
-        }
-      }
-      .FairyTail.text {
-        p {
-          font-size: 20px;
-          line-height: 27px;
-        }
-        p + p {
-          padding-top: 15px !important;
-        }
-      }
-    }
-  }
-  .OurTrip {
-    .onescreen .container__item_second {
-      .days {
-        height: 675px;
-        .text__blok {
-          height: 230px;
-          width: 300px;
-          .text__title {
-            font-size: 26px;
-          }
-          p {
-            font-size: 20px;
-            line-height: 27px;
-          }
-        }
-      }
-      .Slider {
-        height: 556px;
-        .slick-arrow {
-          height: 35px;
-          width: 35px;
-        }
-        .slick-prev.slick-arrow {
-          left: 7px;
-          &:hover {
-            top: 47%;
-          }
-        }
-        .slick-next.slick-arrow {
-          right: 7px;
-          &:hover {
-            top: 47%;
-          }
-        }
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .Hotel {
-    .container {
-      .container__item__second {
-        img {
-          height: 636px;
-        }
-        .text {
-          p {
-            font-size: 20px;
-            line-height: 27px;
-          }
-          .text_images {
-            .blok {
-              height: 150px;
-              width: 213px;
-              .blok__background {
-                .blok__text {
-                  font-size: 20px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .Attractions {
-    .Slider {
-      .item {
-        .item__text {
-          ul {
-            font-size: 17px;
-            line-height: 22px;
-          }
-          .text__tittle {
-            font-size: 26px;
-          }
-          p {
-            font-size: 20px;
-            line-height: 27px;
-          }
-        }
-      }
-    }
-  }
-  .Price {
-    .container {
-      height: 70%;
-      .container__item__second {
-        padding-top: 0;
-        margin: 0;
-        .blok__title {
-          padding-bottom: 20px;
-        }
-        p {
-          font-size: 20px;
-          line-height: 27px;
-        }
-        .blok_first {
-        }
-        .blok_second {
-          .bigBalloon {
-            top: -38%;
-            right: 7%;
-          }
-          .smallBallon {
-            top: 91%;
-            right: 35%;
-          }
-          .smallBallon__second {
-            top: 71%;
-            right: 14%;
-          }
-        }
-      }
-    }
-  }
-  .BookNow {
-    .container {
-      height: 100%;
-    }
-    .container__item__threeth {
-      .blok__text {
-        padding-top: 70px;
-      }
-      form {
-        padding-top: 50px;
-        top: 270px;
-      }
-      .photo img {
-        margin-top: 70px;
-        width: 450px;
-        height: 550px;
-      }
-    }
-  }
-  .footer {
-    div.balloon:nth-child(15) {
-      font-size: 20px;
-      padding-top: 105px;
-      .number {
-        padding: 5px;
-      }
-      .socoial__media ul {
-        padding-top: 15px;
-        img:hover {
-          height: 40px;
-          width: 40px;
-        }
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 1441px) {
-  .Hotel {
-    .container {
-      .container__item__second {
-        img {
-          height: 550px;
-        }
-        .text {
-          padding-left: 0;
-          .text_images .blok {
-            height: 112px;
-            width: 269px;
-          }
-        }
-      }
-    }
-  }
-  .Attractions {
-    .Slider {
-      height: 570px;
-    }
-  }
-  .Price {
-    .container {
-      .container__item__second {
-        .blok_second {
-          .bigBalloon {
-            height: 250px;
-          }
-          .smallBallon {
-            height: 90px;
-            top: 75%;
-          }
-          .smallBallon__second {
-            height: 90px;
-            top: 58%;
-          }
-        }
-      }
-    }
-  }
-  .BookNow .container__item__threeth {
-    .photo img {
-      margin-top: 30px;
-      width: 430px;
-      height: 535px;
-    }
-    .blok__text {
-      padding-top: 30px;
-    }
-  }
-  .footer {
-    div.balloon:nth-child(15) {
-      padding-top: 60px;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 900px;
-  }
   .container__title {
+    padding: 0 70px 35px;
+  }
+
+  .OurTrip .container__item_second .days .text__blok .text__title {
+    font-size: 30px;
+  }
+  .FairyTail.container__inner .FairyTail__content .FairyTail.text p + p {
+    padding-top: 10px;
+  }
+  .Price .container__item__second {
     padding: 30px;
-    padding-bottom: 25px;
-  }
-
-  .container.Pop_up {
-    .pop_up__contant {
-      .main__contant {
-        .pop_up__slider {
-          width: 100%;
-          order: 1;
-        }
-        .pop_up__text {
-          width: 100%;
-          order: 2;
-        }
-        .RoomEquipment {
-          order: 3;
-        }
-      }
+    .blok__title {
+      padding-bottom: 20px;
     }
   }
+  .Price .container__item__second .blok_first p + p,
+  .Price .container__item__second .blok_second p + p {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 2020px) {
+  .Hotel .container__item__second {
+    grid-template-columns: 1fr 3fr;
+    .text .text_images .blok {
+      height: 200px;
+      width: 350px;
+    }
+  }
+}
+@media (max-width: 1827px) {
+  .Hotel .container__item__second .text .text_images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Hotel .container__item__second .text .text_images .blok {
+    width: 100%;
+  }
+  .footer div.balloon:nth-child(15) {
+    width: 23%;
+  }
+}
+@media (max-width: 1601px) {
+  .Hotel .container__item__second .text .text_images .blok {
+    height: 150px;
+  }
+  .menu__backgrount__blok {
+    padding: 3%;
+  }
+}
 
+@media (max-width: 1501px) {
+  .menu {
+    padding: 1%;
+    font-size: 18px;
+    ul li {
+      margin-right: 29px;
+    }
+  }
+  .menu__backgrount__blok {
+    padding: 2%;
+  }
+  .parallax {
+    height: 400px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 150px;
+  }
   .title {
     font-size: 50px;
-    padding-left: 0 !important;
   }
   .subtitle {
-    font-size: 20px;
+    padding-top: 0;
+    font-size: 23px;
   }
-  .UPButton {
-    height: 40px;
-    width: 45px;
-    right: 2%;
-    bottom: 2%;
+  .container__inner {
+    margin: 30px 0;
   }
-  .header {
-    & .Slider {
-      .slick-arrow {
-        height: 35px;
-        width: 35px;
-        &:hover {
-          top: 49%;
-        }
-      }
-      .slick-prev.slick-arrow {
-        left: 15px;
-      }
-      .slick-next.slick-arrow {
-        right: 15px;
-      }
+  .container__title {
+    padding: 0 70px 25px;
+  }
+
+  .Price .container__inner {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .Price .container__item__second .blok_second {
+    .smallBallon {
+      width: 10%;
     }
-    & .container .container__item {
-      &:first-child {
-        padding-top: 7%;
-        font-size: 21px;
-        .menu__second ul li,
-        .menu__first ul li {
-          margin-right: 20px;
-        }
-      }
-      &:nth-child(2) {
-        .header__title {
-          font-size: 135px;
-        }
-        .header__subtitle {
-          font-size: 26px;
-        }
-      }
+    .bigBalloon {
+      top: -35%;
+      height: 57%;
     }
   }
-  .FairyTail .onescreen .container .FairyTail__item_second {
-    top: 20px;
-    .FairyTail.text {
-      width: 100%;
-      margin-left: 10px;
-      p {
-        font-size: 15px;
-        line-height: 20px;
-      }
-    }
-    .Slider {
-      height: 175px;
-      margin: 0 auto 50px;
-      width: 50%;
-      .slick-arrow {
-        height: 25px;
-        width: 25px;
-        &:hover {
-          top: 43%;
-        }
-      }
-    }
-  }
-  .OurTrip {
-    .onescreen {
-      .container__item_second {
-        .Slider {
-          margin: 0 auto 30px;
-          height: 460px;
-          width: 42%;
-          .slick-arrow {
-            &:hover {
-              top: 45%;
-            }
-          }
-        }
-        .days {
-          height: 571px;
-          width: 58%;
-          .text__blok {
-            height: 174px;
-            width: 230px;
-            p {
-              font-size: 15px;
-              line-height: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .Hotel {
-    .container__item__second {
+  .Attractions .Attractions__Slider {
+    max-height: 80%;
+    .item {
       display: flex;
-      img {
-        display: none;
+      padding: 20px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .text__tittle {
+        font-size: 26px;
       }
-    }
-  }
-  .Attractions {
-    .Slider {
-      height: 380px;
-      .item {
-        padding: 10px;
-        .item__text {
-          padding: 10px;
-          ul {
-            font-size: 12px;
-            line-height: 15px;
-          }
-          .text__tittle {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px;
-            line-height: 20px;
-          }
-        }
-      }
-    }
-  }
-  .Price {
-    .container {
-      .container__item__second {
-        padding-top: 0;
-        margin: 0;
-        padding-left: 25px;
-        .blok__title {
-          font-size: 21px;
-          padding-bottom: 10px;
-        }
+      .item__text {
+        width: 100%;
+        padding: 15px 0;
+        ul,
         p {
-          font-size: 15px;
-          line-height: 20px;
-        }
-        .blok_second {
-          .bigBalloon {
-            top: -22%;
-            height: 170px;
-          }
-          .smallBallon {
-            height: 70px;
-            top: 75%;
-          }
-          .smallBallon__second {
-            height: 70px;
-            top: 58%;
-            right: 10%;
-          }
+          font-size: 18px;
+          line-height: 23px;
+          padding-left: 10px;
         }
       }
+      .item__pictures {
+        width: 100%;
+      }
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+  .Hotel .container__item__second .text {
+    margin-left: 30px;
+  }
+  .Hotel .container__item__second p + p {
+    padding-top: 10px;
+  }
+  .Hotel .container__item__second .text p:nth-child(3) {
+    padding-bottom: 20px;
+  }
+  .Hotel .container__item__second .text .text_images {
+    grid-gap: 15px;
+  }
+  .Hotel .container__item__second .text .text_images .blok {
+    &.first,
+    &.second,
+    &.threeth,
+    &.fourth,
+    &.fifth,
+    &.sixth {
+      height: 120px;
+      .blok__background {
+        .blok__text {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+
+  .BookNow .container__item__threeth .photo {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 60%;
     }
   }
   .BookNow .container__item__threeth {
-    .photo img {
-      margin-top: 30px;
-      width: 327px;
-      height: 448px;
-    }
     .blok__text {
-      padding-top: 30px;
       .title {
-        right: 93px;
+        right: 0;
       }
       .subtitle {
-        right: 60px;
+        right: 0;
       }
-    }
-    form {
-      padding-top: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      width: 250px;
-      right: 60px;
-      input {
-        display: block;
-        margin: 0;
-        font-size: 15px;
-        height: 40px;
-        width: 100%;
-      }
-      .OpenPop_upBtn {
-        width: 100% !important;
-      }
-      h1 {
-        font-size: 20px;
-        padding-bottom: 10px;
+      form {
+        top: auto;
+        padding-top: 0;
+        right: 0;
+        h1 {
+          padding-bottom: 30px;
+        }
       }
     }
   }
   .footer div.balloon:nth-child(15) {
-    height: 60%;
-    width: 45%;
+    width: 32%;
+    height: 80%;
   }
 }
+@media (max-width: 1401px) {
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .OurTrip .container__item_second .days .text__blok .text__title {
+    font-size: 23px;
+  }
+  .Price .container__item__second .blok_first p + p,
+  .Price .container__item__second .blok_second p + p {
+    padding-top: 10px;
+  }
+  .Price .container__item__second .blok__title {
+    padding-bottom: 10px;
+    font-size: 23px;
+  }
+  .Price .container__item__second .blok_second {
+    padding-left: 50px;
+  }
+  .Attractions .Attractions__Slider .item .text__tittle {
+    font-size: 23px;
+  }
 
-@media (max-width: 1024px) and (max-height: 1366px) {
-  @mixin P_Size {
-    font-size: 23px;
-    line-height: 29px;
+  .BookNow .container__item__threeth .blok__text form h1 {
+    padding-top: 30px;
+    padding-bottom: 0;
   }
-  .container.Pop_up {
-    max-height: 64%;
+  .footer div.balloon:nth-child(15) {
+    padding-top: 22%;
   }
-  img {
-    border-radius: 0;
-  }
-  .title {
-    font-size: 70px;
-  }
-  .subtitle {
-    font-size: 23px;
-  }
-  .FairyTail .onescreen .container .FairyTail__item_second {
+}
+@media (max-width: 1201px) {
+  .FairyTail.container__inner .FairyTail__content {
     flex-direction: column;
-    height: 80%;
-    .Slider {
-      height: 45%;
-      width: 70%;
-    }
-    .FairyTail.text {
-      height: 50%;
-      p {
-        @include P_Size;
-      }
+    align-items: center;
+  }
+
+  .FairyTail.container__inner .FairyTail__content .FairyTail.text {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .OurTrip .container__item_second .days .text__blok {
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .footer div.balloon:nth-child(15) {
+    padding-top: 28%;
+  }
+}
+@media (max-width: 1051px) {
+  p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .FairyTail.container__inner
+    .FairyTail__content
+    .FairyTail__Slider
+    .slick-arrow,
+  .OurTrip .container__item_second .OurTrip_Slider .slick-arrow,
+  .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow {
+    height: 30px;
+    width: 30px;
+    &.slick-arrow:hover {
+      transform: scale(1.35);
+      top: 46%;
     }
   }
-  .OurTrip .onescreen .container__item_second {
-    flex-direction: column-reverse;
-    .Slider {
-      height: 556px;
-      width: 50%;
-    }
-    .days {
-      width: 100%;
-      margin-top: 50px;
-      .text__blok {
-        height: 231px;
-        width: 317px;
-        p {
-          @include P_Size;
-          padding-top: 10px;
-        }
-      }
-    }
+  .slick-prev.slick-arrow {
+    left: 2px;
   }
+  .slick-next.slick-arrow {
+    right: 2px;
+  }
+  .Hotel .container__item__second .text .text_images {
+    grid-template-columns: 1fr;
+  }
+
   .Hotel {
-    .container {
-      .container__item__second {
-        .text {
-          p {
-            @include P_Size;
-          }
-          .text_images {
-            grid-template-columns: 1fr;
-            .blok {
-              height: 115px;
-              width: 100%;
+    .container__item__second {
+      .text {
+        .text_images {
+          .blok {
+            &.first,
+            &.second,
+            &.threeth,
+            &.fourth,
+            &.fifth,
+            &.sixth {
+              height: 50px;
               .blok__background {
-                .blok__text {
-                  @include P_Size;
+                & .blok__text {
+                  font-size: 18px;
                 }
               }
             }
@@ -599,1004 +296,573 @@
       }
     }
   }
-  .Attractions {
-    .title {
-      top: 100px;
-    }
-    .Slider {
-      height: auto;
-      .item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-        .item__pictures {
-          width: 100%;
-          margin-bottom: 10px;
-        }
-        .item__text {
-          width: 100%;
-          .text__tittle {
-            font-size: 25px;
-          }
-          p {
-            @include P_Size;
-          }
-        }
-      }
-    }
-  }
-  .Price .container .container__item__second {
-    p {
-      font-size: 23px;
-      line-height: 34px;
-    }
-    .blok_second {
-      .bigBalloon {
-        right: 20%;
-        top: 62%;
-        height: 250px;
-      }
-      .smallBallon {
-        height: 103px;
-        top: 113%;
-        right: 56%;
-      }
-      .smallBallon__second {
-        height: 119px;
-        top: 121%;
-        right: 12%;
-      }
-    }
-  }
-  .BookNow .container {
-    .container__item__threeth {
-      flex-direction: column-reverse;
-      align-items: center;
-      .photo {
-        width: auto;
-        img {
-          width: auto;
-          height: 500px;
-        }
-      }
-      form {
-        width: 350px;
-        input {
-          margin: 10px;
-          font-size: 23px;
-          height: 60px;
-          width: 100%;
-        }
-        h1 {
-          font-size: 23px;
-          padding: 15px;
-        }
-      }
-    }
-    .pop_up .pop_up__content{
-        height: 52%;
-    }
-  }
   .footer div.balloon:nth-child(15) {
-    font-size: 32px;
-    padding-top: 175px;
-    .title {
-      font-size: 90px;
-    }
-    .number {
-      padding: 10px;
-    }
-    .socoial__media {
-      ul {
-        img {
-          height: 50px;
-          width: 50px;
-          margin-top: 10px;
-          &:hover {
-            height: 55px;
-            width: 55px;
-            border-radius: 50%;
-          }
-        }
-      }
-    }
+    padding-top: 32%;
+    width: 35%;
+  }
+  .Pop_up.Active .Pop_up__window {
+    height: 30%;
+  }
+  .OurTrip .container__item_second .days {
+    grid-row-gap: 20px;
+  }
+  div.balloon:nth-child(1) {
+    display: none;
+  }
+
+  .Pop_up.Active .Pop_up__window {
+    height: 45%;
+  }
+  .Pop_up.Active .Pop_up__window__Book {
+    width: 75%;
   }
 }
 
-@media (max-width: 979px) {
-  @mixin P_size {
-    font-size: 18px;
-    line-height: 23px;
-  }
+@media (max-width: 851px) {
   .container {
-    width: 700px;
-    padding-top: 60px;
+    padding: 0 20px;
   }
-  .container.Pop_up {
-    max-width: 80%;
-    max-height: 80%;
+  .header .container .container__item__threeth div.balloon:nth-child(1) {
+    right: 23px;
   }
-  .container__title {
-    padding-bottom: 0;
+  .FairyTail.container__inner .container__title {
+    .title,
+    .subtitle {
+      padding: 0;
+    }
   }
-  .title {
-    font-size: 55px;
+  .FairyTail.container__inner .FairyTail__content .FairyTail__Slider {
+    width: 65%;
   }
-  .subtitle {
-    font-size: 18px;
-  }
-  .header__body {
-    display: block;
-    height: 70px;
+  .Price .container__inner {
     width: 100%;
-    background-color: rgba(51, 51, 51, 1);
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 5;
+    .subtitle {
+      left: 0;
+    }
+    .container__item__second .blok_second {
+      padding-left: 35px;
+      .bigBalloon {
+        top: -39%;
+        height: 43%;
+        right: 2%;
+      }
+      .smallBallon {
+        width: 14%;
+        top: 57%;
+        right: 37%;
+      }
+    }
+  }
+
+  .Attractions .Attractions__Slider {
+    width: 75%;
+  }
+  .OurTrip {
+    .subtitle {
+      left: 0;
+    }
+    .container__item_second {
+      flex-direction: column-reverse;
+      align-items: center;
+      .OurTrip_Slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+      .days {
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        .text__blok {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .slick-arrow:hover {
+    transform: scale(1.2);
+    top: 46%;
+  }
+  // .menu,
+  .menu__backgrount__blok {
+    display: none;
+  }
+  // START____BURGER___MENU
+  .burger___menu {
+    position: fixed;
+    height: 60px;
+    z-index: 2006;
+    width: auto;
     right: 0;
-    .header__burger {
+
+    .burger {
       position: absolute;
-      right: 35px;
+      right: 15px;
+      top: 0;
       height: 100%;
-      width: 55px;
-      z-index: 3;
-      top: 50%;
-      transform: translateY(-50%);
+      width: 60px;
+
       span {
         position: absolute;
         top: 50%;
-        display: block;
-        height: 4px;
+        transform: translateY(-50%);
+        height: 6px;
         width: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.507);
+        border-radius: 9px;
+
         &::before {
           content: "";
-          display: block;
-          height: 4px;
-          background-color: rgb(255, 255, 255);
-          transform: translateY(-20px);
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: -19px;
+          background-color: rgba(0, 0, 0, 0.507);
           transition: all 0.5s;
-          position: relative;
+          border-radius: 9px;
         }
         &::after {
           content: "";
-          display: block;
-          height: 4px;
-          background-color: rgb(255, 255, 255);
-          transform: translateY(16px);
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          top: 17px;
+          background-color: rgba(0, 0, 0, 0.507);
           transition: all 0.5s;
+          border-radius: 9px;
         }
       }
-      &.Action {
+      &.Active {
         span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
           height: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.507);
+
           &::before {
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            top: 0px;
+            background-color: rgba(0, 0, 0, 0.507);
             transform: rotate(-45deg);
-            top: 3px;
+            border-radius: 9px;
           }
           &::after {
-            transform: rotate(45deg);
-          }
-        }
-      }
-    }
-  }
-  .header__menu {
-    .header__list {
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      background-color: rgba(51, 51, 51, 1);
-      height: 100%;
-      z-index: 4;
-      display: block;
-      transform: translateY(-100%);
-      transition: all 0.5s;
-      ul {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        li {
-          position: relative;
-          font-size: 23px;
-          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
-          margin-bottom: 30px;
-          a {
-            display: block;
-            height: 100%;
+            content: "";
+            position: absolute;
+            height: 6px;
             width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-size: 44px;
-            color: white;
+            top: 0px;
+            background-color: rgba(0, 0, 0, 0.507);
+            transform: rotate(45deg);
+            border-radius: 9px;
           }
         }
       }
     }
-    .header__list.Action {
+  }
+  .menu {
+    opacity: 1;
+    background-color: chocolate;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 2005;
+    top: -100%;
+    transition: all .5s;
+    display: block;
+    &.Active{
       display: block;
-      transform: translateY(0%);
+      opacity: 1;
+      z-index: 2005;
+      top: 0;
+    }
+    ul li {
+      display: block;
+      margin: 0;
+      border-top: 2px solid rgba(0, 0, 0, 0.514);
+      padding-bottom: 0;
+      &:hover {
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        padding: 25px;
+        font-size: 25px;
+      }
     }
   }
-  .header {
-    .container {
-      padding-top: 0;
-      .container__item nav {
+  // Finish__BURGER__MENU
+
+  .Hotel {
+    .container__title {
+      .subtitle {
+        left: 0;
+      }
+    }
+    .container__item__second {
+      grid-template-columns: 1fr;
+      .photo {
+        display: none;
+      }
+      .text {
+        margin-left: 0;
+        .text_images {
+          .blok {
+            &.first,
+            &.second,
+            &.threeth,
+            &.fourth,
+            &.fifth,
+            &.sixth {
+              height: 75px;
+              .blok__background {
+                & .blok__text {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .BookNow .container__item__threeth {
+    .blok__text {
+      .title,
+      .subtitle {
+        text-align: center;
+      }
+
+      form {
+        position: relative;
+      }
+    }
+
+    .photo {
+      width: 50%;
+      img {
+        max-width: 85%;
+      }
+    }
+  }
+  .footer div.balloon:nth-child(15) {
+    padding-top: 30%;
+    width: 53%;
+  }
+  .Pop_up.Active {
+    .Pop_up__window {
+      height: 72%;
+      display: flex;
+      flex-direction: column;
+    }
+    .Pop_up__window__Book {
+      height: 40%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 27px;
+    padding-right: 9%;
+  }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 100px;
+  }
+  .Attractions .Attractions__Slider .slick-next.slick-arrow {
+    right: -20%;
+  }
+  .Attractions .Attractions__Slider .slick-prev.slick-arrow {
+    left: -20%;
+  }
+  .BookNow .container__item__threeth {
+    flex-direction: column-reverse;
+    align-items: center;
+    .blok__text {
+      width: auto;
+    }
+    .photo {
+      display: none;
+    }
+    .photo__mobile {
+      display: block;
+    }
+  }
+  .Price .container__inner .container__item__second .blok_second {
+    padding-left: 20px;
+  }
+  .OurTrip .container__item_second {
+    .days {
+      width: 100%;
+      grid-gap: 30px;
+    }
+    .OurTrip_Slider {
+      display: none;
+    }
+  }
+  .footer div.balloon:nth-child(15) {
+    padding-top: 31%;
+    width: 57%;
+  }
+}
+
+@media (max-width: 450px) {
+  .UPButton {
+    height: 50px;
+    width: 50px;
+    right: 2%;
+    bottom: 2%;
+  }
+  .container {
+    padding: 0px 10px;
+  }
+  .container__inner {
+    margin: 15px 0;
+  }
+  .container__title {
+    padding: 10px 0;
+  }
+  .parallax {
+    height: 150px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .subtitle {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  .header .container .container__item:nth-child(2) .header__title {
+    font-size: 70px;
+  }
+  .header .container .container__item:nth-child(2) .header__subtitle {
+    font-size: 23px;
+    padding-right: 0;
+  }
+
+  .burger___menu {
+    height: 50px;
+    .burger {
+      width: 45px;
+      span {
+        &::before {
+          top: -14px;
+        }
+        &::after {
+          top: 14px;
+        }
+      }
+    }
+  }
+
+  .FairyTail.container__inner .FairyTail__content {
+    .FairyTail__Slider {
+      width: 100%;
+    }
+    .FairyTail.text {
+      border-radius: 10px;
+      padding: 15px;
+      text-align: justify;
+      p + p {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .OurTrip .container__item_second .days {
+    grid-gap: 15px;
+
+    .text__blok {
+      padding: 10px;
+      border-radius: 10px;
+      p {
+        line-height: 19px;
+      }
+      .text__title {
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .Price .container__inner {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    .container__title {
+      padding-bottom: 0;
+    }
+    .title {
+      margin: 0;
+    }
+    .container__item__second {
+      padding: 0 10px;
+      flex-direction: column;
+      .blok_first,
+      .blok_second {
+        padding-left: 0;
+        width: 100%;
+        text-align: justify;
+        .blok__title {
+          padding-bottom: 0;
+          font-size: 18px;
+          text-align: center;
+        }
+        p + p {
+          padding-top: 5px;
+        }
+        .bigBalloon {
+          top: -204%;
+          height: 69%;
+          right: -14%;
+        }
+        .smallBallon {
+          width: 22%;
+          top: -244%;
+          right: 92%;
+        }
+        .smallBallon__second {
+          top: 86%;
+          right: -3%;
+        }
+      }
+    }
+  }
+
+  .Attractions .container__inner {
+    .title {
+      margin-bottom: 10px;
+    }
+    .Attractions__Slider {
+      width: 100%;
+      .item {
+        padding: 10px 0px 0;
+        .text__tittle {
+          font-size: 18px;
+        }
+        .item__text {
+          padding: 10px 5px 17px;
+          p,
+          ul {
+            padding: 5px 0;
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .Hotel.container__inner {
+    .container__title {
+      padding: 0;
+    }
+    .container__item__second .text {
+      text-align: justify;
+      p + p {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .BookNow .container__item__threeth .blok__text {
+    .title {
+      font-size: 40px;
+    }
+    .subtitle {
+      padding: 0;
+    }
+    form {
+      h1 {
+        padding-top: 10px;
+        font-size: 18px;
+      }
+      input {
+        font-size: 18px;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        height: 40px;
+      }
+      label {
         display: none;
       }
     }
   }
-  .FairyTail {
-    .onescreen {
-      .container {
-        .FairyTail__item_second {
-          .Slider {
-            margin-bottom: 15px;
-          }
-          .FairyTail.text {
-            padding-top: 15px;
-            padding-bottom: 15px;
-          }
-        }
-        .FairyTail__item_second {
-          .FairyTail.text {
-            height: 55%;
-            margin-left: 0;
-            p {
-              @include P_size;
-            }
-            p + p {
-              padding-top: 10px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-  .OurTrip {
-    .onescreen {
-      .container__item_second {
-        .Slider {
-          height: 45%;
-        }
-        .days {
-          grid-row-gap: 25px;
-          height: 55%;
-          margin-top: 0;
-          .text__blok {
-            height: 185px;
-            width: 285px;
-            p {
-              @include P_size;
-              padding-top: 0;
-            }
-            .text__title {
-              font-size: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .Hotel {
-    .container {
-      .container__item__second {
-        .text {
-          p {
-            @include P_size();
-            &:nth-child(3) {
-              padding-bottom: 0;
-            }
-          }
-          p + p {
-            padding-top: 10px;
-          }
-          .text_images {
-            margin-top: 15px;
-            grid-row-gap: 9px;
-            .blok {
-              height: 95px;
-              .blok__background {
-                .blok__text {
-                  @include P_size();
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .Hotel .Pop-up .main__contant .RoomEquipment .RoomEquipment__item img {
-    height: 35px;
-    width: 35px;
-  }
-  .Hotel .container.Pop_up .pop_up__contant .main__contant .pop_up__text {
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .Attractions {
-    .Slider {
-      .item {
-        .item__text {
-          .text__tittle {
-            font-size: 20px;
-          }
-          p {
-            @include P_size();
-          }
-        }
-      }
-    }
-  }
-  .Price {
-    .container {
-      padding-top: 0px;
-      height: 50%;
-      width: 95%;
-      .container__item__second {
-        padding-top: 10px;
-        p {
-          @include P_size();
-        }
-        .blok_second {
-          padding-left: 35px;
-          .bigBalloon {
-            right: 19%;
-            top: -18%;
-            height: 66px;
-          }
-          .smallBallon {
-            height: 101px;
-            top: 67%;
-            right: 56%;
-          }
-          .smallBallon__second {
-            height: 76px;
-            top: 81%;
-            right: 29%;
-          }
-        }
-      }
-    }
-  }
-  .BookNow {
-    .container {
-        
-      .container__item__threeth {
-        .photoTOadaptive {
-          display: block;
-          margin-top: 15px;
-        }
-        .photo {
-          img {
-            display: none;
-          }
-        }
-        .blok__text {
-          padding-top: 10px;
-          form {
-            right: 0;
-            top: 195px;
-            input {
-              margin: 10px 0;
-            }
-          }
-        }
-      }
-    }
-    .pop_up .pop_up__content{
-        height: 70% !important;
-        width: 80%;
-    }
-  }
-  .footer div.balloon:nth-child(15) {
-    font-size: 26px;
-    padding-top: 120px;
-    .title {
-      font-size: 70px;
-    }
-  }
-}
 
-@media (max-width: 767px) {
-  @mixin P_Size {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .title {
-    font-size: 43px;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
-  .container {
-    width: 90%;
-    padding-top: 12%;
+  .BookNow {
     .container__title {
-      padding: 15px;
+      padding: 0px;
     }
-  }
-  .header__body {
-    height: 45px;
-    .header__burger {
-      width: 35px;
-      span {
-        height: 2px;
-        &::before {
-          height: 2px;
-          top: 9px;
-        }
-        &::after {
-          position: relative;
-          bottom: 7px;
-          height: 2px;
-        }
+    .container__item__threeth {
+      .photo__mobile img {
+        width: 100%;
       }
-      &.Action {
-        span::before {
-          top: 0;
-        }
-        span::after {
-          bottom: 2px;
-        }
+      .blok__text form {
+        width: 100%;
       }
     }
   }
-  .header__menu {
-    .header__list ul {
-      top: 10%;
-      transform: none;
-      li {
-        margin-bottom: 10px;
-        a {
-          padding-top: 10px;
-          padding-bottom: 10px;
-          font-size: 25px;
-        }
-      }
-    }
-  }
-  .header {
-    .container {
-      .container__item:nth-child(2) {
-        .header__title {
-          font-size: 70px;
-        }
-        .header__subtitle {
-          font-size: 19px;
-          padding-right: 14%;
-        }
-      }
-    }
-  }
-  .FairyTail {
-    .onescreen {
-      .container {
-        .FairyTail__item_second {
-          height: auto;
-          top: 0px;
-          .Slider {
-            width: 100%;
-            height: 50%;
-            margin-bottom: 0;
-          }
-          .FairyTail.text {
-            margin: 10px auto;
-            width: 100%;
-            border-radius: 0;
-            padding: 0;
-            box-shadow: none;
-            p {
-              font-size: 14px;
-              line-height: 20px;
-            }
-            p + p {
-              padding-top: 5px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-  .OurTrip {
-    .onescreen {
-      .container__item_second {
-        .Slider {
-          margin: 0 auto 15px;
-        }
-        .days {
-          grid-template-columns: 1fr;
-          grid-row-gap: 9px;
-          .text__blok {
-            width: 100%;
-            padding: 10px;
-            height: auto;
-            border: 1px solid rgba(0, 0, 0, 0.493);
-            box-shadow: none;
-            border-radius: 0;
-            p {
-              @include P_Size();
-            }
-            .text__title {
-              font-size: 15px;
-              padding-bottom: 5px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .Hotel {
-    .container {
-      .container__item__second {
-        .text {
-          p {
-            @include P_Size();
-          }
-          .text_images {
-            .blok {
-              height: 73px;
-              .blok__background {
-                .blok__text {
-                  font-size: 15px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .Attractions {
-    .Slider {
-      width: 96%;
-      .slick-dots {
-        bottom: 11px;
-      }
-      .item .item__text {
-        p {
-          font-size: 15px;
-          line-height: 20px;
-        }
-        .text__tittle {
-          font-size: 18px;
-        }
-      }
-    }
-    .title {
-      top: 8%;
-    }
-  }
-  .Price {
-    .container {
-      height: 70%;
-      .container__item__second {
-        padding-top: 0;
-        .blok__title {
-          font-size: 16px;
-        }
-        .blok_first,
-        .blok_second {
-          p {
-            font-size: 15px;
-            line-height: 20px;
-            padding-top: 10px;
-          }
-          .bigBalloon {
-            top: 75%;
-          }
-          .smallBallon__second {
-            top: 95%;
-          }
-        }
-      }
-    }
-  }
-  .BookNow {
-    .container {
-      width: 90%;
-      .container__item__threeth {
-        height: 90%;
-        position: relative;
-        .photoTOadaptive {
-          height: 40%;
-          width: 100%;
-          position: relative;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .blok__text {
-          height: 60%;
-          width: 100%;
-          .title {
-            right: 0;
-            text-align: center;
-          }
-          .subtitle {
-            right: 0;
-            text-align: center;
-          }
-          form {
-            position: relative;
-            top: 0;
-            width: 100%;
-            h1 {
-              font-size: 20px;
-              padding: 10px;
-            }
-            input {
-              font-size: 16px;
-              height: 50px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .footer div.balloon:nth-child(15) {
-    padding-top: 90px;
-    width: 90%;
-    font-size: 22px;
-    .socoial__media ul img {
-      height: 35px;
-      width: 35px;
-      margin-top: 0px;
-    }
-  }
-}
 
-@media (max-width: 415px) and (max-height: 737px) {
-  .FairyTail {
-    .onescreen {
-      .container {
-        .FairyTail__item_second {
-          .Slider {
-            width: 100%;
-            height: 45%;
-          }
-          .FairyTail.text {
-            p {
-              font-size: 12px;
-              line-height: 18px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .OurTrip {
-    .onescreen {
-      .container__item_second {
-        .Slider {
-          display: none;
-        }
-      }
-    }
-  }
-  .Hotel {
-    .container {
-      .container__item__second {
-        .text {
-          p {
-            font-size: 12px;
-          }
-          .text_images {
-            .blok {
-              height: 60px;
-              .blok__background {
-                .blok__text {
-                  font-size: 13px;
-                }
-              }
-            }
-          }
-        }
-      }
-      .container__title {
-        padding: 10px;
-      }
-    }
-  }
-  .RoomEquipment {
-    display: none !important;
-  }
-  .container.Pop_up .pop_up__contant .contant__head {
-    font-size: 16px;
-  }
-  .Hotel .container.Pop_up .pop_up__contant .main__contant .pop_up__text {
-    font-size: 17px;
-    line-height: 23px;
-  }
-  .Attractions {
-    .Slider {
-      .item .item__text {
-        p {
-          font-size: 13px;
-          line-height: 17px;
-        }
-        .text__tittle {
-          font-size: 15px;
-        }
-        ul {
-          font-size: 12px;
-          line-height: 12px;
-        }
-      }
-    }
-    .title {
-      top: 8%;
-    }
-  }
-  .Price {
-    .container {
-      .container__item__second {
-        .blok__title {
-          font-size: 14px;
-        }
-        .blok_first,
-        .blok_second {
-          p {
-            font-size: 13px;
-            line-height: 17px;
-            padding-top: 7px;
-          }
-          .bigBalloon {
-            top: 75%;
-          }
-          .smallBallon__second {
-            top: 103%;
-          }
-        }
-      }
-    }
-  }
-  .BookNow {
-    .container {
-      .container__item__threeth {
-        height: 90%;
-        .photoTOadaptive {
-          margin-top: 0;
-          height: 36%;
-          width: 100%;
-          position: relative;
-        }
-        .blok__text {
-          height: 64%;
-          width: 100%;
-          form {
-            h1 {
-              font-size: 18px;
-              padding: 5px;
-            }
-            input {
-              font-size: 15px;
-              height: 45px;
-            }
-          }
-        }
-      }
-    }
-  }
   .footer div.balloon:nth-child(15) {
-    height: 66%;
+    width: 93%;
+    font-size: 20px;
+    .number {
+      padding-top: 17px;
+    }
+    .email {
+      padding: 0px;
+    }
+    .socoial__media {
+      ul {
+        padding-top: 19px;
+      }
+    }
   }
-}
 
-@media (max-height: 668px) {
-  .container .container__title {
-    padding-bottom: 5px;
-  }
-  .title {
-    font-size: 40px;
-  }
-  .FairyTail .onescreen .container .FairyTail__item_second {
-    .Slider {
-      width: 82%;
-    }
-    .FairyTail.text p + p {
-      padding-top: 2px !important;
-    }
-  }
-  .OurTrip .onescreen .container__item_second .days {
-    grid-row-gap: 17px;
-    margin-top: 20px;
-  }
-  .Hotel .subtitle {
-    padding-top: 0;
-  }
-  .Hotel {
-    .container {
-      .container__item__second {
-        .text {
-          p {
-            line-height: 14px;
-          }
-          p + p {
-            padding-top: 7px;
-          }
-          .text_images .blok {
-            height: 53px;
-          }
-        }
-      }
-    }
-  }
-  .Attractions .Slider .item .item__text {
-    padding-top: 0;
-    p {
-      padding-top: 5px;
-    }
-    ul {
-      padding-top: 0;
-    }
-  }
-  .Price .container .container__item__second {
-    .blok__title {
-      padding-bottom: 0;
-    }
-    .blok_second {
-      .smallBallon {
-        top: 60%;
-      }
-      .bigBalloon {
-        top: 70%;
-      }
-      .smallBallon__second {
-        height: 55px;
-        top: 94%;
-        right: 42%;
-      }
-    }
-  }
-  .BookNow .container .container__item__threeth .blok__text form {
-    h1 {
-      font-size: 15px;
-    }
-    input {
-      margin: 5px 0;
-    }
-  }
-  .footer div.balloon:nth-child(15) {
-    padding-top: 80px;
-    .number,
-    .email,
-    ul {
-      padding: 5px;
-    }
-  }
-}
-
-@media (max-height: 569px) {
-  .subtitle {
+  .Pop_up.Active .Pop_up__window {
     padding: 0;
-    font-size: 13px;
-  }
-  .title {
-    font-size: 35px;
-  }
-  .FairyTail {
-    .onescreen {
-      .container {
-        .container__title {
-          .subtitle {
-            padding-left: 50%;
-          }
-        }
-        .FairyTail__item_second .FairyTail.text {
-          margin: 5px auto;
-          p {
-            font-size: 11px;
-            line-height: 15px;
-          }
-        }
+    width: 86%;
+    .windows__content {
+      font-size: 15px;
+    line-height: 22px;
+      .about__room {
+        margin: 0;
       }
     }
-  }
-  .OurTrip .onescreen .container__item_second .days {
-    grid-row-gap: 14px;
-    margin-top: 0;
+    .ClosePop-up{
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      font-size: 21px;
+    }
   }
 
-  .Hotel {
-    .title {
-      padding-top: 10px;
-    }
-    .subtitle {
-      left: 85px;
-    }
-    .container {
-      .container__item__second {
-        .text {
-          p + p {
-            padding-top: 5px;
-          }
-          .text_images {
-            margin-top: 10px;
-            .blok {
-              height: 34px;
-            }
-          }
+  .Pop_up.Active .Pop_up__window__Book {
+    height: 62%;
+    .windows__content {
+      .photo_popup {
+        display: none;
+      }
+      .window__text {
+        width: 100%;
+        font-size: 17px;
+        line-height: 24px;
+        button {
+          height: 35px;
         }
       }
     }
   }
 
-  .Attractions {
-    .title {
-      top: 8%;
-    }
-    .Slider {
-      .item {
-        .item__text {
-          padding: 0;
-          ul {
-            font-size: 10px;
-            line-height: 10px;
-          }
-          .text__tittle {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-  .Price {
-    .subtitle {
-      left: 77px;
-    }
-    .container {
-      .container__item__second {
-        padding-left: 10px;
-        .blok_second {
-          padding-left: 15px;
-          .smallBallon {
-            height: 75px;
-            top: 65%;
-            right: 58%;
-          }
-          .bigBalloon {
-            right: 17%;
-            top: 74%;
-            height: 50px;
-          }
-          .smallBallon__second {
-            height: 50px;
-            top: 93%;
-            right: 40%;
-          }
-        }
-        .blok_first p,
-        .blok_second p {
-          font-size: 11px;
-          line-height: 15px;
-        }
-      }
-    }
-  }
-  .BookNow {
-    .container {
-      .container__item__threeth {
-        .blok__text {
-          padding: 0;
-          .title,
-          .subtitle {
-            padding: 3px 0;
-          }
-          form {
-            input {
-              font-size: 13px;
-              height: 39px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .footer div.balloon:nth-child(15) {
-    height: 79%;
-  }
+ 
 }
