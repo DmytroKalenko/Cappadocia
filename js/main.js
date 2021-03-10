@@ -171,5 +171,10 @@ $(document).ready(function () {
          $('body').removeClass("NOScroll");
         $('.burger, .menu').removeClass("Active");
     })
-
+    $('.blok, .OpenPop_upBtn').click(function(){
+        $(".burger").fadeOut()
+    })
+    $('.ClosePop-up').click(function(){
+        $(".burger").fadeIn()
+    })
 });
