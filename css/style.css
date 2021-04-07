@@ -1,1132 +1,1338 @@
 @font-face {
-  font-family: "balqis";
-  src: url("../fonts/balqis.woff") format("woff"), url("../fonts/balqis.woff2") format("woff2");
+    font-family: "balqis";
+    src: url("../fonts/balqis.woff") format("woff"), url("../fonts/balqis.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
+
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto";
-  overflow-x: hidden;
+    font-family: "Roboto";
+    overflow-x: hidden;
 }
+
 body a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
+
 body.NOScroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .menu {
-  position: fixed;
-  z-index: 2002;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2%;
-  font-size: 26px;
-  width: 100%;
+    position: fixed;
+    z-index: 2002;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    font-size: 26px;
+    width: 100%;
 }
+
 .menu ul li {
-  display: inline-block;
-  margin-right: 52px;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 10px;
-  transition: all 0.5s;
-  cursor: pointer;
+    display: inline-block;
+    margin-right: 52px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
+
 .menu ul li:hover {
-  border-bottom: 2px solid white;
+    border-bottom: 2px solid white;
 }
+
 .menu ul li a {
-  color: white;
+    color: white;
 }
 
 .menu__backgrount__blok {
-  position: fixed;
-  z-index: 2001;
-  background-color: #d2691e;
-  padding: 2%;
-  width: 100%;
+    position: fixed;
+    z-index: 2001;
+    background-color: #d2691e;
+    padding: 2%;
+    width: 100%;
 }
 
 .parallax {
-  position: relative;
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(2px);
+    position: relative;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
 }
+
 .parallax.first {
-  background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
-  z-index: 2001;
+    background-image: url(../imgs/backgrounds/chica-1920x700-capadocia.jpg);
+    z-index: 2001;
 }
+
 .parallax.second {
-  background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/globo-1920x700-capadocia.jpg);
 }
+
 .parallax.threeth {
-  background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/goreme-1920x700-capadocia.jpg);
 }
+
 .parallax.fourth {
-  background-image: url(../imgs/backgrounds/ihlara-valley-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/ihlara-valley-1920x700-capadocia.jpg);
 }
+
 .parallax.fifth {
-  background-image: url(../imgs/backgrounds/ortahisar-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/ortahisar-1920x700-capadocia.jpg);
 }
+
 .parallax.sixth {
-  background-image: url(../imgs/backgrounds/sunset-point-1920x700-capadocia.jpg);
+    background-image: url(../imgs/backgrounds/sunset-point-1920x700-capadocia.jpg);
 }
+
 .parallax.seventh {
-  background-image: url(../imgs/backgrounds/valle-palomas-1920x700-capadocia.jpg);
-  z-index: 1;
+    background-image: url(../imgs/backgrounds/valle-palomas-1920x700-capadocia.jpg);
+    z-index: 1;
 }
 
 p {
-  font-size: 32px;
-  line-height: 40px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .container {
-  max-width: 2000px;
-  margin: 0 auto;
-  position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .container__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
 }
 
 .title {
-  color: #d2691e;
-  font-family: "balqis";
-  font-size: 90px;
-  text-align: center;
-  position: relative;
+    color: #d2691e;
+    font-family: "balqis";
+    font-size: 90px;
+    text-align: center;
+    position: relative;
 }
 
 .subtitle {
-  position: relative;
-  padding-top: 10px;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
+    position: relative;
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
 }
 
 .container__title {
-  padding: 0 70px 70px;
+    padding: 0 70px 70px;
 }
 
 input {
-  width: 302px !important;
-  height: 61px;
-  background: transparent;
-  border: 1px solid #d2691e;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 23px;
-  text-transform: uppercase;
+    width: 302px !important;
+    height: 61px;
+    background: transparent;
+    border: 1px solid #d2691e;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 23px;
+    text-transform: uppercase;
 }
 
 .header,
 .footer {
-  height: 100vh;
-  background-image: url("../imgs/Main.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+    height: 100vh;
+    background-image: url("../imgs/Main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .Main_Slider .slick-arrow {
-  height: 70px;
-  width: 70px;
+    height: 70px;
+    width: 70px;
 }
 
 .slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2000;
-  font-size: 0;
-  padding: 0;
-  border: none;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transition: all 0.5s;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2000;
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
 }
+
 .slick-arrow:hover {
-  transform: scale(1.15);
-  top: 47%;
+    transform: scale(1.15);
+    top: 47%;
 }
 
 .slick-prev.slick-arrow {
-  left: 0;
-  background-image: url("../imgs/icons/prev_arrowCollor.svg");
+    left: 0;
+    background-image: url("../imgs/icons/prev_arrowCollor.svg");
 }
 
 .slick-next.slick-arrow {
-  right: 0;
-  background-image: url("../imgs/icons/next_arrowCollor.svg");
+    right: 0;
+    background-image: url("../imgs/icons/next_arrowCollor.svg");
 }
 
 .UPButton {
-  display: none;
-  height: 70px;
-  width: 70px;
-  position: fixed;
-  right: 6%;
-  bottom: 5%;
-  background-image: url(../imgs/icons/UP.png);
-  background-size: cover;
-  background-position: center;
-  z-index: 2020;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 0;
+    display: none;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    right: 6%;
+    bottom: 5%;
+    background-image: url(../imgs/icons/UP.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2020;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
 }
 
 .Pop_up {
-  display: none;
+    display: none;
 }
+
 .Pop_up.Active {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: fixed;
-  z-index: 1002;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(8, 8, 8, 0.493);
-  font-size: 30px;
-  line-height: 35px;
-  transition: all 0.5s;
-  z-index: 2020;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 1002;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(8, 8, 8, 0.493);
+    font-size: 30px;
+    line-height: 35px;
+    transition: all 0.5s;
+    z-index: 2020;
 }
+
 .Pop_up.Active .Pop_up__window {
-  background-color: white;
-  width: 80%;
-  height: 65%;
-  position: relative;
-  padding: 20px;
-  display: flex;
-  min-width: 0;
+    background-color: white;
+    width: 80%;
+    height: 65%;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    min-width: 0;
 }
+
 .Pop_up.Active .Pop_up__window .window__title {
-  font-size: 35px;
-  margin-bottom: 10px;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
+
 .Pop_up.Active .Pop_up__window .ClosePop-up {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  z-index: 2;
-  border: none;
-  background-color: chocolate;
-  border-radius: 7px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    background-color: chocolate;
+    border-radius: 7px;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider {
-  width: 100%;
-  position: relative;
-  min-width: 0;
+    width: 100%;
+    position: relative;
+    min-width: 0;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list {
-  overflow: hidden;
-  height: 100%;
+    overflow: hidden;
+    height: 100%;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list .slick-track {
-  display: flex;
-  height: 100%;
+    display: flex;
+    height: 100%;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-list .slick-track .slick-slide img {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    list-style: none;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li {
-  display: inline-block;
+    display: inline-block;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li.slick-active button {
-  background-color: #7a7a7a;
-  border: 1px solid white;
+    background-color: #7a7a7a;
+    border: 1px solid white;
 }
-.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li + li {
-  margin-left: 10px;
+
+.Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots li+li {
+    margin-left: 10px;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-dots button {
-  font-size: 0;
-  background-color: transparent;
-  padding: 0;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  border: 1px solid #797979;
-  cursor: pointer;
+    font-size: 0;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    border: 1px solid #797979;
+    cursor: pointer;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-prev.slick-arrow {
-  background-image: url(../imgs/icons/prev_arrowCollor.svg);
+    background-image: url(../imgs/icons/prev_arrowCollor.svg);
 }
+
 .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-next.slick-arrow {
-  background-image: url(../imgs/icons//next_arrowCollor.svg);
+    background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
+
 .Pop_up.Active .Pop_up__window .windows__content {
-  display: flex;
-  position: relative;
-  height: 100%;
-  padding: 10px;
-  text-align: justify;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
+
 .Pop_up.Active .Pop_up__window .windows__content .window__title {
-  font-size: 25px;
-  line-height: 30px;
+    font-size: 25px;
+    line-height: 30px;
 }
+
 .Pop_up.Active .Pop_up__window .windows__content .about__room {
-  margin-top: 30px;
-  text-align: center;
+    margin-top: 30px;
+    text-align: center;
 }
+
 .Pop_up.Active .Pop_up__window .windows__content .about__room ul {
-  list-style: none;
+    list-style: none;
 }
+
 .Pop_up.Active .Pop_up__window__Book {
-  background-color: white;
-  width: 50%;
-  height: 50%;
-  position: relative;
-  padding: 20px;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    padding: 20px;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content .photo_popup {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content .photo_popup img {
-  height: 100%;
+    height: 100%;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content .window__text {
-  padding: 10px;
-  text-align: justify;
-  width: 50%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-  line-height: 30px;
+    padding: 10px;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 30px;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content .window__text span {
-  display: block;
-  text-align: center;
-  font-size: 25px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
 }
+
 .Pop_up.Active .Pop_up__window__Book .windows__content .window__text button {
-  background-color: #d2691e;
-  color: white;
-  cursor: pointer;
-  border: none;
-  height: 50px;
-  width: 200px;
-  border-radius: 10px;
+    background-color: #d2691e;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 .header {
-  color: white;
-  z-index: 2001;
+    color: white;
+    z-index: 2001;
 }
+
 .header .Main_Slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
+
 .header .Main_Slider .slick-list .slick-track {
-  display: flex;
-  width: 100% !important;
+    display: flex;
+    width: 100% !important;
 }
+
 .header .Main_Slider .slick-list .slick-track .slick-slide img {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  filter: brightness(75%);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(75%);
 }
+
 .header .container {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: normal;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: normal;
 }
+
 .header .container .container__item:nth-child(2) {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
 }
+
 .header .container .container__item:nth-child(2) .header__title {
-  font-family: "balqis";
-  font-size: 200pt;
-  text-align: center;
+    font-family: "balqis";
+    font-size: 200pt;
+    text-align: center;
 }
+
 .header .container .container__item:nth-child(2) .header__subtitle {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 36px;
-  font-style: italic;
-  padding-right: 26%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    font-style: italic;
+    padding-right: 26%;
 }
+
 .header .container .container__item__threeth div.balloon {
-  position: absolute;
+    position: absolute;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(1) {
-  right: 20px;
-  bottom: 0;
-  animation: anim 12s infinite ease-in;
+    right: 20px;
+    bottom: 0;
+    animation: anim 12s infinite ease-in;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(2) {
-  right: 17%;
-  bottom: 0;
-  animation: anim 12s infinite ease-in;
+    right: 17%;
+    bottom: 0;
+    animation: anim 12s infinite ease-in;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(3) {
-  right: 22%;
-  bottom: 0;
-  animation: anim 20s infinite;
+    right: 22%;
+    bottom: 0;
+    animation: anim 20s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(4) {
-  right: 32%;
-  bottom: 0;
-  animation: anim 17s infinite ease-in;
+    right: 32%;
+    bottom: 0;
+    animation: anim 17s infinite ease-in;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(5) {
-  right: 48%;
-  bottom: 0;
-  animation: anim 18s infinite;
+    right: 48%;
+    bottom: 0;
+    animation: anim 18s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(6) {
-  right: 55%;
-  bottom: 0;
-  animation: anim 22s infinite ease-in;
+    right: 55%;
+    bottom: 0;
+    animation: anim 22s infinite ease-in;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(7) {
-  right: 60%;
-  bottom: 0;
-  animation: anim 12s infinite;
+    right: 60%;
+    bottom: 0;
+    animation: anim 12s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(8) {
-  right: 66%;
-  bottom: 0;
-  animation: anim 10s infinite ease-in-out;
+    right: 66%;
+    bottom: 0;
+    animation: anim 10s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(9) {
-  right: 70%;
-  bottom: 0;
-  animation: anim 13s infinite ease-in;
+    right: 70%;
+    bottom: 0;
+    animation: anim 13s infinite ease-in;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(10) {
-  right: 75%;
-  bottom: 0;
-  animation: anim 15s infinite ease-in-out;
+    right: 75%;
+    bottom: 0;
+    animation: anim 15s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(11) {
-  right: 80%;
-  bottom: 0;
-  animation: anim 10s infinite;
+    right: 80%;
+    bottom: 0;
+    animation: anim 10s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(12) {
-  right: 86%;
-  bottom: 0;
-  animation: anim 14s infinite;
+    right: 86%;
+    bottom: 0;
+    animation: anim 14s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(13) {
-  right: 90%;
-  bottom: 0;
-  animation: anim 17s infinite;
+    right: 90%;
+    bottom: 0;
+    animation: anim 17s infinite;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(14) {
-  right: 97%;
-  bottom: 0;
-  animation: anim 13s infinite ease-in-out;
+    right: 97%;
+    bottom: 0;
+    animation: anim 13s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(15) {
-  right: 20%;
-  bottom: 0;
-  animation: anim 12s infinite ease-in-out;
+    right: 20%;
+    bottom: 0;
+    animation: anim 12s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(16) {
-  right: 40%;
-  bottom: 0;
-  animation: anim 9s infinite ease-in-out;
+    right: 40%;
+    bottom: 0;
+    animation: anim 9s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(17) {
-  right: 50%;
-  bottom: 0;
-  animation: anim 10s infinite ease-in-out;
+    right: 50%;
+    bottom: 0;
+    animation: anim 10s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(18) {
-  right: 100%;
-  bottom: 0;
-  animation: anim 15s infinite ease-in-out;
+    right: 100%;
+    bottom: 0;
+    animation: anim 15s infinite ease-in-out;
 }
+
 .header .container .container__item__threeth div.balloon:nth-child(19) {
-  right: 8%;
-  bottom: 0;
-  animation: anim 15s infinite ease-in-out;
+    right: 8%;
+    bottom: 0;
+    animation: anim 15s infinite ease-in-out;
 }
 
 .FairyTail {
-  position: relative;
-  z-index: 1;
-  background-color: white;
+    position: relative;
+    z-index: 1;
+    background-color: white;
 }
+
 .FairyTail.container__inner .container__title .title {
-  padding-left: 10%;
+    padding-left: 10%;
 }
+
 .FairyTail.container__inner .container__title .subtitle {
-  padding-left: 19%;
+    padding-left: 19%;
 }
+
 .FairyTail.container__inner .FairyTail__content {
-  display: flex;
-  min-width: 0;
+    display: flex;
+    min-width: 0;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider {
-  width: 42%;
-  position: relative;
-  min-width: 0;
+    width: 42%;
+    position: relative;
+    min-width: 0;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list .slick-track {
-  display: flex;
+    display: flex;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-list .slick-track .slick-slide img {
-  width: 100%;
+    width: 100%;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-arrow {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 }
+
 .FairyTail.container__inner .FairyTail__content .FairyTail.text {
-  width: 58%;
-  margin-left: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
-  font-size: 26px;
-  line-height: 35px;
-  max-width: 1200px;
-  padding: 20px;
+    width: 58%;
+    margin-left: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 26px;
+    line-height: 35px;
+    max-width: 1200px;
+    padding: 20px;
 }
-.FairyTail.container__inner .FairyTail__content .FairyTail.text p + p {
-  padding-top: 20px;
+
+.FairyTail.container__inner .FairyTail__content .FairyTail.text p+p {
+    padding-top: 20px;
 }
 
 .OurTrip .subtitle {
-  left: 7%;
+    left: 7%;
 }
+
 .OurTrip .container__title .container.buttom,
 .OurTrip .container__title .container.text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
 .OurTrip .container__title .container.buttom {
-  margin-top: 70px;
+    margin-top: 70px;
 }
+
 .OurTrip .container__item_second {
-  display: flex;
+    display: flex;
 }
+
 .OurTrip .container__item_second .days {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 70%;
-  justify-items: center;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
 }
+
 .OurTrip .container__item_second .days .text__blok {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
-  padding: 20px;
-  max-width: 400px;
-  max-height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 350px;
 }
+
 .OurTrip .container__item_second .days .text__blok .text__title {
-  font-size: 35px;
-  text-align: center;
-  padding-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
 }
+
 .OurTrip .container__item_second .OurTrip_Slider {
-  width: 30%;
-  position: relative;
+    width: 30%;
+    position: relative;
 }
+
 .OurTrip .container__item_second .OurTrip_Slider .slick-list {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .OurTrip .container__item_second .OurTrip_Slider .slick-list .slick-track {
-  display: flex;
+    display: flex;
 }
+
 .OurTrip .container__item_second .OurTrip_Slider .slick-list .slick-track .slick-slide img {
-  width: 100%;
+    width: 100%;
 }
+
 .OurTrip .container__item_second .OurTrip_Slider .slick-arrow {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 }
 
 .Price {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 .Price .container__inner {
-  overflow: hidden;
-  height: auto;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
 }
+
 .Price .container__inner .title {
-  margin-top: 30px;
+    margin-top: 30px;
 }
+
 .Price .subtitle {
-  left: 110px;
+    left: 110px;
 }
+
 .Price .container__item__second {
-  display: flex;
-  font-size: 21px;
-  line-height: 35px;
-  padding: 50px;
+    display: flex;
+    font-size: 21px;
+    line-height: 35px;
+    padding: 50px;
 }
+
 .Price .container__item__second .blok__title {
-  font-weight: bold;
-  padding-bottom: 50px;
-  font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 26px;
 }
+
 .Price .container__item__second .blok_first,
 .Price .container__item__second .blok_second {
-  position: relative;
-  width: 50%;
+    position: relative;
+    width: 50%;
 }
-.Price .container__item__second .blok_first p + p,
-.Price .container__item__second .blok_second p + p {
-  padding-top: 20px;
+
+.Price .container__item__second .blok_first p+p,
+.Price .container__item__second .blok_second p+p {
+    padding-top: 20px;
 }
+
 .Price .container__item__second .blok_first .bigBalloon,
 .Price .container__item__second .blok_second .bigBalloon {
-  position: absolute;
-  top: -44%;
-  right: 0;
+    position: absolute;
+    top: -44%;
+    right: 0;
 }
+
 .Price .container__item__second .blok_first .smallBallon,
 .Price .container__item__second .blok_second .smallBallon {
-  position: absolute;
-  top: 30%;
-  right: 20%;
+    position: absolute;
+    top: 30%;
+    right: 20%;
 }
+
 .Price .container__item__second .blok_first .smallBallon__second,
 .Price .container__item__second .blok_second .smallBallon__second {
-  position: absolute;
-  top: 65%;
-  right: 5%;
+    position: absolute;
+    top: 65%;
+    right: 5%;
 }
+
 .Price .container__item__second .blok_second {
-  padding-left: 70px;
+    padding-left: 70px;
 }
 
 .Attractions {
-  height: 100%;
-  position: relative;
+    height: 100%;
+    position: relative;
 }
+
 .Attractions .title {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .Attractions .Attractions__Slider {
-  width: 65%;
-  margin: 0 auto;
-  position: relative;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
 }
+
 .Attractions .Attractions__Slider .slick-list {
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .Attractions .Attractions__Slider .slick-list .slick-track {
-  display: flex;
+    display: flex;
 }
+
 .Attractions .Attractions__Slider .item {
-  display: flex;
-  padding: 20px;
-  padding-left: 0;
+    display: flex;
+    padding: 20px;
+    padding-left: 0;
 }
+
 .Attractions .Attractions__Slider .item .item__text {
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: justify;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
 }
+
 .Attractions .Attractions__Slider .item .item__text.text__title {
-  padding: 20px;
+    padding: 20px;
 }
+
 .Attractions .Attractions__Slider .item .item__text p {
-  font-size: 22px;
-  line-height: 34px;
-  padding-top: 20px;
+    font-size: 22px;
+    line-height: 34px;
+    padding-top: 20px;
 }
+
 .Attractions .Attractions__Slider .item .item__text ul {
-  font-size: 20px;
-  line-height: 34px;
-  padding-top: 20px;
+    font-size: 20px;
+    line-height: 34px;
+    padding-top: 20px;
 }
+
 .Attractions .Attractions__Slider .item .text__tittle {
-  font-size: 35px;
+    font-size: 35px;
 }
+
 .Attractions .Attractions__Slider .item .item__pictures {
-  width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 .Attractions .Attractions__Slider .item .item__pictures picture {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 .Attractions .Attractions__Slider .slick-arrow {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 }
+
 .Attractions .Attractions__Slider .slick-prev.slick-arrow {
-  left: -100px;
-  background-image: url(../imgs/icons/prev_arrowCollor.svg);
+    left: -100px;
+    background-image: url(../imgs/icons/prev_arrowCollor.svg);
 }
+
 .Attractions .Attractions__Slider .slick-next.slick-arrow {
-  right: -100px;
-  background-image: url(../imgs/icons//next_arrowCollor.svg);
+    right: -100px;
+    background-image: url(../imgs/icons//next_arrowCollor.svg);
 }
+
 .Attractions .Attractions__Slider img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 .Attractions .Attractions__Slider .slick-dots {
-  display: block;
-  position: absolute;
-  bottom: 2%;
-  right: 35px;
-  z-index: 999;
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    right: 35px;
+    z-index: 999;
 }
+
 .Attractions .Attractions__Slider .slick-dots li {
-  display: inline-block;
+    display: inline-block;
 }
+
 .Attractions .Attractions__Slider .slick-dots li.slick-active button {
-  background-color: #7e7e81;
+    background-color: #7e7e81;
 }
+
 .Attractions .Attractions__Slider .slick-dots li button {
-  display: block;
-  height: 10px;
-  width: 10px;
-  font-size: 0;
-  border-radius: 50%;
-  padding: 0;
-  border: none;
-  margin-right: 5px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    font-size: 0;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    margin-right: 5px;
 }
 
 .Hotel .subtitle {
-  left: 112px;
+    left: 112px;
 }
+
 .Hotel .container__item__second {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
 }
+
 .Hotel .container__item__second .photo {
-  position: relative;
+    position: relative;
 }
+
 .Hotel .container__item__second .text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 67px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 67px;
+    position: relative;
 }
+
 .Hotel .container__item__second .text .text_images {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 30px;
-  justify-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
 }
+
 .Hotel .container__item__second .text .text_images .blok {
-  background-color: #eb1810;
-  height: 250px;
-  width: 400px;
-  position: relative;
+    background-color: #eb1810;
+    height: 250px;
+    width: 400px;
+    position: relative;
 }
-.Hotel .container__item__second .text .text_images .blok.first, .Hotel .container__item__second .text .text_images .blok.second, .Hotel .container__item__second .text .text_images .blok.threeth, .Hotel .container__item__second .text .text_images .blok.fourth, .Hotel .container__item__second .text .text_images .blok.fifth, .Hotel .container__item__second .text .text_images .blok.sixth {
-  background: url("../imgs/rooms/FairyChimneySuite/Main.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.Hotel .container__item__second .text .text_images .blok.first .blok__background, .Hotel .container__item__second .text .text_images .blok.second .blok__background, .Hotel .container__item__second .text .text_images .blok.threeth .blok__background, .Hotel .container__item__second .text .text_images .blok.fourth .blok__background, .Hotel .container__item__second .text .text_images .blok.fifth .blok__background, .Hotel .container__item__second .text .text_images .blok.sixth .blok__background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: 0.5s ease;
-  background-color: #0000008a;
-  cursor: pointer;
-}
-.Hotel .container__item__second .text .text_images .blok.first .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.second .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.threeth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.fourth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.fifth .blok__background .blok__text, .Hotel .container__item__second .text .text_images .blok.sixth .blok__background .blok__text {
-  font-size: 30px;
-  color: white;
-}
-.Hotel .container__item__second .text .text_images .blok.first:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.second:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.threeth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.fourth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.fifth:hover .blok__background, .Hotel .container__item__second .text .text_images .blok.sixth:hover .blok__background {
-  opacity: 0;
-}
-.Hotel .container__item__second .text .text_images .blok.second {
-  background-image: url("../imgs/rooms/SultanSuite/Main.jpg");
-}
-.Hotel .container__item__second .text .text_images .blok.threeth {
-  background-image: url("../imgs/rooms/Pacha/main.jpg");
-}
-.Hotel .container__item__second .text .text_images .blok.fourth {
-  background-image: url("../imgs/rooms/King/main.jpg");
-}
-.Hotel .container__item__second .text .text_images .blok.fifth {
-  background-image: url("../imgs/rooms/Family/main.jpg");
-}
+
+.Hotel .container__item__second .text .text_images .blok.first,
+.Hotel .container__item__second .text .text_images .blok.second,
+.Hotel .container__item__second .text .text_images .blok.threeth,
+.Hotel .container__item__second .text .text_images .blok.fourth,
+.Hotel .container__item__second .text .text_images .blok.fifth,
 .Hotel .container__item__second .text .text_images .blok.sixth {
-  background-image: url("../imgs/rooms/junior/main.jpg");
+    background: url("../imgs/rooms/FairyChimneySuite/Main.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
+.Hotel .container__item__second .text .text_images .blok.first .blok__background,
+.Hotel .container__item__second .text .text_images .blok.second .blok__background,
+.Hotel .container__item__second .text .text_images .blok.threeth .blok__background,
+.Hotel .container__item__second .text .text_images .blok.fourth .blok__background,
+.Hotel .container__item__second .text .text_images .blok.fifth .blok__background,
+.Hotel .container__item__second .text .text_images .blok.sixth .blok__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background-color: #0000008a;
+    cursor: pointer;
+}
+
+.Hotel .container__item__second .text .text_images .blok.first .blok__background .blok__text,
+.Hotel .container__item__second .text .text_images .blok.second .blok__background .blok__text,
+.Hotel .container__item__second .text .text_images .blok.threeth .blok__background .blok__text,
+.Hotel .container__item__second .text .text_images .blok.fourth .blok__background .blok__text,
+.Hotel .container__item__second .text .text_images .blok.fifth .blok__background .blok__text,
+.Hotel .container__item__second .text .text_images .blok.sixth .blok__background .blok__text {
+    font-size: 30px;
+    color: white;
+}
+
+.Hotel .container__item__second .text .text_images .blok.first:hover .blok__background,
+.Hotel .container__item__second .text .text_images .blok.second:hover .blok__background,
+.Hotel .container__item__second .text .text_images .blok.threeth:hover .blok__background,
+.Hotel .container__item__second .text .text_images .blok.fourth:hover .blok__background,
+.Hotel .container__item__second .text .text_images .blok.fifth:hover .blok__background,
+.Hotel .container__item__second .text .text_images .blok.sixth:hover .blok__background {
+    opacity: 0;
+}
+
+.Hotel .container__item__second .text .text_images .blok.second {
+    background-image: url("../imgs/rooms/SultanSuite/Main.jpg");
+}
+
+.Hotel .container__item__second .text .text_images .blok.threeth {
+    background-image: url("../imgs/rooms/Pacha/main.jpg");
+}
+
+.Hotel .container__item__second .text .text_images .blok.fourth {
+    background-image: url("../imgs/rooms/King/main.jpg");
+}
+
+.Hotel .container__item__second .text .text_images .blok.fifth {
+    background-image: url("../imgs/rooms/Family/main.jpg");
+}
+
+.Hotel .container__item__second .text .text_images .blok.sixth {
+    background-image: url("../imgs/rooms/junior/main.jpg");
+}
+
 .Hotel .container__item__second .text .text_images img {
-  width: 500px;
-  height: 295px;
+    width: 500px;
+    height: 295px;
 }
+
 .Hotel .container__item__second .text p:nth-child(3) {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
-.Hotel .container__item__second p + p {
-  padding-top: 20px;
+
+.Hotel .container__item__second p+p {
+    padding-top: 20px;
 }
 
 .BookNow {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  background-color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
 }
+
 .BookNow .pop_up {
-  display: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 81, 0, 0);
-  z-index: 2;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: all 0.9s ease 0s;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 81, 0, 0);
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.9s ease 0s;
 }
+
 .BookNow .pop_up .pop_up__content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 70%;
-  width: 60%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .BookNow .pop_up .pop_up__content p {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
+
 .BookNow .pop_up .pop_up__content img {
-  width: 500px;
+    width: 500px;
 }
+
 .BookNow .container {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
+
 .BookNow .container__item__threeth {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
+
 .BookNow .container__item__threeth .blok__text {
-  position: relative;
-  width: 50%;
+    position: relative;
+    width: 50%;
 }
+
 .BookNow .container__item__threeth .blok__text .title,
 .BookNow .container__item__threeth .blok__text .subtitle {
-  position: relative;
-  text-align: end;
-  right: 201px;
-  left: auto;
-  display: block;
-  padding: 5px 0;
+    position: relative;
+    text-align: end;
+    right: 201px;
+    left: auto;
+    display: block;
+    padding: 5px 0;
 }
+
 .BookNow .container__item__threeth .blok__text .subtitle {
-  right: 163px;
+    right: 163px;
 }
+
 .BookNow .container__item__threeth form {
-  padding-top: 100px;
-  width: 360px;
-  position: absolute;
-  top: 350px;
-  right: 163px;
+    padding-top: 100px;
+    width: 360px;
+    position: absolute;
+    top: 350px;
+    right: 163px;
 }
+
 .BookNow .container__item__threeth form label {
-  font-size: 0;
+    font-size: 0;
 }
+
 .BookNow .container__item__threeth form h1 {
-  display: block;
-  width: 100%;
-  padding-bottom: 50px;
-  font-size: 24px;
-  text-align: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
 }
+
 .BookNow .container__item__threeth form input {
-  display: block;
-  width: 100% !important;
-  height: 50px;
-  padding-left: 31px;
+    display: block;
+    width: 100% !important;
+    height: 50px;
+    padding-left: 31px;
 }
-.BookNow .container__item__threeth form input + input {
-  margin-top: 20px;
+
+.BookNow .container__item__threeth form input+input {
+    margin-top: 20px;
 }
+
 .BookNow .container__item__threeth b .photo {
-  position: relative;
-  width: 50%;
+    position: relative;
+    width: 50%;
 }
+
 .BookNow .container__item__threeth b .photo img {
-  max-width: 600px;
-  max-height: 800px;
+    max-width: 600px;
+    max-height: 800px;
 }
+
 .BookNow .container__item__threeth .photo__mobile {
-  display: none;
+    display: none;
 }
+
 .BookNow form input:last-child,
 .BookNow input.close {
-  padding-left: 0px;
-  margin: 20px auto 0 auto;
-  width: 280px !important;
-  border: 1px solid white;
-  background-color: #d2691e;
-  color: white;
-  transition: all 0.5s;
-  cursor: pointer;
+    padding-left: 0px;
+    margin: 20px auto 0 auto;
+    width: 280px !important;
+    border: 1px solid white;
+    background-color: #d2691e;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
 }
+
 .BookNow form input:last-child:hover,
 .BookNow input.close:hover {
-  color: #d2691e;
-  background-color: white;
-  border: 1px solid #d2691e;
+    color: #d2691e;
+    background-color: white;
+    border: 1px solid #d2691e;
 }
 
 .footer div.balloon {
-  position: absolute;
+    position: absolute;
 }
+
 .footer div.balloon:nth-child(1) {
-  right: 10%;
-  bottom: 0;
-  animation: anim 12s infinite ease-in;
+    right: 10%;
+    bottom: 0;
+    animation: anim 12s infinite ease-in;
 }
+
 .footer div.balloon:nth-child(2) {
-  right: 17%;
-  bottom: 0;
-  animation: anim 16s infinite;
+    right: 17%;
+    bottom: 0;
+    animation: anim 16s infinite;
 }
+
 .footer div.balloon:nth-child(3) {
-  right: 22%;
-  bottom: 0;
-  animation: anim 20s infinite;
+    right: 22%;
+    bottom: 0;
+    animation: anim 20s infinite;
 }
+
 .footer div.balloon:nth-child(4) {
-  right: 32%;
-  bottom: 0;
-  animation: anim 17s infinite ease-in;
+    right: 32%;
+    bottom: 0;
+    animation: anim 17s infinite ease-in;
 }
+
 .footer div.balloon:nth-child(5) {
-  right: 48%;
-  bottom: 0;
-  animation: anim 18s infinite;
+    right: 48%;
+    bottom: 0;
+    animation: anim 18s infinite;
 }
+
 .footer div.balloon:nth-child(6) {
-  right: 55%;
-  bottom: 0;
-  animation: anim 22s infinite ease-in;
+    right: 55%;
+    bottom: 0;
+    animation: anim 22s infinite ease-in;
 }
+
 .footer div.balloon:nth-child(7) {
-  right: 60%;
-  bottom: 0;
-  animation: anim 12s infinite;
+    right: 60%;
+    bottom: 0;
+    animation: anim 12s infinite;
 }
+
 .footer div.balloon:nth-child(8) {
-  right: 66%;
-  bottom: 0;
-  animation: anim 10s infinite ease-in-out;
+    right: 66%;
+    bottom: 0;
+    animation: anim 10s infinite ease-in-out;
 }
+
 .footer div.balloon:nth-child(9) {
-  right: 70%;
-  bottom: 0;
-  animation: anim 13s infinite ease-in;
+    right: 70%;
+    bottom: 0;
+    animation: anim 13s infinite ease-in;
 }
+
 .footer div.balloon:nth-child(10) {
-  right: 75%;
-  bottom: 0;
-  animation: anim 15s infinite ease-in-out;
+    right: 75%;
+    bottom: 0;
+    animation: anim 15s infinite ease-in-out;
 }
+
 .footer div.balloon:nth-child(11) {
-  right: 80%;
-  bottom: 0;
-  animation: anim 10s infinite;
+    right: 80%;
+    bottom: 0;
+    animation: anim 10s infinite;
 }
+
 .footer div.balloon:nth-child(12) {
-  right: 86%;
-  bottom: 0;
-  animation: anim 14s infinite;
+    right: 86%;
+    bottom: 0;
+    animation: anim 14s infinite;
 }
+
 .footer div.balloon:nth-child(13) {
-  right: 90%;
-  bottom: 0;
-  animation: anim 17s infinite;
+    right: 90%;
+    bottom: 0;
+    animation: anim 17s infinite;
 }
+
 .footer div.balloon:nth-child(14) {
-  right: 97%;
-  bottom: 0;
-  animation: anim 10s infinite ease-in-out;
+    right: 97%;
+    bottom: 0;
+    animation: anim 10s infinite ease-in-out;
 }
+
 .footer div.balloon:nth-child(15) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../imgs/BalloonContacts.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 50%;
-  width: 19%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: 26px;
-  padding-top: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../imgs/BalloonContacts.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50%;
+    width: 19%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    padding-top: 120px;
 }
+
 .footer div.balloon:nth-child(15) .number,
 .footer div.balloon:nth-child(15) .email {
-  padding: 10px;
+    padding: 10px;
 }
+
 .footer div.balloon:nth-child(15) .number {
-  padding-top: 33px;
+    padding-top: 33px;
 }
+
 .footer div.balloon:nth-child(15) .socoial__media ul {
-  list-style: none;
-  display: flex;
-  padding-top: 55px;
+    list-style: none;
+    display: flex;
+    padding-top: 55px;
 }
+
 .footer div.balloon:nth-child(15) .socoial__media ul a {
-  font-size: 0;
+    font-size: 0;
 }
-.footer div.balloon:nth-child(15) .socoial__media ul li + li {
-  margin-left: 15px;
+
+.footer div.balloon:nth-child(15) .socoial__media ul li+li {
+    margin-left: 15px;
 }
+
 .footer div.balloon:nth-child(15) .socoial__media img {
-  height: 35px;
-  width: 35px;
-  transition: all 0.5s;
+    height: 35px;
+    width: 35px;
+    transition: all 0.5s;
 }
+
 .footer div.balloon:nth-child(15) .socoial__media img:hover {
-  height: 50px;
-  width: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
 }
+
 @keyframes anim {
-  0% {
-    bottom: -10%;
-    transform: translateX(15px) rotate(7deg);
-  }
-  20% {
-    transform: translateX(25px) rotate(-7deg);
-  }
-  40% {
-    transform: translateX(20px) rotate(9deg);
-  }
-  60% {
-    transform: translateX(15px) rotate(-9deg);
-  }
-  80% {
-    transform: translateX(15px) rotate(5deg);
-  }
-  100% {
-    bottom: 110%;
-    transform: translateX(15px) rotate(0deg);
-  }
+    0% {
+        bottom: -10%;
+        transform: translateX(15px) rotate(7deg);
+    }
+    20% {
+        transform: translateX(25px) rotate(-7deg);
+    }
+    40% {
+        transform: translateX(20px) rotate(9deg);
+    }
+    60% {
+        transform: translateX(15px) rotate(-9deg);
+    }
+    80% {
+        transform: translateX(15px) rotate(5deg);
+    }
+    100% {
+        bottom: 110%;
+        transform: translateX(15px) rotate(0deg);
+    }
 }
