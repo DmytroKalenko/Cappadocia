@@ -32,6 +32,7 @@
 
 @media (max-width: 2020px) {
     .Hotel .container__item__second {
+        -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
     }
     .Hotel .container__item__second .text .text_images .blok {
@@ -49,6 +50,7 @@
 
 @media (max-width: 1827px) {
     .Hotel .container__item__second .text .text_images {
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     }
     .Hotel .container__item__second .text .text_images .blok {
@@ -114,10 +116,19 @@
         max-height: 80%;
     }
     .Attractions .Attractions__Slider .item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .Attractions .Attractions__Slider .item .text__tittle {
@@ -168,7 +179,11 @@
         font-size: 23px;
     }
     .BookNow .container__item__threeth .photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
     .BookNow .container__item__threeth .photo img {
@@ -220,7 +235,12 @@
 
 @media (max-width: 1201px) {
     .FairyTail.container__inner .FairyTail__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .FairyTail.container__inner .FairyTail__content .FairyTail.text {
@@ -247,6 +267,8 @@
     .FairyTail.container__inner .FairyTail__content .FairyTail__Slider .slick-arrow.slick-arrow:hover,
     .OurTrip .container__item_second .OurTrip_Slider .slick-arrow.slick-arrow:hover,
     .Pop_up.Active .Pop_up__window .Pop_up__slider .slick-arrow.slick-arrow:hover {
+        -webkit-transform: scale(1.35);
+        -ms-transform: scale(1.35);
         transform: scale(1.35);
         top: 46%;
     }
@@ -257,6 +279,7 @@
         right: 2px;
     }
     .Hotel .container__item__second .text .text_images {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .Hotel .container__item__second .text .text_images .blok.first,
@@ -332,12 +355,23 @@
         left: 0;
     }
     .OurTrip .container__item_second {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .OurTrip .container__item_second .OurTrip_Slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 25px;
     }
@@ -350,6 +384,8 @@
         height: 100%;
     }
     .slick-arrow:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
         transform: scale(1.2);
         top: 46%;
     }
@@ -373,6 +409,8 @@
     .burger___menu .burger span {
         position: absolute;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         height: 6px;
         width: 100%;
@@ -386,6 +424,8 @@
         width: 100%;
         top: -19px;
         background-color: rgba(0, 0, 0, 0.507);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
         border-radius: 9px;
     }
@@ -396,12 +436,16 @@
         width: 100%;
         top: 17px;
         background-color: rgba(0, 0, 0, 0.507);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
         border-radius: 9px;
     }
     .burger___menu .burger.Active span {
         position: absolute;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         height: 0;
         width: 100%;
@@ -414,6 +458,8 @@
         width: 100%;
         top: 0px;
         background-color: rgba(0, 0, 0, 0.507);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         border-radius: 9px;
     }
@@ -424,6 +470,8 @@
         width: 100%;
         top: 0px;
         background-color: rgba(0, 0, 0, 0.507);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         border-radius: 9px;
     }
@@ -436,6 +484,8 @@
         height: 100%;
         z-index: 2005;
         top: -100%;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
         transition: all .5s;
         display: block;
     }
@@ -463,6 +513,7 @@
         left: 0;
     }
     .Hotel .container__item__second {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .Hotel .container__item__second .photo {
@@ -502,7 +553,12 @@
     }
     .Pop_up.Active .Pop_up__window {
         height: 72%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .Pop_up.Active .Pop_up__window__Book {
@@ -525,7 +581,12 @@
         left: -20%;
     }
     .BookNow .container__item__threeth {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .BookNow .container__item__threeth .blok__text {
@@ -632,6 +693,9 @@
     }
     .Price .container__inner .container__item__second {
         padding: 0 10px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .Price .container__inner .container__item__second .blok_first,
@@ -761,6 +825,3 @@
         height: 35px;
     }
 }
-
-
-/*# sourceMappingURL=adaptive.css.map */
